@@ -1,0 +1,1778 @@
+{
+    "moduleId": "fi",
+    "moduleName": "Finance (FI)",
+    "description": "Quiz sul modulo finanziario, contabilità generale e reportistica finanziaria di SAP.",
+    "questions": [
+      {
+        "id": "fi-1",
+        "text": "Quale delle seguenti transazioni viene utilizzata per registrare una fattura fornitore in SAP FI?",
+        "answers": [
+          {
+            "id": "fi-1-a",
+            "text": "FB01"
+          },
+          {
+            "id": "fi-1-b",
+            "text": "FB60"
+          },
+          {
+            "id": "fi-1-c",
+            "text": "F-43"
+          },
+          {
+            "id": "fi-1-d",
+            "text": "MIRO"
+          }
+        ],
+        "correctAnswer": "fi-1-b"
+      },
+      {
+        "id": "fi-2",
+        "text": "Cosa rappresenta il termine 'Ledger' in SAP Finance?",
+        "answers": [
+          {
+            "id": "fi-2-a",
+            "text": "Un registro fisico dove vengono conservate le fatture cartacee"
+          },
+          {
+            "id": "fi-2-b",
+            "text": "Un insieme di conti che registrano le transazioni finanziarie secondo specifici principi contabili"
+          },
+          {
+            "id": "fi-2-c",
+            "text": "Il nome del server database che contiene i dati finanziari"
+          },
+          {
+            "id": "fi-2-d",
+            "text": "La persona responsabile della gestione finanziaria"
+          }
+        ],
+        "correctAnswer": "fi-2-b"
+      },
+      {
+        "id": "fi-3",
+        "text": "Quale dei seguenti documenti è utilizzato per registrare movimenti contabili senza riferimento a clienti o fornitori?",
+        "answers": [
+          {
+            "id": "fi-3-a",
+            "text": "Documento FI speciale"
+          },
+          {
+            "id": "fi-3-b",
+            "text": "Documento cliente"
+          },
+          {
+            "id": "fi-3-c",
+            "text": "Documento fornitore"
+          },
+          {
+            "id": "fi-3-d",
+            "text": "Documento generale"
+          }
+        ],
+        "correctAnswer": "fi-3-d"
+      },
+      {
+        "id": "fi-4",
+        "text": "Qual è la transazione utilizzata per visualizzare il bilancio in SAP FI?",
+        "answers": [
+          {
+            "id": "fi-4-a",
+            "text": "FS00"
+          },
+          {
+            "id": "fi-4-b",
+            "text": "FS10N"
+          },
+          {
+            "id": "fi-4-c",
+            "text": "F.01"
+          },
+          {
+            "id": "fi-4-d",
+            "text": "S_ALR_87012332"
+          }
+        ],
+        "correctAnswer": "fi-4-b"
+      },
+      {
+        "id": "fi-5",
+        "text": "Cosa si intende per 'periodo contabile' in SAP FI?",
+        "answers": [
+          {
+            "id": "fi-5-a",
+            "text": "L'orario di lavoro del team Finance"
+          },
+          {
+            "id": "fi-5-b",
+            "text": "Il tempo necessario per elaborare una transazione finanziaria"
+          },
+          {
+            "id": "fi-5-c",
+            "text": "Una suddivisione dell'anno fiscale in cui vengono registrate le transazioni"
+          },
+          {
+            "id": "fi-5-d",
+            "text": "Il tempo previsto per la chiusura mensile"
+          }
+        ],
+        "correctAnswer": "fi-5-c"
+      },
+      {
+        "id": "fi-6",
+        "text": "Quale transazione viene utilizzata per creare un nuovo conto Co.Ge. in SAP FI?",
+        "answers": [
+          {
+            "id": "fi-6-a",
+            "text": "FS00"
+          },
+          {
+            "id": "fi-6-b",
+            "text": "FK01"
+          },
+          {
+            "id": "fi-6-c",
+            "text": "OB01"
+          },
+          {
+            "id": "fi-6-d",
+            "text": "FBS1"
+          }
+        ],
+        "correctAnswer": "fi-6-a"
+      },
+      {
+        "id": "fi-7",
+        "text": "Cosa rappresenta l'abbreviazione 'OTC' nel contesto di SAP FI?",
+        "answers": [
+          {
+            "id": "fi-7-a",
+            "text": "Order To Cash"
+          },
+          {
+            "id": "fi-7-b",
+            "text": "Open Transaction Clearing"
+          },
+          {
+            "id": "fi-7-c",
+            "text": "Operational Transaction Control"
+          },
+          {
+            "id": "fi-7-d",
+            "text": "Outgoing Treasury Check"
+          }
+        ],
+        "correctAnswer": "fi-7-a"
+      },
+      {
+        "id": "fi-8",
+        "text": "Quale delle seguenti è una caratteristica chiave del modulo SAP New General Ledger?",
+        "answers": [
+          {
+            "id": "fi-8-a",
+            "text": "Supporta solo un piano dei conti"
+          },
+          {
+            "id": "fi-8-b",
+            "text": "Non è integrato con il modulo Controlling"
+          },
+          {
+            "id": "fi-8-c",
+            "text": "Consente la valutazione parallela secondo diversi principi contabili"
+          },
+          {
+            "id": "fi-8-d",
+            "text": "Richiede sistemi separati per ogni società"
+          }
+        ],
+        "correctAnswer": "fi-8-c"
+      },
+      {
+        "id": "fi-9",
+        "text": "In SAP FI, cosa si intende per 'partita aperta'?",
+        "answers": [
+          {
+            "id": "fi-9-a",
+            "text": "Una transazione che è stata avviata ma non completata"
+          },
+          {
+            "id": "fi-9-b",
+            "text": "Un documento registrato ma non ancora pagato o incassato"
+          },
+          {
+            "id": "fi-9-c",
+            "text": "Un conto che non è stato ancora assegnato a un centro di costo"
+          },
+          {
+            "id": "fi-9-d",
+            "text": "Una fattura in attesa di approvazione"
+          }
+        ],
+        "correctAnswer": "fi-9-b"
+      },
+      {
+        "id": "fi-10",
+        "text": "Quale transazione viene utilizzata per effettuare la chiusura di periodo in SAP FI?",
+        "answers": [
+          {
+            "id": "fi-10-a",
+            "text": "F.16"
+          },
+          {
+            "id": "fi-10-b",
+            "text": "FAGL_FC_VAL"
+          },
+          {
+            "id": "fi-10-c",
+            "text": "FB50"
+          },
+          {
+            "id": "fi-10-d",
+            "text": "MMPV"
+          }
+        ],
+        "correctAnswer": "fi-10-b"
+      },
+      {
+        "id": "fi-11",
+        "text": "Quale tabella principale contiene tutti i dati delle transazioni finanziere in S/4 HANA?",
+        "answers": [
+          {
+            "id": "fi-11-a",
+            "text": "BSEG"
+          },
+          {
+            "id": "fi-11-b",
+            "text": "BKPF"
+          },
+          {
+            "id": "fi-11-c",
+            "text": "ACDOCA"
+          },
+          {
+            "id": "fi-11-d",
+            "text": "FAGLFLEXA"
+          }
+        ],
+        "correctAnswer": "fi-11-c"
+      },
+      {
+        "id": "fi-12",
+        "text": "Cosa rappresenta il concetto di 'Universal Journal' in SAP S/4 HANA?",
+        "answers": [
+          {
+            "id": "fi-12-a",
+            "text": "Un giornale cartaceo per annotare transazioni manuali"
+          },
+          {
+            "id": "fi-12-b",
+            "text": "Un'unica tabella che integra dati finanziari di FI, CO, AA e altre componenti"
+          },
+          {
+            "id": "fi-12-c",
+            "text": "Una rivista di contabilità pubblicata da SAP"
+          },
+          {
+            "id": "fi-12-d",
+            "text": "Un report che mostra tutte le transazioni di un giorno"
+          }
+        ],
+        "correctAnswer": "fi-12-b"
+      },
+      {
+        "id": "fi-13",
+        "text": "Quale delle seguenti è una struttura organizzativa fondamentale in SAP FI?",
+        "answers": [
+          {
+            "id": "fi-13-a",
+            "text": "Centro di costo"
+          },
+          {
+            "id": "fi-13-b",
+            "text": "Company Code (Società)"
+          },
+          {
+            "id": "fi-13-c",
+            "text": "Centro di profitto"
+          },
+          {
+            "id": "fi-13-d",
+            "text": "Divisione di vendita"
+          }
+        ],
+        "correctAnswer": "fi-13-b"
+      },
+      {
+        "id": "fi-14",
+        "text": "In SAP S/4 HANA, quali dati confluiscono nella tabella ACDOCA?",
+        "answers": [
+          {
+            "id": "fi-14-a",
+            "text": "Solo dati di FI (Finanza)"
+          },
+          {
+            "id": "fi-14-b",
+            "text": "Solo dati di CO (Controlling)"
+          },
+          {
+            "id": "fi-14-c",
+            "text": "Dati di FI, CO, AA e ML (Finanza, Controlling, Asset Accounting e Material Ledger)"
+          },
+          {
+            "id": "fi-14-d",
+            "text": "Solo dati di Master Data"
+          }
+        ],
+        "correctAnswer": "fi-14-c"
+      },
+      {
+        "id": "fi-15",
+        "text": "Cosa rappresenta il 'Mandante' nella struttura organizzativa di SAP?",
+        "answers": [
+          {
+            "id": "fi-15-a",
+            "text": "Un cliente che ha richiesto una modifica al sistema"
+          },
+          {
+            "id": "fi-15-b",
+            "text": "Un fornitore esterno che gestisce il sistema SAP"
+          },
+          {
+            "id": "fi-15-c",
+            "text": "La più alta unità organizzativa in SAP che separa i dati aziendali"
+          },
+          {
+            "id": "fi-15-d",
+            "text": "Un documento legale che autorizza l'uso di SAP"
+          }
+        ],
+        "correctAnswer": "fi-15-c"
+      },
+      {
+        "id": "fi-16",
+        "text": "Quale dei seguenti non è uno dei vantaggi del sistema SAP S/4 HANA?",
+        "answers": [
+          {
+            "id": "fi-16-a",
+            "text": "Accesso ai dati In-Memory"
+          },
+          {
+            "id": "fi-16-b",
+            "text": "Struttura database semplificata (database colonnare)"
+          },
+          {
+            "id": "fi-16-c",
+            "text": "Incremento dello spazio di archiviazione necessario"
+          },
+          {
+            "id": "fi-16-d",
+            "text": "Real-Time Embedded Analytics"
+          }
+        ],
+        "correctAnswer": "fi-16-c"
+      },
+      {
+        "id": "fi-17",
+        "text": "Cosa significa 'Business Area' in SAP FI?",
+        "answers": [
+          {
+            "id": "fi-17-a",
+            "text": "Una divisione geografica dell'azienda"
+          },
+          {
+            "id": "fi-17-b",
+            "text": "Un segmento di business trasversale alle società che permette reporting separato"
+          },
+          {
+            "id": "fi-17-c",
+            "text": "Un ufficio fisico dove lavorano i dipendenti"
+          },
+          {
+            "id": "fi-17-d",
+            "text": "L'area di specializzazione di un consulente SAP"
+          }
+        ],
+        "correctAnswer": "fi-17-b"
+      },
+      {
+        "id": "fi-18",
+        "text": "Quali tipi di Ledger possono coesistere in SAP S/4 HANA?",
+        "answers": [
+          {
+            "id": "fi-18-a",
+            "text": "Solo Ledger locali"
+          },
+          {
+            "id": "fi-18-b",
+            "text": "Solo Ledger di gruppo"
+          },
+          {
+            "id": "fi-18-c",
+            "text": "Ledger paralleli che seguono principi contabili diversi"
+          },
+          {
+            "id": "fi-18-d",
+            "text": "Solo un tipo di Ledger per ambiente SAP"
+          }
+        ],
+        "correctAnswer": "fi-18-c"
+      },
+      {
+        "id": "fi-19",
+        "text": "A cosa serve la chiave contabile in SAP FI?",
+        "answers": [
+          {
+            "id": "fi-19-a",
+            "text": "Per accedere al sistema SAP come amministratore"
+          },
+          {
+            "id": "fi-19-b",
+            "text": "Per definire il segno di una registrazione (dare/avere) e il tipo di conto"
+          },
+          {
+            "id": "fi-19-c",
+            "text": "Per cifrare i dati finanziari sensibili"
+          },
+          {
+            "id": "fi-19-d",
+            "text": "Per attivare le funzionalità premium di SAP"
+          }
+        ],
+        "correctAnswer": "fi-19-b"
+      },
+      {
+        "id": "fi-20",
+        "text": "Quale dei seguenti campi identifica univocamente un documento contabile in SAP FI?",
+        "answers": [
+          {
+            "id": "fi-20-a",
+            "text": "Numero società, tipo documento, numero documento, esercizio"
+          },
+          {
+            "id": "fi-20-b",
+            "text": "Solo il numero documento"
+          },
+          {
+            "id": "fi-20-c",
+            "text": "Solo l'ID utente che ha creato il documento"
+          },
+          {
+            "id": "fi-20-d",
+            "text": "Data di registrazione e importo"
+          }
+        ],
+        "correctAnswer": "fi-20-a"
+      },
+      {
+        "id": "fi-21",
+        "text": "Quale delle seguenti funzionalità è tipica del modulo FI-AA (Asset Accounting)?",
+        "answers": [
+          {
+            "id": "fi-21-a",
+            "text": "Gestione degli incassi da clienti"
+          },
+          {
+            "id": "fi-21-b",
+            "text": "Calcolo automatico degli ammortamenti"
+          },
+          {
+            "id": "fi-21-c",
+            "text": "Gestione degli ordini di vendita"
+          },
+          {
+            "id": "fi-21-d",
+            "text": "Controllo delle disponibilità di magazzino"
+          }
+        ],
+        "correctAnswer": "fi-21-b"
+      },
+      {
+        "id": "fi-22",
+        "text": "Cosa significa l'acronimo FSCM in SAP?",
+        "answers": [
+          {
+            "id": "fi-22-a",
+            "text": "Financial System Control Management"
+          },
+          {
+            "id": "fi-22-b",
+            "text": "Flexible Supply Chain Model"
+          },
+          {
+            "id": "fi-22-c",
+            "text": "Financial Supply Chain Management"
+          },
+          {
+            "id": "fi-22-d",
+            "text": "Fiscality and Supply Chain Monitoring"
+          }
+        ],
+        "correctAnswer": "fi-22-c"
+      },
+      {
+        "id": "fi-23",
+        "text": "Quali componenti fanno parte del Cash Management in SAP?",
+        "answers": [
+          {
+            "id": "fi-23-a",
+            "text": "Solo la gestione delle ricevute bancarie"
+          },
+          {
+            "id": "fi-23-b",
+            "text": "Solo la previsione di liquidità"
+          },
+          {
+            "id": "fi-23-c",
+            "text": "Gestione conti bancari, previsione liquidità, gestione pagamenti e incassi"
+          },
+          {
+            "id": "fi-23-d",
+            "text": "Solo la gestione degli investimenti finanziari"
+          }
+        ],
+        "correctAnswer": "fi-23-c"
+      },
+      {
+        "id": "fi-24",
+        "text": "Cos'è il Business Partner in SAP S/4 HANA?",
+        "answers": [
+          {
+            "id": "fi-24-a",
+            "text": "Un consulente esterno che aiuta nell'implementazione di SAP"
+          },
+          {
+            "id": "fi-24-b",
+            "text": "Una società partner che vende prodotti SAP"
+          },
+          {
+            "id": "fi-24-c",
+            "text": "Un'entità che unifica clienti, fornitori e altri ruoli commerciali in un'unica struttura anagrafica"
+          },
+          {
+            "id": "fi-24-d",
+            "text": "Un modulo specifico per la gestione delle partnership commerciali"
+          }
+        ],
+        "correctAnswer": "fi-24-c"
+      },
+      {
+        "id": "fi-25",
+        "text": "Come funziona il processo di fatturazione elettronica attiva in SAP?",
+        "answers": [
+          {
+            "id": "fi-25-a",
+            "text": "È un processo completamente manuale"
+          },
+          {
+            "id": "fi-25-b",
+            "text": "Avviene tramite invio di email con PDF allegati"
+          },
+          {
+            "id": "fi-25-c",
+            "text": "Tramite creazione di file XML, firma elettronica e trasmissione allo SDI"
+          },
+          {
+            "id": "fi-25-d",
+            "text": "Tramite l'invio di fax automatici"
+          }
+        ],
+        "correctAnswer": "fi-25-c"
+      },
+      {
+        "id": "fi-26",
+        "text": "Quale transazione permette di gestire i blocchi al pagamento in SAP FI?",
+        "answers": [
+          {
+            "id": "fi-26-a",
+            "text": "F110"
+          },
+          {
+            "id": "fi-26-b",
+            "text": "F-54"
+          },
+          {
+            "id": "fi-26-c",
+            "text": "FBRA"
+          },
+          {
+            "id": "fi-26-d",
+            "text": "F-44"
+          }
+        ],
+        "correctAnswer": "fi-26-b"
+      },
+      {
+        "id": "fi-27",
+        "text": "Cosa rappresenta il Vendor Invoice Management (VIM) in SAP?",
+        "answers": [
+          {
+            "id": "fi-27-a",
+            "text": "Un sistema per gestire manualmente le fatture fornitori"
+          },
+          {
+            "id": "fi-27-b",
+            "text": "Un add-on che automatizza la registrazione e verifica delle fatture passive"
+          },
+          {
+            "id": "fi-27-c",
+            "text": "Un sistema di gestione dei fornitori"
+          },
+          {
+            "id": "fi-27-d",
+            "text": "Un database di fatture fornitori archiviato esternamente"
+          }
+        ],
+        "correctAnswer": "fi-27-b"
+      },
+      {
+        "id": "fi-28",
+        "text": "Quali sono le principali strutture organizzative in ambito AFC (Amministrazione, Finanza e Controllo)?",
+        "answers": [
+          {
+            "id": "fi-28-a",
+            "text": "Solo il Mandante"
+          },
+          {
+            "id": "fi-28-b",
+            "text": "Solo la Società"
+          },
+          {
+            "id": "fi-28-c",
+            "text": "Mandante, Controlling Area, Piano dei conti, Società, Business Area"
+          },
+          {
+            "id": "fi-28-d",
+            "text": "Filiale, Ufficio, Dipartimento"
+          }
+        ],
+        "correctAnswer": "fi-28-c"
+      },
+      {
+        "id": "fi-29",
+        "text": "Quale delle seguenti è una funzionalità della Collection Management in SAP?",
+        "answers": [
+          {
+            "id": "fi-29-a",
+            "text": "Gestione delle collezioni artistiche aziendali"
+          },
+          {
+            "id": "fi-29-b",
+            "text": "Suddivisione dei clienti in categorie per il monitoraggio dei crediti"
+          },
+          {
+            "id": "fi-29-c",
+            "text": "Raccolta di documentazione cartacea"
+          },
+          {
+            "id": "fi-29-d",
+            "text": "Gestione dei collezionisti di prodotti aziendali"
+          }
+        ],
+        "correctAnswer": "fi-29-b"
+      },
+      {
+        "id": "fi-30",
+        "text": "Cosa si intende per 'Co.Ge. speciali' in SAP FI?",
+        "answers": [
+          {
+            "id": "fi-30-a",
+            "text": "Conti contabili riservati agli amministratori di sistema"
+          },
+          {
+            "id": "fi-30-b",
+            "text": "Contabilità generale con funzionalità avanzate"
+          },
+          {
+            "id": "fi-30-c",
+            "text": "Un meccanismo per canalizzare sui conti cliente/fornitore registrazioni da monitorare separatamente"
+          },
+          {
+            "id": "fi-30-d",
+            "text": "Conti contabili disponibili solo per determinati utenti"
+          }
+        ],
+        "correctAnswer": "fi-30-c"
+      },
+      {
+        "id": "fi-31",
+        "text": "Come si definisce un piano dei conti operativo in SAP?",
+        "answers": [
+          {
+            "id": "fi-31-a",
+            "text": "Un piano dei conti utilizzato esclusivamente per le operazioni giornaliere"
+          },
+          {
+            "id": "fi-31-b",
+            "text": "Un piano dei conti che tutte le società utilizzano per le rilevazioni contabili"
+          },
+          {
+            "id": "fi-31-c",
+            "text": "Un piano dei conti in formato cartaceo"
+          },
+          {
+            "id": "fi-31-d",
+            "text": "Un piano dei conti temporaneo"
+          }
+        ],
+        "correctAnswer": "fi-31-b"
+      },
+      {
+        "id": "fi-32",
+        "text": "Quale vantaggio offre SAP S/4 HANA in termini di velocità rispetto alle versioni precedenti?",
+        "answers": [
+          {
+            "id": "fi-32-a",
+            "text": "La velocità di accesso ai dati è migliorata di circa 2 volte"
+          },
+          {
+            "id": "fi-32-b",
+            "text": "La velocità di accesso ai dati è migliorata di circa 2 ordini di grandezza"
+          },
+          {
+            "id": "fi-32-c",
+            "text": "Non ci sono miglioramenti significativi in termini di velocità"
+          },
+          {
+            "id": "fi-32-d",
+            "text": "La velocità è ridotta per garantire maggiore accuratezza"
+          }
+        ],
+        "correctAnswer": "fi-32-b"
+      },
+      {
+        "id": "fi-33",
+        "text": "Cosa sono i 'ledger paralleli' in SAP S/4 HANA?",
+        "answers": [
+          {
+            "id": "fi-33-a",
+            "text": "Sistemi contabili che operano in parallelo ma indipendenti da SAP"
+          },
+          {
+            "id": "fi-33-b",
+            "text": "Una modalità di visualizzazione affiancata dei conti contabili"
+          },
+          {
+            "id": "fi-33-c",
+            "text": "Diversi ledger che coesistono per gestire principi contabili differenti (locali e di gruppo)"
+          },
+          {
+            "id": "fi-33-d",
+            "text": "Registri contabili di backup"
+          }
+        ],
+        "correctAnswer": "fi-33-c"
+      },
+      {
+        "id": "fi-34",
+        "text": "In SAP FI, cosa si intende per 'localizzazione'?",
+        "answers": [
+          {
+            "id": "fi-34-a",
+            "text": "Il processo di traduzione dell'interfaccia utente in lingue diverse"
+          },
+          {
+            "id": "fi-34-b",
+            "text": "La determinazione della posizione geografica dell'utente"
+          },
+          {
+            "id": "fi-34-c",
+            "text": "Funzioni specifiche per gestire esigenze normative richieste nelle diverse nazioni"
+          },
+          {
+            "id": "fi-34-d",
+            "text": "La configurazione del formato data e ora in base al fuso orario"
+          }
+        ],
+        "correctAnswer": "fi-34-c"
+      },
+      {
+        "id": "fi-35",
+        "text": "Cosa si intende per 'validazioni' in SAP FI?",
+        "answers": [
+          {
+            "id": "fi-35-a",
+            "text": "Il processo di approvazione dei pagamenti da parte del management"
+          },
+          {
+            "id": "fi-35-b",
+            "text": "La verifica dei dati degli utenti al login"
+          },
+          {
+            "id": "fi-35-c",
+            "text": "Controlli di merito sulle registrazioni contabili che possono scattare in vari momenti"
+          },
+          {
+            "id": "fi-35-d",
+            "text": "La conferma dell'installazione di nuovi moduli SAP"
+          }
+        ],
+        "correctAnswer": "fi-35-c"
+      },
+      {
+        "id": "fi-36",
+        "text": "Come vengono gestite le ritenute d'acconto in SAP FI?",
+        "answers": [
+          {
+            "id": "fi-36-a",
+            "text": "Non possono essere gestite in SAP"
+          },
+          {
+            "id": "fi-36-b",
+            "text": "Vengono calcolate manualmente e inserite su un foglio Excel esterno"
+          },
+          {
+            "id": "fi-36-c",
+            "text": "Vengono configurate nell'anagrafica fornitore e calcolate automaticamente al pagamento"
+          },
+          {
+            "id": "fi-36-d",
+            "text": "Vengono gestite esclusivamente dal modulo HR"
+          }
+        ],
+        "correctAnswer": "fi-36-c"
+      },
+      {
+        "id": "fi-37",
+        "text": "Quale interfaccia utente è disponibile in SAP S/4 HANA?",
+        "answers": [
+          {
+            "id": "fi-37-a",
+            "text": "Solo terminale a caratteri"
+          },
+          {
+            "id": "fi-37-b",
+            "text": "Solo interfaccia SAPGUI"
+          },
+          {
+            "id": "fi-37-c",
+            "text": "Interfaccia SAP Fiori basata sul web"
+          },
+          {
+            "id": "fi-37-d",
+            "text": "Solo interfaccia a riga di comando"
+          }
+        ],
+        "correctAnswer": "fi-37-c"
+      },
+      {
+        "id": "fi-38",
+        "text": "Quale soluzione Horsa permette di gestire reti di vendita complesse in SAP?",
+        "answers": [
+          {
+            "id": "fi-38-a",
+            "text": "Vendor+"
+          },
+          {
+            "id": "fi-38-b",
+            "text": "Agenti+"
+          },
+          {
+            "id": "fi-38-c",
+            "text": "Network+"
+          },
+          {
+            "id": "fi-38-d",
+            "text": "Sales+"
+          }
+        ],
+        "correctAnswer": "fi-38-b"
+      },
+      {
+        "id": "fi-39",
+        "text": "Con quali moduli SAP è integrata la soluzione Agenti+?",
+        "answers": [
+          {
+            "id": "fi-39-a",
+            "text": "Solo con il modulo SD"
+          },
+          {
+            "id": "fi-39-b",
+            "text": "Solo con i moduli FI e CO"
+          },
+          {
+            "id": "fi-39-c",
+            "text": "Con i moduli SD, FI e CO"
+          },
+          {
+            "id": "fi-39-d",
+            "text": "Con tutti i moduli SAP"
+          }
+        ],
+        "correctAnswer": "fi-39-c"
+      },
+      {
+        "id": "fi-40",
+        "text": "Quali informazioni sono gestite nell'anagrafica agenti oltre ai dati standard di fornitore?",
+        "answers": [
+          {
+            "id": "fi-40-a",
+            "text": "Solo dati anagrafici personali"
+          },
+          {
+            "id": "fi-40-b",
+            "text": "Solo dati fiscali e bancari"
+          },
+          {
+            "id": "fi-40-c",
+            "text": "Data inizio/fine contratto, mono/plurimandatario e tipologia di collaboratore"
+          },
+          {
+            "id": "fi-40-d",
+            "text": "Solo area geografica di competenza e clienti assegnati"
+          }
+        ],
+        "correctAnswer": "fi-40-c"
+      },
+      {
+        "id": "fi-41",
+        "text": "Cosa rappresenta il Piano di valutazione nella gestione cespiti di SAP?",
+        "answers": [
+          {
+            "id": "fi-41-a",
+            "text": "Un documento che stima il valore dei cespiti aziendali"
+          },
+          {
+            "id": "fi-41-b",
+            "text": "Una struttura organizzativa che consente di gestire differenti tipi di ammortamento"
+          },
+          {
+            "id": "fi-41-c",
+            "text": "Un report che confronta il valore dei cespiti con il loro valore di mercato"
+          },
+          {
+            "id": "fi-41-d",
+            "text": "Un registro che elenca tutti i cespiti dell'azienda"
+          }
+        ],
+        "correctAnswer": "fi-41-b"
+      },
+      {
+        "id": "fi-42",
+        "text": "Qual è la funzione principale della classe cespiti in SAP FI-AA?",
+        "answers": [
+          {
+            "id": "fi-42-a",
+            "text": "Determinare il valore residuo dei cespiti"
+          },
+          {
+            "id": "fi-42-b",
+            "text": "Raggruppare i cespiti per ubicazione fisica"
+          },
+          {
+            "id": "fi-42-c",
+            "text": "Strutturare il capitale fisso dal punto di vista contabile"
+          },
+          {
+            "id": "fi-42-d",
+            "text": "Stabilire il periodo di ammortamento in base alle leggi fiscali"
+          }
+        ],
+        "correctAnswer": "fi-42-c"
+      },
+      {
+        "id": "fi-43",
+        "text": "In SAP, cosa permette di visualizzare il Cash Flow Analyzer?",
+        "answers": [
+          {
+            "id": "fi-43-a",
+            "text": "Solo i movimenti bancari già registrati"
+          },
+          {
+            "id": "fi-43-b",
+            "text": "Solo le previsioni di liquidità future"
+          },
+          {
+            "id": "fi-43-c",
+            "text": "Posizioni di cassa, previsioni di liquidità e flussi di cassa effettivi"
+          },
+          {
+            "id": "fi-43-d",
+            "text": "Solo il saldo delle banche per ciascun giorno"
+          }
+        ],
+        "correctAnswer": "fi-43-c"
+      },
+      {
+        "id": "fi-44",
+        "text": "Quali tipi di dati considera l'app Cash Flow Analyzer in SAP?",
+        "answers": [
+          {
+            "id": "fi-44-a",
+            "text": "Solo dati bancari e scadenzari clienti"
+          },
+          {
+            "id": "fi-44-b",
+            "text": "Solo ordini di acquisto e vendita"
+          },
+          {
+            "id": "fi-44-c",
+            "text": "Dati bancari, scadenzari clienti/fornitori, ordini di acquisto/vendita e movimenti previsionali"
+          },
+          {
+            "id": "fi-44-d",
+            "text": "Solo movimenti previsionali inseriti manualmente"
+          }
+        ],
+        "correctAnswer": "fi-44-c"
+      },
+      {
+        "id": "fi-45",
+        "text": "A cosa serve l'app Previsioni di liquidità in SAP?",
+        "answers": [
+          {
+            "id": "fi-45-a",
+            "text": "A visualizzare solo il saldo attuale delle banche"
+          },
+          {
+            "id": "fi-45-b",
+            "text": "A prevedere l'andamento della liquidità per i successivi 90 giorni"
+          },
+          {
+            "id": "fi-45-c",
+            "text": "A calcolare gli interessi passivi per scoperti bancari"
+          },
+          {
+            "id": "fi-45-d",
+            "text": "A verificare solo i pagamenti in scadenza"
+          }
+        ],
+        "correctAnswer": "fi-45-b"
+      },
+      {
+        "id": "fi-46",
+        "text": "Quale informazione è necessaria impostare per creare una nuova banca interna in SAP?",
+        "answers": [
+          {
+            "id": "fi-46-a",
+            "text": "Solo il codice ABI e CAB"
+          },
+          {
+            "id": "fi-46-b",
+            "text": "Solo il conto contabile associato"
+          },
+          {
+            "id": "fi-46-c",
+            "text": "L'IBAN"
+          },
+          {
+            "id": "fi-46-d",
+            "text": "Solo il nome della banca"
+          }
+        ],
+        "correctAnswer": "fi-46-c"
+      },
+      {
+        "id": "fi-47",
+        "text": "Quali informazioni vengono memorizzate nell'anagrafica di un cespite in SAP?",
+        "answers": [
+          {
+            "id": "fi-47-a",
+            "text": "Solo dati generali e valori"
+          },
+          {
+            "id": "fi-47-b",
+            "text": "Solo ubicazione e centro di costo"
+          },
+          {
+            "id": "fi-47-c",
+            "text": "Dati generali, informazioni di registrazione, dati temporali, attribuzioni, dati di origine, valutazione e valori"
+          },
+          {
+            "id": "fi-47-d",
+            "text": "Solo le regole di ammortamento"
+          }
+        ],
+        "correctAnswer": "fi-47-c"
+      },
+      {
+        "id": "fi-48",
+        "text": "Qual è lo scopo principale del modulo SAP FI-AA?",
+        "answers": [
+          {
+            "id": "fi-48-a",
+            "text": "Gestione delle vendite"
+          },
+          {
+            "id": "fi-48-b",
+            "text": "Gestione dei cespiti e degli ammortamenti"
+          },
+          {
+            "id": "fi-48-c",
+            "text": "Gestione del personale"
+          },
+          {
+            "id": "fi-48-d",
+            "text": "Gestione delle scorte di magazzino"
+          }
+        ],
+        "correctAnswer": "fi-48-b"
+      },
+      {
+        "id": "fi-49",
+        "text": "Cosa rappresenta l'area di valutazione 01 nella gestione cespiti SAP?",
+        "answers": [
+          {
+            "id": "fi-49-a",
+            "text": "Ammortamento fiscale"
+          },
+          {
+            "id": "fi-49-b",
+            "text": "Ammortamento civilistico"
+          },
+          {
+            "id": "fi-49-c",
+            "text": "Differenza civilistico/fiscale"
+          },
+          {
+            "id": "fi-49-d",
+            "text": "Ammortamento gestionale"
+          }
+        ],
+        "correctAnswer": "fi-49-b"
+      },
+      {
+        "id": "fi-50",
+        "text": "Come vengono generate le proposte di pagamento in SAP?",
+        "answers": [
+          {
+            "id": "fi-50-a",
+            "text": "In modo completamente manuale"
+          },
+          {
+            "id": "fi-50-b",
+            "text": "Impostando parametri come società, metodo di pagamento e scadenze"
+          },
+          {
+            "id": "fi-50-c",
+            "text": "Solo in base ai giorni di ritardo delle fatture"
+          },
+          {
+            "id": "fi-50-d",
+            "text": "Solo tramite un file esterno importato"
+          }
+        ],
+        "correctAnswer": "fi-50-b"
+      },
+      {
+        "id": "fi-51",
+        "text": "Quale formato di file viene generato per i bonifici SEPA in SAP?",
+        "answers": [
+          {
+            "id": "fi-51-a",
+            "text": "CSV"
+          },
+          {
+            "id": "fi-51-b",
+            "text": "TXT"
+          },
+          {
+            "id": "fi-51-c",
+            "text": "XML"
+          },
+          {
+            "id": "fi-51-d",
+            "text": "PDF"
+          }
+        ],
+        "correctAnswer": "fi-51-c"
+      },
+      {
+        "id": "fi-52",
+        "text": "Cosa permette di fare l'app 'Importazione flussi bancari' in SAP?",
+        "answers": [
+          {
+            "id": "fi-52-a",
+            "text": "Modificare i dati IBAN delle banche"
+          },
+          {
+            "id": "fi-52-b",
+            "text": "Importare movimenti bancari dal remote banking per la contabilizzazione"
+          },
+          {
+            "id": "fi-52-c",
+            "text": "Allineare i saldi banche con il remote banking"
+          },
+          {
+            "id": "fi-52-d",
+            "text": "Effettuare pagamenti verso le banche"
+          }
+        ],
+        "correctAnswer": "fi-52-b"
+      },
+      {
+        "id": "fi-53",
+        "text": "A cosa serve l'app 'Movimenti previsionali' in SAP?",
+        "answers": [
+          {
+            "id": "fi-53-a",
+            "text": "Registrare solo fatture da ricevere"
+          },
+          {
+            "id": "fi-53-b",
+            "text": "Gestire movimenti come stipendi, F24 o acquisti non gestiti con ordine di acquisto"
+          },
+          {
+            "id": "fi-53-c",
+            "text": "Creare nuovi conti bancari"
+          },
+          {
+            "id": "fi-53-d",
+            "text": "Visualizzare solo i movimenti già registrati"
+          }
+        ],
+        "correctAnswer": "fi-53-b"
+      },
+      {
+        "id": "fi-54",
+        "text": "Cosa rappresenta il 'Registro beni ammortizzabili' in SAP?",
+        "answers": [
+          {
+            "id": "fi-54-a",
+            "text": "Un elenco dei fornitori di cespiti"
+          },
+          {
+            "id": "fi-54-b",
+            "text": "Un report che evidenzia tutti i beni materiali e immateriali, valori, anni di formazione e regole di ammortamento"
+          },
+          {
+            "id": "fi-54-c",
+            "text": "Un report che mostra solo gli acquisti dell'anno in corso"
+          },
+          {
+            "id": "fi-54-d",
+            "text": "L'elenco dei documenti di vendita dei cespiti"
+          }
+        ],
+        "correctAnswer": "fi-54-b"
+      },
+      {
+        "id": "fi-55",
+        "text": "In cosa consiste il processo di 'capitalizzazione' di un cespite in SAP?",
+        "answers": [
+          {
+            "id": "fi-55-a",
+            "text": "La vendita di un cespite"
+          },
+          {
+            "id": "fi-55-b",
+            "text": "Il passaggio da 'cespite in costruzione' ad 'anagrafica cespite' definitiva"
+          },
+          {
+            "id": "fi-55-c",
+            "text": "L'ammortamento anticipato di un cespite"
+          },
+          {
+            "id": "fi-55-d",
+            "text": "L'acquisto di un nuovo cespite"
+          }
+        ],
+        "correctAnswer": "fi-55-b"
+      },
+      {
+        "id": "fi-56",
+        "text": "Come vengono calcolati gli estratti conto provvigioni in Agenti+?",
+        "answers": [
+          {
+            "id": "fi-56-a",
+            "text": "Solo manualmente dagli operatori"
+          },
+          {
+            "id": "fi-56-b",
+            "text": "Solo in base al fatturato"
+          },
+          {
+            "id": "fi-56-c",
+            "text": "Attraverso un'elaborazione che permette di verificare i risultati prima della conferma"
+          },
+          {
+            "id": "fi-56-d",
+            "text": "Solo tramite import da file esterni"
+          }
+        ],
+        "correctAnswer": "fi-56-c"
+      },
+      {
+        "id": "fi-57",
+        "text": "Quali informazioni possono essere mostrate nel cruscotto 'Riepilogo relazioni con la banca' in SAP?",
+        "answers": [
+          {
+            "id": "fi-57-a",
+            "text": "Solo i saldi attuali"
+          },
+          {
+            "id": "fi-57-b",
+            "text": "Solo i pagamenti effettuati"
+          },
+          {
+            "id": "fi-57-c",
+            "text": "Pagamenti/incassi per banca, banche attive, monitoraggio spese bancarie e workflow"
+          },
+          {
+            "id": "fi-57-d",
+            "text": "Solo le spese bancarie"
+          }
+        ],
+        "correctAnswer": "fi-57-c"
+      },
+      {
+        "id": "fi-58",
+        "text": "Cosa consente di fare l'app 'Gerarchie banche' in SAP?",
+        "answers": [
+          {
+            "id": "fi-58-a",
+            "text": "Modificare i tassi di interesse"
+          },
+          {
+            "id": "fi-58-b",
+            "text": "Costruire gerarchie a scopi di reporting (es. banche per nazione, società, istituto bancario)"
+          },
+          {
+            "id": "fi-58-c",
+            "text": "Creare nuove banche"
+          },
+          {
+            "id": "fi-58-d",
+            "text": "Calcolare gli interessi sui conti"
+          }
+        ],
+        "correctAnswer": "fi-58-b"
+      },
+      {
+        "id": "fi-59",
+        "text": "Qual è la differenza tra un 'cespite in costruzione' e un 'cespite' definitivo in SAP?",
+        "answers": [
+          {
+            "id": "fi-59-a",
+            "text": "Non c'è differenza, sono la stessa cosa"
+          },
+          {
+            "id": "fi-59-b",
+            "text": "Un cespite in costruzione non viene ammortizzato, mentre un cespite definitivo sì"
+          },
+          {
+            "id": "fi-59-c",
+            "text": "Un cespite in costruzione è solo un bene immobile"
+          },
+          {
+            "id": "fi-59-d",
+            "text": "Un cespite in costruzione è solo un bene mobile"
+          }
+        ],
+        "correctAnswer": "fi-59-b"
+      },
+      {
+        "id": "fi-60",
+        "text": "Quale documento contabile viene generato quando si conferma una proposta di pagamento in SAP?",
+        "answers": [
+          {
+            "id": "fi-60-a",
+            "text": "Nessun documento contabile"
+          },
+          {
+            "id": "fi-60-b",
+            "text": "Un documento di pareggio fatture e un file da inoltrare alla banca"
+          },
+          {
+            "id": "fi-60-c",
+            "text": "Solo una nota di credito"
+          },
+          {
+            "id": "fi-60-d",
+            "text": "Solo un blocco al pagamento"
+          }
+        ],
+        "correctAnswer": "fi-60-b"
+      },
+      {
+        "id": "fi-61",
+        "text": "Cosa permette di fare l'app 'Stato di cassa giornaliero' in SAP?",
+        "answers": [
+          {
+            "id": "fi-61-a",
+            "text": "Solo visualizzare il saldo delle banche del giorno precedente"
+          },
+          {
+            "id": "fi-61-b",
+            "text": "Analizzare la posizione di cassa utilizzando differenti criteri"
+          },
+          {
+            "id": "fi-61-c",
+            "text": "Solo registrare nuovi movimenti bancari"
+          },
+          {
+            "id": "fi-61-d",
+            "text": "Solo effettuare pagamenti"
+          }
+        ],
+        "correctAnswer": "fi-61-b"
+      },
+      {
+        "id": "fi-62",
+        "text": "Quale orizzonte temporale può essere utilizzato nell'app Cash Flow Analyzer in SAP?",
+        "answers": [
+          {
+            "id": "fi-62-a",
+            "text": "Solo giorni"
+          },
+          {
+            "id": "fi-62-b",
+            "text": "Solo mesi"
+          },
+          {
+            "id": "fi-62-c",
+            "text": "Giorni, settimane o mesi"
+          },
+          {
+            "id": "fi-62-d",
+            "text": "Solo anni"
+          }
+        ],
+        "correctAnswer": "fi-62-c"
+      },
+      {
+        "id": "fi-63",
+        "text": "Cosa rappresenta la chiave di ammortamento in SAP FI-AA?",
+        "answers": [
+          {
+            "id": "fi-63-a",
+            "text": "Un codice di accesso agli ammortamenti"
+          },
+          {
+            "id": "fi-63-b",
+            "text": "L'oggetto SAP che calcola l'ammortamento in base alle regole normative/gestionali"
+          },
+          {
+            "id": "fi-63-c",
+            "text": "La password per accedere ai cespiti"
+          },
+          {
+            "id": "fi-63-d",
+            "text": "Il codice fiscale dell'azienda"
+          }
+        ],
+        "correctAnswer": "fi-63-b"
+      },
+      {
+        "id": "fi-64",
+        "text": "Come vengono generalmente gestiti i movimenti bancari in SAP?",
+        "answers": [
+          {
+            "id": "fi-64-a",
+            "text": "Solo con registrazioni manuali"
+          },
+          {
+            "id": "fi-64-b",
+            "text": "Tramite import di file dal remote banking, con regole di mapping per i conti contabili"
+          },
+          {
+            "id": "fi-64-c",
+            "text": "Solo tramite registrazione diretta da parte della banca"
+          },
+          {
+            "id": "fi-64-d",
+            "text": "Non è possibile gestire i movimenti bancari in SAP"
+          }
+        ],
+        "correctAnswer": "fi-64-b"
+      },
+      {
+        "id": "fi-65",
+        "text": "A cosa serve il ruolo BP TR0703 in SAP?",
+        "answers": [
+          {
+            "id": "fi-65-a",
+            "text": "Per identificare i dipendenti delle banche"
+          },
+          {
+            "id": "fi-65-b",
+            "text": "Per creare un'anagrafica BP per ogni istituto bancario nelle gerarchie banche"
+          },
+          {
+            "id": "fi-65-c",
+            "text": "Per gestire gli ordini di acquisto"
+          },
+          {
+            "id": "fi-65-d",
+            "text": "Per gestire gli agenti di vendita"
+          }
+        ],
+        "correctAnswer": "fi-65-b"
+      },
+      {
+        "id": "fi-66",
+        "text": "Quale processo viene gestito nella contabilità cespiti per un bene in costruzione?",
+        "answers": [
+          {
+            "id": "fi-66-a",
+            "text": "Solo l'ammortamento mensile"
+          },
+          {
+            "id": "fi-66-b",
+            "text": "La raccolta dei costi di costruzione/realizzazione fino alla capitalizzazione"
+          },
+          {
+            "id": "fi-66-c",
+            "text": "Solo la vendita del bene"
+          },
+          {
+            "id": "fi-66-d",
+            "text": "Solo la manutenzione ordinaria"
+          }
+        ],
+        "correctAnswer": "fi-66-b"
+      },
+      {
+        "id": "fi-67",
+        "text": "Cosa rappresenta l'app 'Flusso di cassa effettivo' in SAP?",
+        "answers": [
+          {
+            "id": "fi-67-a",
+            "text": "Solo il flusso di cassa futuro"
+          },
+          {
+            "id": "fi-67-b",
+            "text": "Una panoramica dei flussi di cassa nei 90 giorni antecedenti"
+          },
+          {
+            "id": "fi-67-c",
+            "text": "Solo il saldo delle banche"
+          },
+          {
+            "id": "fi-67-d",
+            "text": "Solo i movimenti delle carte di credito"
+          }
+        ],
+        "correctAnswer": "fi-67-b"
+      },
+      {
+        "id": "fi-68",
+        "text": "Nel processo Agenti+, cosa rappresentano le 'PV maturate'?",
+        "answers": [
+          {
+            "id": "fi-68-a",
+            "text": "I pagamenti vari effettuati agli agenti"
+          },
+          {
+            "id": "fi-68-b",
+            "text": "I punti vendita gestiti dall'agente"
+          },
+          {
+            "id": "fi-68-c",
+            "text": "Le provvigioni maturate in base al fatturato"
+          },
+          {
+            "id": "fi-68-d",
+            "text": "Le partite varie da contabilizzare"
+          }
+        ],
+        "correctAnswer": "fi-68-c"
+      },
+      {
+        "id": "fi-69",
+        "text": "Cosa rappresenta l'area di valutazione 02 nella gestione cespiti SAP?",
+        "answers": [
+          {
+            "id": "fi-69-a",
+            "text": "Ammortamento civilistico"
+          },
+          {
+            "id": "fi-69-b",
+            "text": "Ammortamento fiscale"
+          },
+          {
+            "id": "fi-69-c",
+            "text": "Differenza civilistico/fiscale"
+          },
+          {
+            "id": "fi-69-d",
+            "text": "Ammortamento gestionale"
+          }
+        ],
+        "correctAnswer": "fi-69-b"
+      },
+      {
+        "id": "fi-70",
+        "text": "Cosa rappresenta l'area di valutazione 03 nella gestione cespiti SAP?",
+        "answers": [
+          {
+            "id": "fi-70-a",
+            "text": "Ammortamento civilistico"
+          },
+          {
+            "id": "fi-70-b",
+            "text": "Ammortamento fiscale"
+          },
+          {
+            "id": "fi-70-c",
+            "text": "Differenza civilistico/fiscale"
+          },
+          {
+            "id": "fi-70-d",
+            "text": "Ammortamento gestionale"
+          }
+        ],
+        "correctAnswer": "fi-70-c"
+      },
+      {
+        "id": "fi-71",
+        "text": "Cosa sono le 'PV liquidabili' nel processo Agenti+?",
+        "answers": [
+          {
+            "id": "fi-71-a",
+            "text": "I punti vendita liquidati"
+          },
+          {
+            "id": "fi-71-b",
+            "text": "Le provvigioni che possono essere pagate all'agente dopo la verifica degli incassi"
+          },
+          {
+            "id": "fi-71-c",
+            "text": "I pagamenti vari agli agenti"
+          },
+          {
+            "id": "fi-71-d",
+            "text": "Le partite da verificare"
+          }
+        ],
+        "correctAnswer": "fi-71-b"
+      },
+      {
+        "id": "fi-72",
+        "text": "Quali adempimenti vengono calcolati nel processo Agenti+?",
+        "answers": [
+          {
+            "id": "fi-72-a",
+            "text": "Solo IRPEF e addizionali"
+          },
+          {
+            "id": "fi-72-b",
+            "text": "Solo IVA sulle fatture"
+          },
+          {
+            "id": "fi-72-c",
+            "text": "Enasarco, FIRR e indennità suppletiva clientela"
+          },
+          {
+            "id": "fi-72-d",
+            "text": "Solo contributi INPS"
+          }
+        ],
+        "correctAnswer": "fi-72-c"
+      },
+      {
+        "id": "fi-73",
+        "text": "Quale informazione viene registrata quando si utilizza la funzione 'Importazione flussi bancari' in SAP?",
+        "answers": [
+          {
+            "id": "fi-73-a",
+            "text": "Solo i saldi bancari"
+          },
+          {
+            "id": "fi-73-b",
+            "text": "I movimenti che transitano sui conti correnti dalle contabili bancarie"
+          },
+          {
+            "id": "fi-73-c",
+            "text": "Solo i dati degli IBAN"
+          },
+          {
+            "id": "fi-73-d",
+            "text": "I tassi di interesse applicati dalle banche"
+          }
+        ],
+        "correctAnswer": "fi-73-b"
+      },
+      {
+        "id": "fi-74",
+        "text": "A cosa servono le condizioni di pagamento in SAP?",
+        "answers": [
+          {
+            "id": "fi-74-a",
+            "text": "Solo a determinare il metodo di pagamento"
+          },
+          {
+            "id": "fi-74-b",
+            "text": "A definire la scadenza dell'incasso o del pagamento in base alla data fattura"
+          },
+          {
+            "id": "fi-74-c",
+            "text": "Solo a calcolare le commissioni bancarie"
+          },
+          {
+            "id": "fi-74-d",
+            "text": "Solo a determinare le banche da utilizzare"
+          }
+        ],
+        "correctAnswer": "fi-74-b"
+      },
+      {
+        "id": "fi-75",
+        "text": "Quali fonti di informazione utilizza l'app 'Previsioni di liquidità' in SAP?",
+        "answers": [
+          {
+            "id": "fi-75-a",
+            "text": "Solo i movimenti bancari"
+          },
+          {
+            "id": "fi-75-b",
+            "text": "Solo le fatture passive"
+          },
+          {
+            "id": "fi-75-c",
+            "text": "Le stesse fonti del Cash flow analyzer"
+          },
+          {
+            "id": "fi-75-d",
+            "text": "Solo i movimenti previsionali"
+          }
+        ],
+        "correctAnswer": "fi-75-c"
+      },
+      {
+        "id": "fi-76",
+        "text": "Quale blocco di dati è presente nell'anagrafica di un cespite in SAP per determinare come calcolare gli ammortamenti?",
+        "answers": [
+          {
+            "id": "fi-76-a",
+            "text": "Dati generali"
+          },
+          {
+            "id": "fi-76-b",
+            "text": "Informazioni di registrazione"
+          },
+          {
+            "id": "fi-76-c",
+            "text": "Valutazione"
+          },
+          {
+            "id": "fi-76-d",
+            "text": "Dati temporali"
+          }
+        ],
+        "correctAnswer": "fi-76-c"
+      },
+      {
+        "id": "fi-77",
+        "text": "Quale funzionalità è disponibile per i metodi di pagamento in SAP?",
+        "answers": [
+          {
+            "id": "fi-77-a",
+            "text": "Possono generare file telematici per le banche"
+          },
+          {
+            "id": "fi-77-b",
+            "text": "Possono essere utilizzati solo per pagamenti in contanti"
+          },
+          {
+            "id": "fi-77-c",
+            "text": "Sono validi a livello globale per tutte le nazioni"
+          },
+          {
+            "id": "fi-77-d",
+            "text": "Sono configurabili solo a livello di cliente/fornitore"
+          }
+        ],
+        "correctAnswer": "fi-77-a"
+      }
+    ]
+}

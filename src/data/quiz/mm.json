@@ -1,0 +1,1571 @@
+{
+    "moduleId": "mm-ewm",
+    "moduleName": "Materials Management & Extended Warehouse Management (MM-EWM)",
+    "description": "Quiz sui moduli di gestione materiali e gestione avanzata del magazzino in SAP S/4HANA.",
+    "questions": [
+      {
+        "id": "mm-ewm-1",
+        "text": "Cosa si intende per 'ciclo passivo' in SAP MM?",
+        "answers": [
+          {
+            "id": "mm-ewm-1-a",
+            "text": "L'insieme delle operazioni necessarie all'approvvigionamento di materiali e servizi"
+          },
+          {
+            "id": "mm-ewm-1-b",
+            "text": "Il processo di produzione interno all'azienda"
+          },
+          {
+            "id": "mm-ewm-1-c",
+            "text": "Il ciclo di vendita dei prodotti finiti"
+          },
+          {
+            "id": "mm-ewm-1-d",
+            "text": "La gestione del magazzino e delle scorte"
+          }
+        ],
+        "correctAnswer": "mm-ewm-1-a"
+      },
+      {
+        "id": "mm-ewm-2",
+        "text": "Qual è la più piccola unità organizzativa per la quale sia ammessa una contabilità autonoma?",
+        "answers": [
+          {
+            "id": "mm-ewm-2-a",
+            "text": "Divisione"
+          },
+          {
+            "id": "mm-ewm-2-b",
+            "text": "Magazzino Logico"
+          },
+          {
+            "id": "mm-ewm-2-c",
+            "text": "Società"
+          },
+          {
+            "id": "mm-ewm-2-d",
+            "text": "Gruppo acquisti"
+          }
+        ],
+        "correctAnswer": "mm-ewm-2-c"
+      },
+      {
+        "id": "mm-ewm-3",
+        "text": "Cosa rappresenta il 'Gruppo acquisti' nella struttura organizzativa di MM?",
+        "answers": [
+          {
+            "id": "mm-ewm-3-a",
+            "text": "Un insieme di aziende che collaborano per acquistare insieme"
+          },
+          {
+            "id": "mm-ewm-3-b",
+            "text": "L'unità organizzativa che gestisce le scorte di magazzino"
+          },
+          {
+            "id": "mm-ewm-3-c",
+            "text": "Il responsabile della contabilità fornitori"
+          },
+          {
+            "id": "mm-ewm-3-d",
+            "text": "Un acquirente o un gruppo di essi, responsabili di determinate operazioni di acquisto"
+          }
+        ],
+        "correctAnswer": "mm-ewm-3-d"
+      },
+      {
+        "id": "mm-ewm-4",
+        "text": "A cosa serve l'anagrafica materiali in SAP?",
+        "answers": [
+          {
+            "id": "mm-ewm-4-a",
+            "text": "Solo per la gestione del magazzino"
+          },
+          {
+            "id": "mm-ewm-4-b",
+            "text": "È la principale sorgente di dati relativi a un materiale all'interno di SAP"
+          },
+          {
+            "id": "mm-ewm-4-c",
+            "text": "Esclusivamente per scopi contabili"
+          },
+          {
+            "id": "mm-ewm-4-d",
+            "text": "Per gestire solo i prodotti finiti"
+          }
+        ],
+        "correctAnswer": "mm-ewm-4-b"
+      },
+      {
+        "id": "mm-ewm-5",
+        "text": "Qual è la codifica standard per materia prima in SAP?",
+        "answers": [
+          {
+            "id": "mm-ewm-5-a",
+            "text": "FERT"
+          },
+          {
+            "id": "mm-ewm-5-b",
+            "text": "HALB"
+          },
+          {
+            "id": "mm-ewm-5-c",
+            "text": "ROH"
+          },
+          {
+            "id": "mm-ewm-5-d",
+            "text": "NLAG"
+          }
+        ],
+        "correctAnswer": "mm-ewm-5-c"
+      },
+      {
+        "id": "mm-ewm-6",
+        "text": "In SAP S/4 HANA, come viene gestita l'anagrafica fornitore?",
+        "answers": [
+          {
+            "id": "mm-ewm-6-a",
+            "text": "Come anagrafica materiale"
+          },
+          {
+            "id": "mm-ewm-6-b",
+            "text": "Come Business Partner (BP) con Ruoli BP specifici"
+          },
+          {
+            "id": "mm-ewm-6-c",
+            "text": "Come anagrafica cliente"
+          },
+          {
+            "id": "mm-ewm-6-d",
+            "text": "Come record indipendente"
+          }
+        ],
+        "correctAnswer": "mm-ewm-6-b"
+      },
+      {
+        "id": "mm-ewm-7",
+        "text": "Cosa contiene un Info Record in SAP MM?",
+        "answers": [
+          {
+            "id": "mm-ewm-7-a",
+            "text": "Solo dati contabili"
+          },
+          {
+            "id": "mm-ewm-7-b",
+            "text": "Solo informazioni sulle scorte di magazzino"
+          },
+          {
+            "id": "mm-ewm-7-c",
+            "text": "La relazione tra il materiale ed il fornitore"
+          },
+          {
+            "id": "mm-ewm-7-d",
+            "text": "Solo dati anagrafici del fornitore"
+          }
+        ],
+        "correctAnswer": "mm-ewm-7-c"
+      },
+      {
+        "id": "mm-ewm-8",
+        "text": "A cosa serve la Source List in SAP MM?",
+        "answers": [
+          {
+            "id": "mm-ewm-8-a",
+            "text": "Determina le fonti d'acquisto permesse per un certo materiale"
+          },
+          {
+            "id": "mm-ewm-8-b",
+            "text": "Elenca tutti i fornitori presenti nel sistema"
+          },
+          {
+            "id": "mm-ewm-8-c",
+            "text": "Mostra tutti i materiali disponibili a magazzino"
+          },
+          {
+            "id": "mm-ewm-8-d",
+            "text": "Contiene i codici sorgente di tutti i programmi SAP"
+          }
+        ],
+        "correctAnswer": "mm-ewm-8-a"
+      },
+      {
+        "id": "mm-ewm-9",
+        "text": "Quali documenti vengono generati durante la registrazione dell'entrata merci?",
+        "answers": [
+          {
+            "id": "mm-ewm-9-a",
+            "text": "Solo un documento materiale"
+          },
+          {
+            "id": "mm-ewm-9-b",
+            "text": "Solo un documento contabile"
+          },
+          {
+            "id": "mm-ewm-9-c",
+            "text": "Un documento materiale e un documento contabile"
+          },
+          {
+            "id": "mm-ewm-9-d",
+            "text": "Una fattura"
+          }
+        ],
+        "correctAnswer": "mm-ewm-9-c"
+      },
+      {
+        "id": "mm-ewm-10",
+        "text": "Quale transazione viene utilizzata in SAP per creare un ordine di acquisto?",
+        "answers": [
+          {
+            "id": "mm-ewm-10-a",
+            "text": "MB01"
+          },
+          {
+            "id": "mm-ewm-10-b",
+            "text": "ME21N"
+          },
+          {
+            "id": "mm-ewm-10-c",
+            "text": "FB60"
+          },
+          {
+            "id": "mm-ewm-10-d",
+            "text": "VA01"
+          }
+        ],
+        "correctAnswer": "mm-ewm-10-b"
+      },
+      {
+        "id": "mm-ewm-11",
+        "text": "Cosa rappresenta l'acronimo EWM in SAP?",
+        "answers": [
+          {
+            "id": "mm-ewm-11-a",
+            "text": "Electronic Work Management"
+          },
+          {
+            "id": "mm-ewm-11-b",
+            "text": "Enterprise Workflow Management"
+          },
+          {
+            "id": "mm-ewm-11-c",
+            "text": "Extended Warehouse Management"
+          },
+          {
+            "id": "mm-ewm-11-d",
+            "text": "External Work Management"
+          }
+        ],
+        "correctAnswer": "mm-ewm-11-c"
+      },
+      {
+        "id": "mm-ewm-12",
+        "text": "Quale strategia di immagazzinamento (Putaway Strategy) viene utilizzata per immagazzinare in ubicazioni che contengono già il prodotto?",
+        "answers": [
+          {
+            "id": "mm-ewm-12-a",
+            "text": "Fixed Storage bin"
+          },
+          {
+            "id": "mm-ewm-12-b",
+            "text": "Addition to Existing Stock"
+          },
+          {
+            "id": "mm-ewm-12-c",
+            "text": "Manual Entry"
+          },
+          {
+            "id": "mm-ewm-12-d",
+            "text": "Empty Storage bin"
+          }
+        ],
+        "correctAnswer": "mm-ewm-12-b"
+      },
+      {
+        "id": "mm-ewm-13",
+        "text": "Quale strategia di prelievo (Stock Removal Strategy) utilizza la data di scadenza per determinare l'ubicazione di prelievo?",
+        "answers": [
+          {
+            "id": "mm-ewm-13-a",
+            "text": "FIFO (First in, First Out)"
+          },
+          {
+            "id": "mm-ewm-13-b",
+            "text": "LIFO (Last In, First Out)"
+          },
+          {
+            "id": "mm-ewm-13-c",
+            "text": "Shelf Life Expiration Date"
+          },
+          {
+            "id": "mm-ewm-13-d",
+            "text": "Fixed Storage Bin"
+          }
+        ],
+        "correctAnswer": "mm-ewm-13-c"
+      },
+      {
+        "id": "mm-ewm-14",
+        "text": "Quale documento contiene tutti i dati necessari per avviare e monitorare l'intero processo di entrata merci in EWM?",
+        "answers": [
+          {
+            "id": "mm-ewm-14-a",
+            "text": "Purchase Order"
+          },
+          {
+            "id": "mm-ewm-14-b",
+            "text": "Inbound Delivery"
+          },
+          {
+            "id": "mm-ewm-14-c",
+            "text": "Material Document"
+          },
+          {
+            "id": "mm-ewm-14-d",
+            "text": "Warehouse Order"
+          }
+        ],
+        "correctAnswer": "mm-ewm-14-b"
+      },
+      {
+        "id": "mm-ewm-15",
+        "text": "Cosa rappresenta una 'Handling Unit' in SAP EWM?",
+        "answers": [
+          {
+            "id": "mm-ewm-15-a",
+            "text": "Un'unità di misura"
+          },
+          {
+            "id": "mm-ewm-15-b",
+            "text": "Un'ubicazione di magazzino"
+          },
+          {
+            "id": "mm-ewm-15-c",
+            "text": "Un'unità fisica costituita dai materiali di imballaggio e dalle merci in esso contenute"
+          },
+          {
+            "id": "mm-ewm-15-d",
+            "text": "Un macchinario per la movimentazione"
+          }
+        ],
+        "correctAnswer": "mm-ewm-15-c"
+      },
+      {
+        "id": "mm-ewm-16",
+        "text": "Quale di queste non è una procedura d'inventario supportata da EWM?",
+        "answers": [
+          {
+            "id": "mm-ewm-16-a",
+            "text": "Inventario annuale relativo all'ubicazione"
+          },
+          {
+            "id": "mm-ewm-16-b",
+            "text": "Inventario Cycle-Counting"
+          },
+          {
+            "id": "mm-ewm-16-c",
+            "text": "Inventario ad hoc"
+          },
+          {
+            "id": "mm-ewm-16-d",
+            "text": "Inventario virtuale automatico"
+          }
+        ],
+        "correctAnswer": "mm-ewm-16-d"
+      },
+      {
+        "id": "mm-ewm-17",
+        "text": "Qual è la transazione utilizzata per visualizzare la lista stock di magazzino?",
+        "answers": [
+          {
+            "id": "mm-ewm-17-a",
+            "text": "MB51"
+          },
+          {
+            "id": "mm-ewm-17-b",
+            "text": "MB52"
+          },
+          {
+            "id": "mm-ewm-17-c",
+            "text": "ME5A"
+          },
+          {
+            "id": "mm-ewm-17-d",
+            "text": "MIGO"
+          }
+        ],
+        "correctAnswer": "mm-ewm-17-b"
+      },
+      {
+        "id": "mm-ewm-18",
+        "text": "In quale anno SAP EWM è stato integrato in SAP S/4HANA?",
+        "answers": [
+          {
+            "id": "mm-ewm-18-a",
+            "text": "2002"
+          },
+          {
+            "id": "mm-ewm-18-b",
+            "text": "2010"
+          },
+          {
+            "id": "mm-ewm-18-c",
+            "text": "2015"
+          },
+          {
+            "id": "mm-ewm-18-d",
+            "text": "2020"
+          }
+        ],
+        "correctAnswer": "mm-ewm-18-c"
+      },
+      {
+        "id": "mm-ewm-19",
+        "text": "Quale funzione viene utilizzata in EWM per la pianificazione del rifornimento interno al magazzino?",
+        "answers": [
+          {
+            "id": "mm-ewm-19-a",
+            "text": "Stock Transfer"
+          },
+          {
+            "id": "mm-ewm-19-b",
+            "text": "Ad Hoc Movements"
+          },
+          {
+            "id": "mm-ewm-19-c",
+            "text": "Replenishment"
+          },
+          {
+            "id": "mm-ewm-19-d",
+            "text": "Registrazioni di modifica"
+          }
+        ],
+        "correctAnswer": "mm-ewm-19-c"
+      },
+      {
+        "id": "mm-ewm-20",
+        "text": "Qual è il documento che viene generato da EWM a fronte dell'esecuzione dell'uscita merci?",
+        "answers": [
+          {
+            "id": "mm-ewm-20-a",
+            "text": "Outbound Delivery"
+          },
+          {
+            "id": "mm-ewm-20-b",
+            "text": "Outbound Delivery Order"
+          },
+          {
+            "id": "mm-ewm-20-c",
+            "text": "Sales Order"
+          },
+          {
+            "id": "mm-ewm-20-d",
+            "text": "Stock Removal Order"
+          }
+        ],
+        "correctAnswer": "mm-ewm-20-a"
+      },
+      {
+        "id": "mm-ewm-21",
+        "text": "Quale di questi non è un tipo di contratto di acquisto in SAP MM?",
+        "answers": [
+          {
+            "id": "mm-ewm-21-a",
+            "text": "Contratti a quantità"
+          },
+          {
+            "id": "mm-ewm-21-b",
+            "text": "Contratti a valore"
+          },
+          {
+            "id": "mm-ewm-21-c",
+            "text": "Contratti misti"
+          },
+          {
+            "id": "mm-ewm-21-d",
+            "text": "Contratti a tempo"
+          }
+        ],
+        "correctAnswer": "mm-ewm-21-d"
+      },
+      {
+        "id": "mm-ewm-22",
+        "text": "Cosa rappresenta la 'Divisione' nella struttura organizzativa di SAP MM?",
+        "answers": [
+          {
+            "id": "mm-ewm-22-a",
+            "text": "Un'unità organizzativa che gestisce gli acquisti"
+          },
+          {
+            "id": "mm-ewm-22-b",
+            "text": "Un'unità contabile autonoma"
+          },
+          {
+            "id": "mm-ewm-22-c",
+            "text": "Un'unità organizzativa logistica che consente di strutturare l'impresa dal punto di vista della produzione e approvvigionamento"
+          },
+          {
+            "id": "mm-ewm-22-d",
+            "text": "Una suddivisione del magazzino"
+          }
+        ],
+        "correctAnswer": "mm-ewm-22-c"
+      },
+      {
+        "id": "mm-ewm-23",
+        "text": "Quale strategia di prelievo viene utilizzata quando il sistema cerca prima nell'ubicazione fissa?",
+        "answers": [
+          {
+            "id": "mm-ewm-23-a",
+            "text": "FIFO"
+          },
+          {
+            "id": "mm-ewm-23-b",
+            "text": "LIFO"
+          },
+          {
+            "id": "mm-ewm-23-c",
+            "text": "Near Fixed Picking Bin"
+          },
+          {
+            "id": "mm-ewm-23-d",
+            "text": "Stock Removal Suggestion According to Quantity"
+          }
+        ],
+        "correctAnswer": "mm-ewm-23-c"
+      },
+      {
+        "id": "mm-ewm-24",
+        "text": "Come viene chiamata l'attività di gestione delle unità di trasporto nel piazzale in EWM?",
+        "answers": [
+          {
+            "id": "mm-ewm-24-a",
+            "text": "Transport Management"
+          },
+          {
+            "id": "mm-ewm-24-b",
+            "text": "Yard Management"
+          },
+          {
+            "id": "mm-ewm-24-c",
+            "text": "Truck Management"
+          },
+          {
+            "id": "mm-ewm-24-d",
+            "text": "Vehicle Coordination"
+          }
+        ],
+        "correctAnswer": "mm-ewm-24-b"
+      },
+      {
+        "id": "mm-ewm-25",
+        "text": "In SAP S/4HANA, cosa significa l'acronimo PSA in relazione alla produzione?",
+        "answers": [
+          {
+            "id": "mm-ewm-25-a",
+            "text": "Production Storage Area"
+          },
+          {
+            "id": "mm-ewm-25-b",
+            "text": "Product Supply Area"
+          },
+          {
+            "id": "mm-ewm-25-c",
+            "text": "Production Staging Area"
+          },
+          {
+            "id": "mm-ewm-25-d",
+            "text": "Process Supply Area"
+          }
+        ],
+        "correctAnswer": "mm-ewm-25-c"
+      },
+      {
+        "id": "mm-ewm-26",
+        "text": "Quale transazione viene utilizzata per registrare documenti materiale in SAP MM?",
+        "answers": [
+          {
+            "id": "mm-ewm-26-a",
+            "text": "MB01"
+          },
+          {
+            "id": "mm-ewm-26-b",
+            "text": "MB52"
+          },
+          {
+            "id": "mm-ewm-26-c",
+            "text": "MIGO"
+          },
+          {
+            "id": "mm-ewm-26-d",
+            "text": "MM01"
+          }
+        ],
+        "correctAnswer": "mm-ewm-26-c"
+      },
+      {
+        "id": "mm-ewm-27",
+        "text": "Quale delle seguenti è una tipologia di consumo in integrazione con la produzione?",
+        "answers": [
+          {
+            "id": "mm-ewm-27-a",
+            "text": "Consumo puntuale"
+          },
+          {
+            "id": "mm-ewm-27-b",
+            "text": "Consumo automatico"
+          },
+          {
+            "id": "mm-ewm-27-c",
+            "text": "Consumo preventivo"
+          },
+          {
+            "id": "mm-ewm-27-d",
+            "text": "Consumo pianificato"
+          }
+        ],
+        "correctAnswer": "mm-ewm-27-a"
+      },
+      {
+        "id": "mm-ewm-28",
+        "text": "Quale delle seguenti non è una strategia di Replenishment in EWM?",
+        "answers": [
+          {
+            "id": "mm-ewm-28-a",
+            "text": "Planned Replenishment"
+          },
+          {
+            "id": "mm-ewm-28-b",
+            "text": "Automatic Replenishment"
+          },
+          {
+            "id": "mm-ewm-28-c",
+            "text": "Direct Replenishment"
+          },
+          {
+            "id": "mm-ewm-28-d",
+            "text": "Sequential Replenishment"
+          }
+        ],
+        "correctAnswer": "mm-ewm-28-d"
+      },
+      {
+        "id": "mm-ewm-29",
+        "text": "Qual è il codice del tipo materiale per un prodotto finito in SAP?",
+        "answers": [
+          {
+            "id": "mm-ewm-29-a",
+            "text": "FERT"
+          },
+          {
+            "id": "mm-ewm-29-b",
+            "text": "HALB"
+          },
+          {
+            "id": "mm-ewm-29-c",
+            "text": "ROH"
+          },
+          {
+            "id": "mm-ewm-29-d",
+            "text": "DIEN"
+          }
+        ],
+        "correctAnswer": "mm-ewm-29-a"
+      },
+      {
+        "id": "mm-ewm-30",
+        "text": "Quale transazione viene utilizzata per creare una richiesta d'acquisto?",
+        "answers": [
+          {
+            "id": "mm-ewm-30-a",
+            "text": "ME21N"
+          },
+          {
+            "id": "mm-ewm-30-b",
+            "text": "ME51N"
+          },
+          {
+            "id": "mm-ewm-30-c",
+            "text": "ME41"
+          },
+          {
+            "id": "mm-ewm-30-d",
+            "text": "MB01"
+          }
+        ],
+        "correctAnswer": "mm-ewm-30-b"
+      }, 
+      {
+        "id": "mm-ewm-31",
+        "text": "Come viene chiamata in SAP EWM la funzione che permette di gestire l'arrivo dei camion e la loro assegnazione alle baie di carico/scarico?",
+        "answers": [
+          {
+            "id": "mm-ewm-31-a",
+            "text": "Dock Management"
+          },
+          {
+            "id": "mm-ewm-31-b",
+            "text": "Yard Management"
+          },
+          {
+            "id": "mm-ewm-31-c",
+            "text": "Vehicle Management"
+          },
+          {
+            "id": "mm-ewm-31-d",
+            "text": "Transportation Management"
+          }
+        ],
+        "correctAnswer": "mm-ewm-31-b"
+      },
+      {
+        "id": "mm-ewm-32",
+        "text": "Quale strategia di immagazzinamento assegna un'ubicazione fissa al prodotto?",
+        "answers": [
+          {
+            "id": "mm-ewm-32-a",
+            "text": "General Storage"
+          },
+          {
+            "id": "mm-ewm-32-b",
+            "text": "Manual Entry"
+          },
+          {
+            "id": "mm-ewm-32-c",
+            "text": "Fixed Storage bin"
+          },
+          {
+            "id": "mm-ewm-32-d",
+            "text": "Addition to Existing Stock"
+          }
+        ],
+        "correctAnswer": "mm-ewm-32-c"
+      },
+      {
+        "id": "mm-ewm-33",
+        "text": "Quale delle seguenti non è una vista dell'anagrafica materiali?",
+        "answers": [
+          {
+            "id": "mm-ewm-33-a",
+            "text": "Dati di base"
+          },
+          {
+            "id": "mm-ewm-33-b",
+            "text": "Acquisti"
+          },
+          {
+            "id": "mm-ewm-33-c",
+            "text": "Immagazzinamento"
+          },
+          {
+            "id": "mm-ewm-33-d",
+            "text": "Trasporti"
+          }
+        ],
+        "correctAnswer": "mm-ewm-33-d"
+      },
+      {
+        "id": "mm-ewm-34",
+        "text": "Quale codice di transazione viene utilizzato per visualizzare un ordine d'acquisto in SAP?",
+        "answers": [
+          {
+            "id": "mm-ewm-34-a",
+            "text": "ME21N"
+          },
+          {
+            "id": "mm-ewm-34-b",
+            "text": "ME22N"
+          },
+          {
+            "id": "mm-ewm-34-c",
+            "text": "ME23N"
+          },
+          {
+            "id": "mm-ewm-34-d",
+            "text": "ME25N"
+          }
+        ],
+        "correctAnswer": "mm-ewm-34-c"
+      },
+      {
+        "id": "mm-ewm-35",
+        "text": "Qual è il documento che contiene tutti i dati necessari per avviare e monitorare l'intero processo di entrata merci in EWM?",
+        "answers": [
+          {
+            "id": "mm-ewm-35-a",
+            "text": "Ordine di Magazzino"
+          },
+          {
+            "id": "mm-ewm-35-b",
+            "text": "Documento di Trasporto"
+          },
+          {
+            "id": "mm-ewm-35-c",
+            "text": "Fornitura (Inbound Delivery)"
+          },
+          {
+            "id": "mm-ewm-35-d",
+            "text": "Task di Magazzino"
+          }
+        ],
+        "correctAnswer": "mm-ewm-35-c"
+      },
+      {
+        "id": "mm-ewm-36",
+        "text": "Quale struttura organizzativa rappresenta la più piccola unità organizzativa per la quale sia ammessa una contabilità autonoma?",
+        "answers": [
+          {
+            "id": "mm-ewm-36-a",
+            "text": "Divisione"
+          },
+          {
+            "id": "mm-ewm-36-b",
+            "text": "Società"
+          },
+          {
+            "id": "mm-ewm-36-c",
+            "text": "Magazzino"
+          },
+          {
+            "id": "mm-ewm-36-d",
+            "text": "Plant"
+          }
+        ],
+        "correctAnswer": "mm-ewm-36-b"
+      },
+      {
+        "id": "mm-ewm-37",
+        "text": "In SAP S/4HANA, l'anagrafica fornitore è gestita come:",
+        "answers": [
+          {
+            "id": "mm-ewm-37-a",
+            "text": "Vendor Master"
+          },
+          {
+            "id": "mm-ewm-37-b",
+            "text": "Supplier Record"
+          },
+          {
+            "id": "mm-ewm-37-c",
+            "text": "Business Partner (BP) con Ruoli BP specifici"
+          },
+          {
+            "id": "mm-ewm-37-d",
+            "text": "Account Payable"
+          }
+        ],
+        "correctAnswer": "mm-ewm-37-c"
+      },
+      {
+        "id": "mm-ewm-38",
+        "text": "Quale strategia di prelievo si basa sulla data di scadenza per la determinazione dell'ubicazione?",
+        "answers": [
+          {
+            "id": "mm-ewm-38-a",
+            "text": "FIFO (First in, First Out)"
+          },
+          {
+            "id": "mm-ewm-38-b",
+            "text": "LIFO (Last In, First Out)"
+          },
+          {
+            "id": "mm-ewm-38-c",
+            "text": "Shelf Life Expiration Date"
+          },
+          {
+            "id": "mm-ewm-38-d",
+            "text": "Stock Removal According to Quantity"
+          }
+        ],
+        "correctAnswer": "mm-ewm-38-c"
+      },
+      {
+        "id": "mm-ewm-39",
+        "text": "Cosa significa l'acronimo EWM in SAP?",
+        "answers": [
+          {
+            "id": "mm-ewm-39-a",
+            "text": "Enterprise Warehouse Management"
+          },
+          {
+            "id": "mm-ewm-39-b",
+            "text": "Extended Warehouse Management"
+          },
+          {
+            "id": "mm-ewm-39-c",
+            "text": "Efficient Warehouse Manager"
+          },
+          {
+            "id": "mm-ewm-39-d",
+            "text": "Enhanced Work Management"
+          }
+        ],
+        "correctAnswer": "mm-ewm-39-b"
+      },
+      {
+        "id": "mm-ewm-40",
+        "text": "Quale codice identifica un semilavorato nell'anagrafica materiali?",
+        "answers": [
+          {
+            "id": "mm-ewm-40-a",
+            "text": "HALB"
+          },
+          {
+            "id": "mm-ewm-40-b",
+            "text": "FERT"
+          },
+          {
+            "id": "mm-ewm-40-c",
+            "text": "ROH"
+          },
+          {
+            "id": "mm-ewm-40-d",
+            "text": "NLAG"
+          }
+        ],
+        "correctAnswer": "mm-ewm-40-a"
+      },
+      {
+        "id": "mm-ewm-41",
+        "text": "Quale document viene generato da EWM a fronte dell'esecuzione dell'uscita merci?",
+        "answers": [
+          {
+            "id": "mm-ewm-41-a",
+            "text": "Outbound Delivery"
+          },
+          {
+            "id": "mm-ewm-41-b",
+            "text": "Warehouse Order"
+          },
+          {
+            "id": "mm-ewm-41-c",
+            "text": "Outbound Delivery Order"
+          },
+          {
+            "id": "mm-ewm-41-d",
+            "text": "Sales Order"
+          }
+        ],
+        "correctAnswer": "mm-ewm-41-a"
+      },
+      {
+        "id": "mm-ewm-42",
+        "text": "Quale funzione è utilizzata in EWM per la pianificazione del rifornimento interno al magazzino?",
+        "answers": [
+          {
+            "id": "mm-ewm-42-a",
+            "text": "Stock Transfer"
+          },
+          {
+            "id": "mm-ewm-42-b",
+            "text": "Replenishment"
+          },
+          {
+            "id": "mm-ewm-42-c",
+            "text": "Ad Hoc Movements"
+          },
+          {
+            "id": "mm-ewm-42-d",
+            "text": "Inventory Management"
+          }
+        ],
+        "correctAnswer": "mm-ewm-42-b"
+      },
+      {
+        "id": "mm-ewm-43",
+        "text": "Quale procedura di inventario viene utilizzata per l'inventario annuale relativo all'ubicazione?",
+        "answers": [
+          {
+            "id": "mm-ewm-43-a",
+            "text": "AL"
+          },
+          {
+            "id": "mm-ewm-43-b",
+            "text": "AS"
+          },
+          {
+            "id": "mm-ewm-43-c",
+            "text": "CC"
+          },
+          {
+            "id": "mm-ewm-43-d",
+            "text": "HL"
+          }
+        ],
+        "correctAnswer": "mm-ewm-43-a"
+      },
+      {
+        "id": "mm-ewm-44",
+        "text": "Quale tra questi è un ruolo di Business Partner fornitore in SAP S/4HANA?",
+        "answers": [
+          {
+            "id": "mm-ewm-44-a",
+            "text": "BRFO"
+          },
+          {
+            "id": "mm-ewm-44-b",
+            "text": "FLVN0"
+          },
+          {
+            "id": "mm-ewm-44-c",
+            "text": "SUPP"
+          },
+          {
+            "id": "mm-ewm-44-d",
+            "text": "VEN01"
+          }
+        ],
+        "correctAnswer": "mm-ewm-44-b"
+      },
+      {
+        "id": "mm-ewm-45",
+        "text": "Quale unità organizzativa è responsabile della negoziazione delle condizioni generali di acquisto?",
+        "answers": [
+          {
+            "id": "mm-ewm-45-a",
+            "text": "Divisione"
+          },
+          {
+            "id": "mm-ewm-45-b",
+            "text": "Società"
+          },
+          {
+            "id": "mm-ewm-45-c",
+            "text": "Gruppo acquisti"
+          },
+          {
+            "id": "mm-ewm-45-d",
+            "text": "Organizzazione acquisti"
+          }
+        ],
+        "correctAnswer": "mm-ewm-45-d"
+      },
+      {
+        "id": "mm-ewm-46",
+        "text": "Quale transazione viene utilizzata per creare una source list?",
+        "answers": [
+          {
+            "id": "mm-ewm-46-a",
+            "text": "ME01"
+          },
+          {
+            "id": "mm-ewm-46-b",
+            "text": "ME31"
+          },
+          {
+            "id": "mm-ewm-46-c",
+            "text": "ME41"
+          },
+          {
+            "id": "mm-ewm-46-d",
+            "text": "ME51"
+          }
+        ],
+        "correctAnswer": "mm-ewm-46-a"
+      },
+      {
+        "id": "mm-ewm-47",
+        "text": "Qual è il documento che fa da 'contenitore' dei task di magazzino?",
+        "answers": [
+          {
+            "id": "mm-ewm-47-a",
+            "text": "Warehouse Order"
+          },
+          {
+            "id": "mm-ewm-47-b",
+            "text": "Warehouse Request"
+          },
+          {
+            "id": "mm-ewm-47-c",
+            "text": "Handling Unit"
+          },
+          {
+            "id": "mm-ewm-47-d",
+            "text": "Storage Bin"
+          }
+        ],
+        "correctAnswer": "mm-ewm-47-a"
+      },
+      {
+        "id": "mm-ewm-48",
+        "text": "Quale delle seguenti informazioni è importante in un Info Record?",
+        "answers": [
+          {
+            "id": "mm-ewm-48-a",
+            "text": "La classificazione del materiale"
+          },
+          {
+            "id": "mm-ewm-48-b",
+            "text": "Il prezzo attuale di un fornitore per un certo materiale"
+          },
+          {
+            "id": "mm-ewm-48-c",
+            "text": "La giacenza di un materiale in magazzino"
+          },
+          {
+            "id": "mm-ewm-48-d",
+            "text": "La schedulazione del materiale"
+          }
+        ],
+        "correctAnswer": "mm-ewm-48-b"
+      },
+      {
+        "id": "mm-ewm-49",
+        "text": "Per quale processo viene utilizzata la transazione MIGO?",
+        "answers": [
+          {
+            "id": "mm-ewm-49-a",
+            "text": "Creazione ordine d'acquisto"
+          },
+          {
+            "id": "mm-ewm-49-b",
+            "text": "Registrazione documenti materiale"
+          },
+          {
+            "id": "mm-ewm-49-c",
+            "text": "Visualizzazione lista stock"
+          },
+          {
+            "id": "mm-ewm-49-d",
+            "text": "Creazione info record"
+          }
+        ],
+        "correctAnswer": "mm-ewm-49-b"
+      },
+      {
+        "id": "mm-ewm-50",
+        "text": "Quale tipo di consumo viene utilizzato quando l'avanzamento dell'ordine di produzione determina automaticamente il consumo dei materiali?",
+        "answers": [
+          {
+            "id": "mm-ewm-50-a",
+            "text": "Consumo diretto"
+          },
+          {
+            "id": "mm-ewm-50-b",
+            "text": "Consumo manuale"
+          },
+          {
+            "id": "mm-ewm-50-c",
+            "text": "Consumo puntuale"
+          },
+          {
+            "id": "mm-ewm-50-d",
+            "text": "Consumo retroattivo"
+          }
+        ],
+        "correctAnswer": "mm-ewm-50-d"
+      },
+      {
+        "id": "mm-ewm-51",
+        "text": "A quale livello viene solitamente definita la Source List?",
+        "answers": [
+          {
+            "id": "mm-ewm-51-a",
+            "text": "Società"
+          },
+          {
+            "id": "mm-ewm-51-b",
+            "text": "Divisione"
+          },
+          {
+            "id": "mm-ewm-51-c",
+            "text": "Magazzino"
+          },
+          {
+            "id": "mm-ewm-51-d",
+            "text": "Plant"
+          }
+        ],
+        "correctAnswer": "mm-ewm-51-b"
+      },
+      {
+        "id": "mm-ewm-52",
+        "text": "Quale di queste non è una caratteristica del modulo SAP EWM?",
+        "answers": [
+          {
+            "id": "mm-ewm-52-a",
+            "text": "Integrazione con SAP S/4HANA"
+          },
+          {
+            "id": "mm-ewm-52-b",
+            "text": "Supporto alle strategie di immagazzinamento"
+          },
+          {
+            "id": "mm-ewm-52-c",
+            "text": "Gestione avanzata dell'inventario fisico"
+          },
+          {
+            "id": "mm-ewm-52-d",
+            "text": "Creazione automatica degli ordini cliente"
+          }
+        ],
+        "correctAnswer": "mm-ewm-52-d"
+      },
+      {
+        "id": "mm-ewm-53",
+        "text": "A cosa serve il Gruppo Merce nel modulo MM?",
+        "answers": [
+          {
+            "id": "mm-ewm-53-a",
+            "text": "A identificare univocamente un materiale"
+          },
+          {
+            "id": "mm-ewm-53-b",
+            "text": "A raggruppare i materiali con le stesse caratteristiche"
+          },
+          {
+            "id": "mm-ewm-53-c",
+            "text": "A determinare il fornitore preferenziale"
+          },
+          {
+            "id": "mm-ewm-53-d",
+            "text": "A definire la sequenza di prelievo"
+          }
+        ],
+        "correctAnswer": "mm-ewm-53-b"
+      },
+      {
+        "id": "mm-ewm-54",
+        "text": "Quale di questi non è un tipo di contratto d'acquisto in SAP?",
+        "answers": [
+          {
+            "id": "mm-ewm-54-a",
+            "text": "Contratto a quantità"
+          },
+          {
+            "id": "mm-ewm-54-b",
+            "text": "Contratto a valore"
+          },
+          {
+            "id": "mm-ewm-54-c",
+            "text": "Piano di consegna"
+          },
+          {
+            "id": "mm-ewm-54-d",
+            "text": "Contratto a tempo"
+          }
+        ],
+        "correctAnswer": "mm-ewm-54-d"
+      },
+      {
+        "id": "mm-ewm-55",
+        "text": "Quale delle seguenti transazioni viene utilizzata per visualizzare lo stock a una determinata data?",
+        "answers": [
+          {
+            "id": "mm-ewm-55-a",
+            "text": "MB51"
+          },
+          {
+            "id": "mm-ewm-55-b",
+            "text": "MB52"
+          },
+          {
+            "id": "mm-ewm-55-c",
+            "text": "MB5B"
+          },
+          {
+            "id": "mm-ewm-55-d",
+            "text": "MMBE"
+          }
+        ],
+        "correctAnswer": "mm-ewm-55-c"
+      },
+      {
+        "id": "mm-ewm-56",
+        "text": "Cosa significa l'acronimo PSA nel contesto dell'integrazione con la produzione?",
+        "answers": [
+          {
+            "id": "mm-ewm-56-a",
+            "text": "Product Supply Area"
+          },
+          {
+            "id": "mm-ewm-56-b",
+            "text": "Planning Supply Agreement"
+          },
+          {
+            "id": "mm-ewm-56-c",
+            "text": "Production Staging Area"
+          },
+          {
+            "id": "mm-ewm-56-d",
+            "text": "Plant Storage Assignment"
+          }
+        ],
+        "correctAnswer": "mm-ewm-56-c"
+      },
+      {
+        "id": "mm-ewm-57",
+        "text": "Quale codice identifica una materia prima nell'anagrafica materiali?",
+        "answers": [
+          {
+            "id": "mm-ewm-57-a",
+            "text": "FERT"
+          },
+          {
+            "id": "mm-ewm-57-b",
+            "text": "HALB"
+          },
+          {
+            "id": "mm-ewm-57-c",
+            "text": "ROH"
+          },
+          {
+            "id": "mm-ewm-57-d",
+            "text": "DIEN"
+          }
+        ],
+        "correctAnswer": "mm-ewm-57-c"
+      },
+      {
+        "id": "mm-ewm-58",
+        "text": "Quale strategia viene utilizzata quando il sistema cerca prima nell'ubicazione fissa e poi prova ad immagazzinare in un'ubicazione adiacente?",
+        "answers": [
+          {
+            "id": "mm-ewm-58-a",
+            "text": "Fixed Storage bin"
+          },
+          {
+            "id": "mm-ewm-58-b",
+            "text": "Near Fixed Picking Bin"
+          },
+          {
+            "id": "mm-ewm-58-c",
+            "text": "Addition to Existing Stock"
+          },
+          {
+            "id": "mm-ewm-58-d",
+            "text": "Empty Storage bin"
+          }
+        ],
+        "correctAnswer": "mm-ewm-58-b"
+      },
+      {
+        "id": "mm-ewm-59",
+        "text": "Quale metodo di approntamento viene utilizzato quando i materiali sono sempre disponibili in linea?",
+        "answers": [
+          {
+            "id": "mm-ewm-59-a",
+            "text": "Nessun approntamento"
+          },
+          {
+            "id": "mm-ewm-59-b",
+            "text": "Approntamento valido per tutti gli Ordini"
+          },
+          {
+            "id": "mm-ewm-59-c",
+            "text": "Approntamento Specifico dell'Ordine"
+          },
+          {
+            "id": "mm-ewm-59-d",
+            "text": "Riapprovvigionamento parti di cassa"
+          }
+        ],
+        "correctAnswer": "mm-ewm-59-a"
+      },
+      {
+        "id": "mm-ewm-60",
+        "text": "Quale delle seguenti non è una vista dell'anagrafica materiali legata al mandante?",
+        "answers": [
+          {
+            "id": "mm-ewm-60-a",
+            "text": "Dati di base"
+          },
+          {
+            "id": "mm-ewm-60-b",
+            "text": "Classificazione"
+          },
+          {
+            "id": "mm-ewm-60-c",
+            "text": "Vendite"
+          },
+          {
+            "id": "mm-ewm-60-d",
+            "text": "Immagazzinamento"
+          }
+        ],
+        "correctAnswer": "mm-ewm-60-d"
+      },
+      {
+        "id": "mm-ewm-61",
+        "text": "Quale unità organizzativa consente la differenziazione degli stock materiale all'interno di una stessa divisione?",
+        "answers": [
+          {
+            "id": "mm-ewm-61-a",
+            "text": "Magazzino Logico"
+          },
+          {
+            "id": "mm-ewm-61-b",
+            "text": "Divisione"
+          },
+          {
+            "id": "mm-ewm-61-c",
+            "text": "Società"
+          },
+          {
+            "id": "mm-ewm-61-d",
+            "text": "Plant"
+          }
+        ],
+        "correctAnswer": "mm-ewm-61-a"
+      },
+      {
+        "id": "mm-ewm-62",
+        "text": "Quale tipo di procedura di inventario si riferisce al controllo ubicazione magazzino?",
+        "answers": [
+          {
+            "id": "mm-ewm-62-a",
+            "text": "AL"
+          },
+          {
+            "id": "mm-ewm-62-b",
+            "text": "AS"
+          },
+          {
+            "id": "mm-ewm-62-c",
+            "text": "HL"
+          },
+          {
+            "id": "mm-ewm-62-d",
+            "text": "ML"
+          }
+        ],
+        "correctAnswer": "mm-ewm-62-d"
+      },
+      {
+        "id": "mm-ewm-63",
+        "text": "Qual è lo scopo principale del 'Yard Management' in SAP EWM?",
+        "answers": [
+          {
+            "id": "mm-ewm-63-a",
+            "text": "La gestione degli spazi verdi aziendali"
+          },
+          {
+            "id": "mm-ewm-63-b",
+            "text": "La gestione delle aree di stoccaggio esterne"
+          },
+          {
+            "id": "mm-ewm-63-c",
+            "text": "La gestione dell'arrivo e dell'assegnazione dei camion alle baie"
+          },
+          {
+            "id": "mm-ewm-63-d",
+            "text": "La gestione della manutenzione delle strade interne"
+          }
+        ],
+        "correctAnswer": "mm-ewm-63-c"
+      },
+      {
+        "id": "mm-ewm-64",
+        "text": "Quale delle seguenti non è una funzionalità di base di SAP Warehouse Management?",
+        "answers": [
+          {
+            "id": "mm-ewm-64-a",
+            "text": "Inventory Management"
+          },
+          {
+            "id": "mm-ewm-64-b",
+            "text": "Inbound Process"
+          },
+          {
+            "id": "mm-ewm-64-c",
+            "text": "Labor Management"
+          },
+          {
+            "id": "mm-ewm-64-d",
+            "text": "Internal Warehouse Movements"
+          }
+        ],
+        "correctAnswer": "mm-ewm-64-c"
+      },
+      {
+        "id": "mm-ewm-65",
+        "text": "Quale tipo di registrazione viene utilizzata per modificare le caratteristiche dello stock senza movimentarlo fisicamente?",
+        "answers": [
+          {
+            "id": "mm-ewm-65-a",
+            "text": "Ad Hoc Movements"
+          },
+          {
+            "id": "mm-ewm-65-b",
+            "text": "Registrazioni di modifica"
+          },
+          {
+            "id": "mm-ewm-65-c",
+            "text": "Trasferimento stock"
+          },
+          {
+            "id": "mm-ewm-65-d",
+            "text": "Replenishment"
+          }
+        ],
+        "correctAnswer": "mm-ewm-65-b"
+      },
+      {
+        "id": "mm-ewm-66",
+        "text": "Quale delle seguenti industrie ha la maggiore percentuale di utilizzo di SAP EWM?",
+        "answers": [
+          {
+            "id": "mm-ewm-66-a",
+            "text": "Consumer Products (17%)"
+          },
+          {
+            "id": "mm-ewm-66-b",
+            "text": "Automotive (12%)"
+          },
+          {
+            "id": "mm-ewm-66-c",
+            "text": "Retail (8%)"
+          },
+          {
+            "id": "mm-ewm-66-d",
+            "text": "Industrial Machinery & Components (9%)"
+          }
+        ],
+        "correctAnswer": "mm-ewm-66-a"
+      },
+      {
+        "id": "mm-ewm-67",
+        "text": "Quale struttura permette di rappresentare il magazzino fisico in SAP EWM?",
+        "answers": [
+          {
+            "id": "mm-ewm-67-a",
+            "text": "Storage Location"
+          },
+          {
+            "id": "mm-ewm-67-b",
+            "text": "Plant"
+          },
+          {
+            "id": "mm-ewm-67-c",
+            "text": "Warehouse Number"
+          },
+          {
+            "id": "mm-ewm-67-d",
+            "text": "Storage Type"
+          }
+        ],
+        "correctAnswer": "mm-ewm-67-c"
+      },
+      {
+        "id": "mm-ewm-68",
+        "text": "Quale transazione viene utilizzata per visualizzare la lista di documenti materiale?",
+        "answers": [
+          {
+            "id": "mm-ewm-68-a",
+            "text": "MB51"
+          },
+          {
+            "id": "mm-ewm-68-b",
+            "text": "MB52"
+          },
+          {
+            "id": "mm-ewm-68-c",
+            "text": "ME2L"
+          },
+          {
+            "id": "mm-ewm-68-d",
+            "text": "ME5A"
+          }
+        ],
+        "correctAnswer": "mm-ewm-68-a"
+      }
+    ]
+}
