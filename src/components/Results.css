@@ -1,0 +1,86 @@
+.results-container {
+    max-width: 700px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f5f5f5;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .score-card {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    text-align: center;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+  }
+  
+  .score, .total {
+    font-weight: bold;
+    font-size: 1.2em;
+  }
+  
+  .percentage {
+    font-size: 1.5em;
+    margin-top: 10px;
+  }
+  
+  .percentage span {
+    font-weight: bold;
+    color: #2196F3;
+  }
+  
+  .answers-review {
+    margin-top: 30px;
+  }
+  
+  .answers-review h3 {
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 10px;
+    margin-bottom: 15px;
+  }
+  
+  .answers-review ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .answers-review li {
+    background-color: white;
+    padding: 15px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    border-left: 5px solid #ccc;
+  }
+  
+  .answers-review li.correct {
+    border-left-color: #4caf50;
+  }
+  
+  .answers-review li.incorrect {
+    border-left-color: #f44336;
+  }
+  
+  .correct-answer {
+    color: #4caf50;
+    font-style: italic;
+  }
+  
+  .retry-button {
+    display: block;
+    width: 100%;
+    padding: 15px;
+    margin-top: 30px;
+    background-color: #2196F3;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.1em;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .retry-button:hover {
+    background-color: #0b7dda;
+  }
