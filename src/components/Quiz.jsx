@@ -1,5 +1,5 @@
 // src/components/Quiz.jsx
-import React from 'react';
+import React, { useState } from 'react';
 import styled from 'styled-components';
 import useQuiz from '../hooks/useQuiz';
 import Question from './Question';
@@ -29,10 +29,27 @@ const Quiz = () => {
     nextQuestion,
     previousQuestion
   } = useQuiz();
+  
+  // Stato per tenere traccia se l'utente ha risposto alla domanda corrente
+  const [questionAnswered, setQuestionAnswered] = useState({});
 
   const currentQuestion = questions[currentQuestionIndex];
   const selectedAnswer = currentQuestion ? answers[currentQuestion.id] : null;
   const isLastQuestion = currentQuestionIndex === questions.length - 1;
+  
+  // Controlla se la domanda corrente è già stata risposta
+  const isCurrentQuestionAnswered = currentQuestion ? questionAnswered[currentQuestion.id] : false;
+
+  // Funzione wrapper per gestire la risposta dell'utente
+  const handleAnswerSelect = (questionId, answerId) => {
+    answerQuestion(questionId, answerId);
+    setQuestionAnswered(prev => ({ ...prev, [questionId]: true }));
+  };
+
+  // Funzione wrapper per passare alla domanda successiva
+  const handleNextQuestion = () => {
+    nextQuestion();
+  };
 
   return (
     <QuizContainer>
@@ -41,14 +58,15 @@ const Quiz = () => {
       <Question
         question={currentQuestion}
         selectedAnswer={selectedAnswer}
-        onAnswerSelect={answerQuestion}
+        onAnswerSelect={handleAnswerSelect}
+        isAnswered={isCurrentQuestionAnswered}
       />
       
       <ButtonsContainer>
         <button onClick={previousQuestion} disabled={currentQuestionIndex === 0}>
           Indietro
         </button>
-        <button onClick={nextQuestion} disabled={!selectedAnswer}>
+        <button onClick={handleNextQuestion} disabled={!selectedAnswer}>
           {isLastQuestion ? 'Termina Quiz' : 'Avanti'}
         </button>
       </ButtonsContainer>

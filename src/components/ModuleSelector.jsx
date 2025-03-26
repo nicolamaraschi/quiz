@@ -1,7 +1,10 @@
-// src/components/ModuleSelector.jsx
-import React from 'react';
+// Modifica 2: src/components/ModuleSelector.jsx
+// Aggiungiamo opzioni per selezionare la modalità casuale o ordinata
+
+import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import styled from 'styled-components';
+import useQuiz from '../hooks/useQuiz';
 
 const ModulesGrid = styled.div`
   display: grid;
@@ -37,8 +40,25 @@ const ModuleDescription = styled.p`
   color: #666;
 `;
 
+const ButtonsContainer = styled.div`
+  display: flex;
+  gap: 0.5rem;
+  margin-top: 1rem;
+`;
+
+const QuizButton = styled.button`
+  flex: 1;
+  font-size: 0.9rem;
+  background-color: ${props => props.random ? '#ff9800' : '#0056b3'};
+  
+  &:hover {
+    background-color: ${props => props.random ? '#e68a00' : '#003d82'};
+  }
+`;
+
 const ModuleSelector = () => {
   const navigate = useNavigate();
+  const { startQuiz } = useQuiz();
 
   const modules = [
     {
@@ -68,17 +88,28 @@ const ModuleSelector = () => {
     }
   ];
 
-  const handleSelectModule = (moduleId) => {
+  const handleSelectModule = (moduleId, useRandomMode) => {
+    startQuiz(moduleId, useRandomMode);
     navigate(`/quiz/${moduleId}`);
   };
 
   return (
     <ModulesGrid>
       {modules.map((module) => (
-        <ModuleCard key={module.id} onClick={() => handleSelectModule(module.id)}>
+        <ModuleCard key={module.id}>
           <ModuleTitle>{module.title}</ModuleTitle>
           <ModuleDescription>{module.description}</ModuleDescription>
-          <button>Inizia Quiz</button>
+          <ButtonsContainer>
+            <QuizButton onClick={() => handleSelectModule(module.id, false)}>
+              Inizia Quiz Ordinato
+            </QuizButton>
+            <QuizButton 
+              random 
+              onClick={() => handleSelectModule(module.id, true)}
+            >
+              Inizia Quiz Random
+            </QuizButton>
+          </ButtonsContainer>
         </ModuleCard>
       ))}
     </ModulesGrid>
