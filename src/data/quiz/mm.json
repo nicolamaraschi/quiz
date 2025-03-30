@@ -1566,6 +1566,742 @@
           }
         ],
         "correctAnswer": "mm-ewm-68-a"
+      },
+      {
+        "id": "mm-ewm-70",
+        "text": "In che modo viene gestito il lotto in SAP MM?",
+        "answers": [
+          {
+            "id": "mm-ewm-70-a",
+            "text": "Come un'entità separata dall'anagrafica materiale"
+          },
+          {
+            "id": "mm-ewm-70-b",
+            "text": "Come un insieme di prodotti con caratteristiche omogenee e data di entrata comune"
+          },
+          {
+            "id": "mm-ewm-70-c",
+            "text": "Come sinonimo di numero seriale"
+          },
+          {
+            "id": "mm-ewm-70-d",
+            "text": "Come un'unità di movimentazione"
+          }
+        ],
+        "correctAnswer": "mm-ewm-70-b"
+      },
+      {
+        "id": "mm-ewm-71",
+        "text": "Qual è la differenza principale tra lotto e numero seriale in SAP MM?",
+        "answers": [
+          {
+            "id": "mm-ewm-71-a",
+            "text": "Il lotto identifica il singolo pezzo, mentre il numero seriale un insieme di prodotti"
+          },
+          {
+            "id": "mm-ewm-71-b",
+            "text": "Il lotto si usa solo per prodotti deperibili, il numero seriale per quelli durevoli"
+          },
+          {
+            "id": "mm-ewm-71-c",
+            "text": "Il lotto identifica una partita di prodotti omogenei, mentre il numero seriale identifica il singolo pezzo"
+          },
+          {
+            "id": "mm-ewm-71-d",
+            "text": "Il lotto si usa in produzione, il numero seriale solo in vendita"
+          }
+        ],
+        "correctAnswer": "mm-ewm-71-c"
+      },
+      {
+        "id": "mm-ewm-72",
+        "text": "Cosa rappresenta il codice NLAG nell'anagrafica materiali?",
+        "answers": [
+          {
+            "id": "mm-ewm-72-a",
+            "text": "Prodotto finito"
+          },
+          {
+            "id": "mm-ewm-72-b",
+            "text": "Materiali non gestiti a sistema"
+          },
+          {
+            "id": "mm-ewm-72-c",
+            "text": "Semilavorato"
+          },
+          {
+            "id": "mm-ewm-72-d",
+            "text": "Materiale di consumo"
+          }
+        ],
+        "correctAnswer": "mm-ewm-72-b"
+      },
+      {
+        "id": "mm-ewm-73",
+        "text": "Cosa rappresenta il codice DIEN nell'anagrafica materiali?",
+        "answers": [
+          {
+            "id": "mm-ewm-73-a",
+            "text": "Materiali a deposito"
+          },
+          {
+            "id": "mm-ewm-73-b",
+            "text": "Dispositivi elettronici"
+          },
+          {
+            "id": "mm-ewm-73-c",
+            "text": "Prestazioni di servizi"
+          },
+          {
+            "id": "mm-ewm-73-d",
+            "text": "Materiali in conto lavorazione"
+          }
+        ],
+        "correctAnswer": "mm-ewm-73-c"
+      },
+      {
+        "id": "mm-ewm-74",
+        "text": "Quali modalità di generazione può avere una Richiesta d'Acquisto (RDA) in SAP MM?",
+        "answers": [
+          {
+            "id": "mm-ewm-74-a",
+            "text": "Solo generazione manuale"
+          },
+          {
+            "id": "mm-ewm-74-b",
+            "text": "Solo da processo MRP"
+          },
+          {
+            "id": "mm-ewm-74-c",
+            "text": "Processo di pianificazione MRP, richieste manuali o processo di conto lavoro"
+          },
+          {
+            "id": "mm-ewm-74-d",
+            "text": "Solo tramite ordini cliente"
+          }
+        ],
+        "correctAnswer": "mm-ewm-74-c"
+      },
+      {
+        "id": "mm-ewm-75",
+        "text": "Quali tipologie di stock sono supportate in SAP MM?",
+        "answers": [
+          {
+            "id": "mm-ewm-75-a",
+            "text": "Solo stock libero e stock bloccato"
+          },
+          {
+            "id": "mm-ewm-75-b",
+            "text": "Stock libero, stock bloccato, stock in controllo qualità e stock speciale"
+          },
+          {
+            "id": "mm-ewm-75-c",
+            "text": "Stock fisico e stock virtuale"
+          },
+          {
+            "id": "mm-ewm-75-d",
+            "text": "Solo stock per materiale"
+          }
+        ],
+        "correctAnswer": "mm-ewm-75-b"
+      },
+      {
+        "id": "mm-ewm-76",
+        "text": "A cosa corrisponde il tipo di movimento 101 in SAP MM?",
+        "answers": [
+          {
+            "id": "mm-ewm-76-a",
+            "text": "Entrata merci"
+          },
+          {
+            "id": "mm-ewm-76-b",
+            "text": "Uscita merci"
+          },
+          {
+            "id": "mm-ewm-76-c",
+            "text": "Rottamazione"
+          },
+          {
+            "id": "mm-ewm-76-d",
+            "text": "Trasferimento tra magazzini"
+          }
+        ],
+        "correctAnswer": "mm-ewm-76-a"
+      },
+      {
+        "id": "mm-ewm-77",
+        "text": "A cosa corrisponde il tipo di movimento 201 in SAP MM?",
+        "answers": [
+          {
+            "id": "mm-ewm-77-a",
+            "text": "Entrata merci"
+          },
+          {
+            "id": "mm-ewm-77-b",
+            "text": "Uscita merci"
+          },
+          {
+            "id": "mm-ewm-77-c",
+            "text": "Consumo a centro di costo"
+          },
+          {
+            "id": "mm-ewm-77-d",
+            "text": "Storno entrata merci"
+          }
+        ],
+        "correctAnswer": "mm-ewm-77-c"
+      },
+      {
+        "id": "mm-ewm-78",
+        "text": "A cosa corrisponde il tipo di movimento 551 in SAP MM?",
+        "answers": [
+          {
+            "id": "mm-ewm-78-a",
+            "text": "Entrata merci"
+          },
+          {
+            "id": "mm-ewm-78-b",
+            "text": "Uscita merci"
+          },
+          {
+            "id": "mm-ewm-78-c",
+            "text": "Consumo per ordine"
+          },
+          {
+            "id": "mm-ewm-78-d",
+            "text": "Rottamazione"
+          }
+        ],
+        "correctAnswer": "mm-ewm-78-d"
+      },
+      {
+        "id": "mm-ewm-79",
+        "text": "A cosa si riferisce 'Intrastat' nel contesto di SAP MM?",
+        "answers": [
+          {
+            "id": "mm-ewm-79-a",
+            "text": "Sistema interno di gestione statistiche"
+          },
+          {
+            "id": "mm-ewm-79-b",
+            "text": "Gestione movimentazioni internazionali e reportistica per trasferimenti transfrontalieri"
+          },
+          {
+            "id": "mm-ewm-79-c",
+            "text": "Interfaccia tra modulo MM e altri moduli SAP"
+          },
+          {
+            "id": "mm-ewm-79-d",
+            "text": "Sistema di trasferimento automatico di dati"
+          }
+        ],
+        "correctAnswer": "mm-ewm-79-b"
+      },
+      {
+        "id": "mm-ewm-80",
+        "text": "Cosa si intende per 'Verticalizzazioni' nel contesto di SAP MM?",
+        "answers": [
+          {
+            "id": "mm-ewm-80-a",
+            "text": "La struttura gerarchica di magazzino"
+          },
+          {
+            "id": "mm-ewm-80-b",
+            "text": "L'organizzazione verticale delle scorte in magazzino"
+          },
+          {
+            "id": "mm-ewm-80-c",
+            "text": "Personalizzazioni per settori specifici come IS-OIL per il settore petrolifero"
+          },
+          {
+            "id": "mm-ewm-80-d",
+            "text": "L'utilizzo esclusivo di scaffalature verticali nel magazzino"
+          }
+        ],
+        "correctAnswer": "mm-ewm-80-c"
+      },
+      {
+        "id": "mm-ewm-81",
+        "text": "Quali sono le tipologie di contratto d'acquisto disponibili in SAP MM?",
+        "answers": [
+          {
+            "id": "mm-ewm-81-a",
+            "text": "Solo contratti a tempo determinato"
+          },
+          {
+            "id": "mm-ewm-81-b",
+            "text": "Contratti a valore e contratti a quantità"
+          },
+          {
+            "id": "mm-ewm-81-c",
+            "text": "Solo contratti per fornitore"
+          },
+          {
+            "id": "mm-ewm-81-d",
+            "text": "Contratti mensili, trimestrali e annuali"
+          }
+        ],
+        "correctAnswer": "mm-ewm-81-b"
+      },
+      {
+        "id": "mm-ewm-82",
+        "text": "Come si differenziano i Piani di Consegna dai Contratti in SAP MM?",
+        "answers": [
+          {
+            "id": "mm-ewm-82-a",
+            "text": "Non ci sono differenze sostanziali"
+          },
+          {
+            "id": "mm-ewm-82-b",
+            "text": "I Piani di Consegna hanno sempre durata annuale"
+          },
+          {
+            "id": "mm-ewm-82-c",
+            "text": "I Piani di Consegna non generano automaticamente ordini e offrono maggiore flessibilità nella pianificazione"
+          },
+          {
+            "id": "mm-ewm-82-d",
+            "text": "I Piani di Consegna riguardano solo servizi, non materiali"
+          }
+        ],
+        "correctAnswer": "mm-ewm-82-c"
+      },
+      {
+        "id": "mm-ewm-83",
+        "text": "Quale transazione viene utilizzata per definire le procedure di rilascio degli ordini in SAP MM?",
+        "answers": [
+          {
+            "id": "mm-ewm-83-a",
+            "text": "ME21N"
+          },
+          {
+            "id": "mm-ewm-83-b",
+            "text": "ME51N"
+          },
+          {
+            "id": "mm-ewm-83-c",
+            "text": "ME29N"
+          },
+          {
+            "id": "mm-ewm-83-d",
+            "text": "MIGO"
+          }
+        ],
+        "correctAnswer": "mm-ewm-83-c"
+      },
+      {
+        "id": "mm-ewm-84",
+        "text": "Quali transazioni si utilizzano per la gestione dell'anagrafica materiali in SAP MM?",
+        "answers": [
+          {
+            "id": "mm-ewm-84-a",
+            "text": "ME01/02/03"
+          },
+          {
+            "id": "mm-ewm-84-b",
+            "text": "MM01/02/03"
+          },
+          {
+            "id": "mm-ewm-84-c",
+            "text": "MD01/02/03"
+          },
+          {
+            "id": "mm-ewm-84-d",
+            "text": "MB01/02/03"
+          }
+        ],
+        "correctAnswer": "mm-ewm-84-b"
+      },
+      {
+        "id": "mm-ewm-85",
+        "text": "Quali transazioni si utilizzano per la gestione delle richieste d'acquisto in SAP MM?",
+        "answers": [
+          {
+            "id": "mm-ewm-85-a",
+            "text": "ME21N/22N/23N"
+          },
+          {
+            "id": "mm-ewm-85-b",
+            "text": "ME51N/52N/53N"
+          },
+          {
+            "id": "mm-ewm-85-c",
+            "text": "MM51/52/53"
+          },
+          {
+            "id": "mm-ewm-85-d",
+            "text": "MD51/52/53"
+          }
+        ],
+        "correctAnswer": "mm-ewm-85-b"
+      },
+      {
+        "id": "mm-ewm-86",
+        "text": "In SAP MM, cosa rappresenta il 'Workflow Approvativo'?",
+        "answers": [
+          {
+            "id": "mm-ewm-86-a",
+            "text": "Le regole per la selezione dei fornitori"
+          },
+          {
+            "id": "mm-ewm-86-b",
+            "text": "I percorsi di approvazione predefiniti che definiscono chi può approvare cosa"
+          },
+          {
+            "id": "mm-ewm-86-c",
+            "text": "La sequenza obbligatoria per l'ingresso di materiali in azienda"
+          },
+          {
+            "id": "mm-ewm-86-d",
+            "text": "La procedura di validazione automatica delle fatture"
+          }
+        ],
+        "correctAnswer": "mm-ewm-86-b"
+      },
+      {
+        "id": "mm-ewm-87",
+        "text": "Nel contesto dei 'Ruoli e Autorizzazioni' in SAP MM, cosa viene definito?",
+        "answers": [
+          {
+            "id": "mm-ewm-87-a",
+            "text": "Solo il prezzo dei materiali"
+          },
+          {
+            "id": "mm-ewm-87-b",
+            "text": "Solo la gerarchia aziendale"
+          },
+          {
+            "id": "mm-ewm-87-c",
+            "text": "Chi può creare richieste d'acquisto, approvare ordini, modificare anagrafiche ed eseguire specifiche transazioni"
+          },
+          {
+            "id": "mm-ewm-87-d",
+            "text": "Solo la gestione delle ubicazioni di magazzino"
+          }
+        ],
+        "correctAnswer": "mm-ewm-87-c"
+      },
+      {
+        "id": "mm-ewm-88",
+        "text": "Quali sono i tipi standard di materiale in SAP che possono essere personalizzati?",
+        "answers": [
+          {
+            "id": "mm-ewm-88-a",
+            "text": "Solo i tipi M e N"
+          },
+          {
+            "id": "mm-ewm-88-b",
+            "text": "I tipi custom con Z o Y"
+          },
+          {
+            "id": "mm-ewm-88-c",
+            "text": "Solo i tipi X e J"
+          },
+          {
+            "id": "mm-ewm-88-d",
+            "text": "I tipi standard non possono essere personalizzati"
+          }
+        ],
+        "correctAnswer": "mm-ewm-88-b"
+      },
+      {
+        "id": "mm-ewm-89",
+        "text": "Quali sono i parametri chiave dell'anagrafica materiali in SAP MM?",
+        "answers": [
+          {
+            "id": "mm-ewm-89-a",
+            "text": "Solo il tipo materiale"
+          },
+          {
+            "id": "mm-ewm-89-b",
+            "text": "Solo l'unità di misura e lo stock"
+          },
+          {
+            "id": "mm-ewm-89-c",
+            "text": "Tipo materiale, unità di misura, gestione a quantità/valore, tipo di approvvigionamento, pianificazione MRP"
+          },
+          {
+            "id": "mm-ewm-89-d",
+            "text": "Solo il prezzo e il codice del fornitore"
+          }
+        ],
+        "correctAnswer": "mm-ewm-89-c"
+      },
+      {
+        "id": "mm-ewm-90",
+        "text": "Nel ciclo passivo di SAP MM, cosa avviene durante la fase di 'Richiesta di Offerta'?",
+        "answers": [
+          {
+            "id": "mm-ewm-90-a",
+            "text": "La generazione automatica dell'ordine d'acquisto"
+          },
+          {
+            "id": "mm-ewm-90-b",
+            "text": "La raccolta preventivi dai fornitori, il confronto delle offerte e la selezione del fornitore migliore"
+          },
+          {
+            "id": "mm-ewm-90-c",
+            "text": "L'accettazione fisica dei materiali"
+          },
+          {
+            "id": "mm-ewm-90-d",
+            "text": "La verifica corrispondenza con la fattura"
+          }
+        ],
+        "correctAnswer": "mm-ewm-90-b"
+      },
+      {
+        "id": "mm-ewm-91",
+        "text": "In SAP MM, che operazioni vengono eseguite durante la fase di 'Entrata Merci'?",
+        "answers": [
+          {
+            "id": "mm-ewm-91-a",
+            "text": "Solo la registrazione a sistema"
+          },
+          {
+            "id": "mm-ewm-91-b",
+            "text": "Solo il controllo qualità"
+          },
+          {
+            "id": "mm-ewm-91-c",
+            "text": "Accettazione fisica dei materiali, controllo quantità e qualità, registrazione a sistema, aggiornamento immediato delle scorte"
+          },
+          {
+            "id": "mm-ewm-91-d",
+            "text": "Solo l'aggiornamento del magazzino"
+          }
+        ],
+        "correctAnswer": "mm-ewm-91-c"
+      },
+      {
+        "id": "mm-ewm-92",
+        "text": "Cosa contiene un Ordine d'Acquisto in SAP MM?",
+        "answers": [
+          {
+            "id": "mm-ewm-92-a",
+            "text": "Solo codice materiale e quantità"
+          },
+          {
+            "id": "mm-ewm-92-b",
+            "text": "Solo dati del fornitore"
+          },
+          {
+            "id": "mm-ewm-92-c",
+            "text": "Dati fornitore, condizioni di pagamento e specifiche per ogni posizione"
+          },
+          {
+            "id": "mm-ewm-92-d",
+            "text": "Solo il prezzo"
+          }
+        ],
+        "correctAnswer": "mm-ewm-92-c"
+      },
+      {
+        "id": "mm-ewm-93",
+        "text": "Quali sono le caratteristiche principali dei Contratti in SAP MM?",
+        "answers": [
+          {
+            "id": "mm-ewm-93-a",
+            "text": "Non hanno un periodo di validità definito"
+          },
+          {
+            "id": "mm-ewm-93-b",
+            "text": "Non possono generare ordini d'acquisto"
+          },
+          {
+            "id": "mm-ewm-93-c",
+            "text": "Periodo di validità definito, possono generare ordini d'acquisto, definiscono condizioni specifiche"
+          },
+          {
+            "id": "mm-ewm-93-d",
+            "text": "Sono utilizzabili solo per servizi, non per materiali"
+          }
+        ],
+        "correctAnswer": "mm-ewm-93-c"
+      },
+      {
+        "id": "mm-ewm-94",
+        "text": "A cosa corrisponde il tipo di movimento 102 in SAP MM?",
+        "answers": [
+          {
+            "id": "mm-ewm-94-a",
+            "text": "Entrata merci"
+          },
+          {
+            "id": "mm-ewm-94-b",
+            "text": "Storno entrata merci"
+          },
+          {
+            "id": "mm-ewm-94-c",
+            "text": "Consumo a centro di costo"
+          },
+          {
+            "id": "mm-ewm-94-d",
+            "text": "Rottamazione"
+          }
+        ],
+        "correctAnswer": "mm-ewm-94-b"
+      },
+      {
+        "id": "mm-ewm-95",
+        "text": "A cosa corrisponde il tipo di movimento 221 in SAP MM?",
+        "answers": [
+          {
+            "id": "mm-ewm-95-a",
+            "text": "Entrata merci"
+          },
+          {
+            "id": "mm-ewm-95-b",
+            "text": "Uscita merci"
+          },
+          {
+            "id": "mm-ewm-95-c",
+            "text": "Consumo per progetto"
+          },
+          {
+            "id": "mm-ewm-95-d",
+            "text": "Storno entrata merci"
+          }
+        ],
+        "correctAnswer": "mm-ewm-95-c"
+      },
+      {
+        "id": "mm-ewm-96",
+        "text": "A cosa corrisponde il tipo di movimento 261 in SAP MM?",
+        "answers": [
+          {
+            "id": "mm-ewm-96-a",
+            "text": "Entrata merci"
+          },
+          {
+            "id": "mm-ewm-96-b",
+            "text": "Uscita merci"
+          },
+          {
+            "id": "mm-ewm-96-c",
+            "text": "Consumo per ordine"
+          },
+          {
+            "id": "mm-ewm-96-d",
+            "text": "Trasferimento tra magazzini"
+          }
+        ],
+        "correctAnswer": "mm-ewm-96-c"
+      },
+      {
+        "id": "mm-ewm-97",
+        "text": "Cosa rappresenta la verticalizzazione IS-OIL in SAP?",
+        "answers": [
+          {
+            "id": "mm-ewm-97-a",
+            "text": "Una funzionalità per lo smaltimento degli oli esausti"
+          },
+          {
+            "id": "mm-ewm-97-b",
+            "text": "Un modulo specifico per la gestione settore petrolifero che gestisce densità e temperature"
+          },
+          {
+            "id": "mm-ewm-97-c",
+            "text": "Un sistema di lubrificazione interna dei macchinari"
+          },
+          {
+            "id": "mm-ewm-97-d",
+            "text": "La procedura per la contabilizzazione di prodotti petroliferi"
+          }
+        ],
+        "correctAnswer": "mm-ewm-97-b"
+      },
+      {
+        "id": "mm-ewm-98",
+        "text": "Quali sono le funzionalità chiave del modulo EWM?",
+        "answers": [
+          {
+            "id": "mm-ewm-98-a",
+            "text": "Solo fatturazione e contabilità"
+          },
+          {
+            "id": "mm-ewm-98-b",
+            "text": "Solo pianificazione della produzione"
+          },
+          {
+            "id": "mm-ewm-98-c",
+            "text": "Ubicazione automatica, strategie di prelievo, gestione unità di movimentazione, yard management e inventario fisico"
+          },
+          {
+            "id": "mm-ewm-98-d",
+            "text": "Solo controllo dei costi e schedulazione"
+          }
+        ],
+        "correctAnswer": "mm-ewm-98-c"
+      },
+      {
+        "id": "mm-ewm-99",
+        "text": "Quali transazioni vengono utilizzate per la gestione dei contratti di acquisto in SAP MM?",
+        "answers": [
+          {
+            "id": "mm-ewm-99-a",
+            "text": "ME21N/22N/23N"
+          },
+          {
+            "id": "mm-ewm-99-b",
+            "text": "ME51N/52N/53N"
+          },
+          {
+            "id": "mm-ewm-99-c",
+            "text": "ME31K/32K/33K"
+          },
+          {
+            "id": "mm-ewm-99-d",
+            "text": "MM01/02/03"
+          }
+        ],
+        "correctAnswer": "mm-ewm-99-c"
+      },
+      {
+        "id": "mm-ewm-100",
+        "text": "Quali transazioni vengono utilizzate per la gestione dei piani di consegna in SAP MM?",
+        "answers": [
+          {
+            "id": "mm-ewm-100-a",
+            "text": "ME21N/22N/23N"
+          },
+          {
+            "id": "mm-ewm-100-b",
+            "text": "ME51N/52N/53N"
+          },
+          {
+            "id": "mm-ewm-100-c",
+            "text": "ME31K/32K/33K"
+          },
+          {
+            "id": "mm-ewm-100-d",
+            "text": "ME31L/32L/33L"
+          }
+        ],
+        "correctAnswer": "mm-ewm-100-d"
+      },
+      {
+        "id": "mm-ewm-101",
+        "text": "Quali sono i possibili stati di un ordine nel processo approvativo in SAP MM?",
+        "answers": [
+          {
+            "id": "mm-ewm-101-a",
+            "text": "Solo Aperto e Chiuso"
+          },
+          {
+            "id": "mm-ewm-101-b",
+            "text": "Bloccato (B) e Rilasciato (G)"
+          },
+          {
+            "id": "mm-ewm-101-c",
+            "text": "Attivo e Disattivo"
+          },
+          {
+            "id": "mm-ewm-101-d",
+            "text": "Eseguito e Annullato"
+          }
+        ],
+        "correctAnswer": "mm-ewm-101-b"
       }
     ]
 }
