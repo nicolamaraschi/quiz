@@ -304,6 +304,9 @@ const Header = () => {
               <DropdownItem onClick={() => handleDocsNavigation('/mm-documentation')}>
                 Material (MM)
               </DropdownItem>
+              <DropdownItem onClick={() => handleDocsNavigation('/sd-documentation')}>
+              Sales & Distribution (SD)
+              </DropdownItem>
             </DropdownContent>
           </DropdownContainer>
           

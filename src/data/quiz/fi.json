@@ -1773,6 +1773,1225 @@
           }
         ],
         "correctAnswer": "fi-77-a"
+      },
+      {
+        "id": "fi-78",
+        "text": "Cosa si intende per 'variante periodi contabili' in SAP?",
+        "answers": [
+          {
+            "id": "fi-78-a",
+            "text": "La valuta utilizzata per i periodi contabili"
+          },
+          {
+            "id": "fi-78-b",
+            "text": "Una configurazione che definisce i periodi di registrazione e controlla quando i periodi possono essere aperti o chiusi"
+          },
+          {
+            "id": "fi-78-c",
+            "text": "Il calendario fiscale di un'azienda"
+          },
+          {
+            "id": "fi-78-d",
+            "text": "Una variante di visualizzazione dei periodi contabili nei report"
+          }
+        ],
+        "correctAnswer": "fi-78-b"
+      },
+      {
+        "id": "fi-79",
+        "text": "Come funziona il controllo credito in SAP?",
+        "answers": [
+          {
+            "id": "fi-79-a",
+            "text": "È un processo completamente manuale"
+          },
+          {
+            "id": "fi-79-b",
+            "text": "Verifica automaticamente l'affidabilità del cliente quando viene creato un ordine di vendita"
+          },
+          {
+            "id": "fi-79-c",
+            "text": "Blocca sempre tutti gli ordini di nuovi clienti"
+          },
+          {
+            "id": "fi-79-d",
+            "text": "È un sistema esterno a SAP"
+          }
+        ],
+        "correctAnswer": "fi-79-b"
+      },
+      {
+        "id": "fi-80",
+        "text": "Cosa si intende per 'blocco al pagamento' in SAP?",
+        "answers": [
+          {
+            "id": "fi-80-a",
+            "text": "Un'impostazione che impedisce qualsiasi registrazione contabile"
+          },
+          {
+            "id": "fi-80-b",
+            "text": "Un meccanismo che impedisce temporaneamente il pagamento di una fattura"
+          },
+          {
+            "id": "fi-80-c",
+            "text": "Un blocco fisico sul terminale di pagamento"
+          },
+          {
+            "id": "fi-80-d",
+            "text": "Una limitazione del credito verso un cliente"
+          }
+        ],
+        "correctAnswer": "fi-80-b"
+      },
+      {
+        "id": "fi-81",
+        "text": "Cos'è la metodologia SAP ACTIVATE?",
+        "answers": [
+          {
+            "id": "fi-81-a",
+            "text": "Un processo di autorizzazione degli utenti"
+          },
+          {
+            "id": "fi-81-b",
+            "text": "Una metodologia utilizzata per l'implementazione di progetti SAP"
+          },
+          {
+            "id": "fi-81-c",
+            "text": "Un sistema di attivazione delle licenze"
+          },
+          {
+            "id": "fi-81-d",
+            "text": "Un processo di ottimizzazione del database"
+          }
+        ],
+        "correctAnswer": "fi-81-b"
+      },
+      {
+        "id": "fi-82",
+        "text": "Cosa rappresenta il concetto di Universal Journal in SAP S/4HANA?",
+        "answers": [
+          {
+            "id": "fi-82-a",
+            "text": "Un giornale contabile in più lingue"
+          },
+          {
+            "id": "fi-82-b",
+            "text": "Un report finanziario disponibile a livello globale"
+          },
+          {
+            "id": "fi-82-c",
+            "text": "La tabella ACDOCA che centralizza tutti i dati contabili precedentemente distribuiti in centinaia di tabelle"
+          },
+          {
+            "id": "fi-82-d",
+            "text": "Un manuale di contabilità universale"
+          }
+        ],
+        "correctAnswer": "fi-82-c"
+      },
+      {
+        "id": "fi-83",
+        "text": "Cosa genera contabilmente l'entrata merce (EM) in SAP?",
+        "answers": [
+          {
+            "id": "fi-83-a",
+            "text": "Nessuna registrazione contabile"
+          },
+          {
+            "id": "fi-83-b",
+            "text": "Solo l'aumento del magazzino"
+          },
+          {
+            "id": "fi-83-c",
+            "text": "Aumento del magazzino, 'Fatture da Ricevere' e registrazioni di costi e contropartite"
+          },
+          {
+            "id": "fi-83-d",
+            "text": "Solo il pagamento al fornitore"
+          }
+        ],
+        "correctAnswer": "fi-83-c"
+      },
+      {
+        "id": "fi-84",
+        "text": "Come avviene la gestione delle differenze di cambio in SAP per fatture in valuta estera?",
+        "answers": [
+          {
+            "id": "fi-84-a",
+            "text": "Devono essere calcolate e registrate manualmente"
+          },
+          {
+            "id": "fi-84-b",
+            "text": "Non vengono gestite in SAP"
+          },
+          {
+            "id": "fi-84-c",
+            "text": "Vengono registrate automaticamente su un conto specifico al momento del pagamento"
+          },
+          {
+            "id": "fi-84-d",
+            "text": "Vengono ignorate dal sistema"
+          }
+        ],
+        "correctAnswer": "fi-84-c"
+      },
+      {
+        "id": "fi-85",
+        "text": "Cosa si intende per 'customizing' in SAP?",
+        "answers": [
+          {
+            "id": "fi-85-a",
+            "text": "La personalizzazione grafica dell'interfaccia"
+          },
+          {
+            "id": "fi-85-b",
+            "text": "La programmazione di nuove funzionalità"
+          },
+          {
+            "id": "fi-85-c",
+            "text": "L'attività di configurazione del sistema SAP attraverso la selezione di opzioni predefinite"
+          },
+          {
+            "id": "fi-85-d",
+            "text": "La traduzione dei menu in diverse lingue"
+          }
+        ],
+        "correctAnswer": "fi-85-c"
+      },
+      {
+        "id": "fi-86",
+        "text": "Quali interfacce sono disponibili per interagire con SAP?",
+        "answers": [
+          {
+            "id": "fi-86-a",
+            "text": "Solo SAP GUI"
+          },
+          {
+            "id": "fi-86-b",
+            "text": "Solo SAP Fiori"
+          },
+          {
+            "id": "fi-86-c",
+            "text": "SAP GUI e SAP Fiori"
+          },
+          {
+            "id": "fi-86-d",
+            "text": "Solo interfaccia a riga di comando"
+          }
+        ],
+        "correctAnswer": "fi-86-c"
+      },
+      {
+        "id": "fi-87",
+        "text": "Cosa prevede il tipico landscape di sistema in un'implementazione SAP?",
+        "answers": [
+          {
+            "id": "fi-87-a",
+            "text": "Solo un ambiente di produzione"
+          },
+          {
+            "id": "fi-87-b",
+            "text": "Solo ambienti di sviluppo e produzione"
+          },
+          {
+            "id": "fi-87-c",
+            "text": "Ambienti di sviluppo, qualità e produzione"
+          },
+          {
+            "id": "fi-87-d",
+            "text": "Solo ambiente di test"
+          }
+        ],
+        "correctAnswer": "fi-87-c"
+      },
+      {
+        "id": "fi-88",
+        "text": "Quali adempimenti specifici devono essere gestiti per gli agenti in Italia?",
+        "answers": [
+          {
+            "id": "fi-88-a",
+            "text": "Solo IVA"
+          },
+          {
+            "id": "fi-88-b",
+            "text": "Solo ritenuta d'acconto"
+          },
+          {
+            "id": "fi-88-c",
+            "text": "Ritenuta d'acconto, FIRR (Fondo Indennità Risoluzione Rapporto) ed Enasarco"
+          },
+          {
+            "id": "fi-88-d",
+            "text": "Solo contributi INPS"
+          }
+        ],
+        "correctAnswer": "fi-88-c"
+      },
+      {
+        "id": "fi-89",
+        "text": "Quali tipi di provvigioni possono essere gestite in un sistema per agenti?",
+        "answers": [
+          {
+            "id": "fi-89-a",
+            "text": "Solo provvigioni sull'ordinato"
+          },
+          {
+            "id": "fi-89-b",
+            "text": "Solo provvigioni sul fatturato"
+          },
+          {
+            "id": "fi-89-c",
+            "text": "Provvigioni sull'ordinato, sul fatturato e sull'incassato"
+          },
+          {
+            "id": "fi-89-d",
+            "text": "Solo provvigioni forfettarie"
+          }
+        ],
+        "correctAnswer": "fi-89-c"
+      },
+      {
+        "id": "fi-90",
+        "text": "Come viene gestito il calcolo delle provvigioni per gli agenti in SAP?",
+        "answers": [
+          {
+            "id": "fi-90-a",
+            "text": "È una funzionalità standard completamente integrata"
+          },
+          {
+            "id": "fi-90-b",
+            "text": "Non può essere gestito in SAP"
+          },
+          {
+            "id": "fi-90-c",
+            "text": "Tramite soluzioni specifiche come Agenti+ sviluppate da partner SAP"
+          },
+          {
+            "id": "fi-90-d",
+            "text": "Solo manualmente tramite registrazioni in FI"
+          }
+        ],
+        "correctAnswer": "fi-90-c"
+      },
+      {
+        "id": "fi-91",
+        "text": "Quali sono i ruoli professionali principali nell'implementazione di SAP?",
+        "answers": [
+          {
+            "id": "fi-91-a",
+            "text": "Solo programmatori"
+          },
+          {
+            "id": "fi-91-b",
+            "text": "Solo consulenti funzionali"
+          },
+          {
+            "id": "fi-91-c",
+            "text": "Consulenti funzionali, programmatori e sistemisti"
+          },
+          {
+            "id": "fi-91-d",
+            "text": "Solo utenti finali e sistemisti"
+          }
+        ],
+        "correctAnswer": "fi-91-c"
+      },
+      {
+        "id": "fi-92",
+        "text": "Cosa si intende per 'mandante' in SAP?",
+        "answers": [
+          {
+            "id": "fi-92-a",
+            "text": "Il cliente che ha richiesto l'implementazione di SAP"
+          },
+          {
+            "id": "fi-92-b",
+            "text": "Un ambiente di lavoro segregato all'interno di un sistema SAP"
+          },
+          {
+            "id": "fi-92-c",
+            "text": "Il fornitore del software"
+          },
+          {
+            "id": "fi-92-d",
+            "text": "L'amministratore di sistema"
+          }
+        ],
+        "correctAnswer": "fi-92-b"
+      },
+      {
+        "id": "fi-93",
+        "text": "Cosa sono le 'causali bancarie' nel contesto dell'estratto conto elettronico?",
+        "answers": [
+          {
+            "id": "fi-93-a",
+            "text": "I codici di errore generati dal sistema bancario"
+          },
+          {
+            "id": "fi-93-b",
+            "text": "I codici forniti dalla banca per classificare le operazioni"
+          },
+          {
+            "id": "fi-93-c",
+            "text": "Le motivazioni dei rifiuti dei pagamenti"
+          },
+          {
+            "id": "fi-93-d",
+            "text": "Le spiegazioni manuali inserite dal tesoriere"
+          }
+        ],
+        "correctAnswer": "fi-93-b"
+      },
+      {
+        "id": "fi-94",
+        "text": "Come funziona l'importazione dell'estratto conto elettronico in SAP?",
+        "answers": [
+          {
+            "id": "fi-94-a",
+            "text": "I movimenti sono importati e registrati automaticamente senza intervento umano"
+          },
+          {
+            "id": "fi-94-b",
+            "text": "Il sistema legge il file della banca e propone registrazioni contabili che devono essere verificate"
+          },
+          {
+            "id": "fi-94-c",
+            "text": "I dati bancari devono essere inseriti manualmente"
+          },
+          {
+            "id": "fi-94-d",
+            "text": "La banca si collega direttamente a SAP e modifica i conti"
+          }
+        ],
+        "correctAnswer": "fi-94-b"
+      },
+      {
+        "id": "fi-95",
+        "text": "Quali sono le fasi principali della procedura di pagamento automatico (F110) in SAP?",
+        "answers": [
+          {
+            "id": "fi-95-a",
+            "text": "Solo la selezione dei fornitori e l'esecuzione del pagamento"
+          },
+          {
+            "id": "fi-95-b",
+            "text": "Inserimento parametri, creazione proposta, esecuzione pagamento"
+          },
+          {
+            "id": "fi-95-c",
+            "text": "Selezione fornitori, approvazione manuale, pagamento, riconciliazione"
+          },
+          {
+            "id": "fi-95-d",
+            "text": "Creazione fattura, registrazione pagamento, riconciliazione"
+          }
+        ],
+        "correctAnswer": "fi-95-b"
+      },
+      {
+        "id": "fi-96",
+        "text": "Cosa si intende per 'banche interne' in SAP?",
+        "answers": [
+          {
+            "id": "fi-96-a",
+            "text": "Le filiali delle banche all'interno dell'azienda"
+          },
+          {
+            "id": "fi-96-b",
+            "text": "I conti correnti utilizzati dalla società per le proprie operazioni"
+          },
+          {
+            "id": "fi-96-c",
+            "text": "Le banche di proprietà dell'azienda"
+          },
+          {
+            "id": "fi-96-d",
+            "text": "I dipartimenti finanziari interni"
+          }
+        ],
+        "correctAnswer": "fi-96-b"
+      },
+      {
+        "id": "fi-97",
+        "text": "A cosa servono i conti transitori banca in SAP?",
+        "answers": [
+          {
+            "id": "fi-97-a",
+            "text": "A registrare i pagamenti prima dell'effettiva uscita di denaro dal conto corrente"
+          },
+          {
+            "id": "fi-97-b",
+            "text": "A gestire le differenze di cambio"
+          },
+          {
+            "id": "fi-97-c",
+            "text": "A registrare solo i pagamenti esteri"
+          },
+          {
+            "id": "fi-97-d",
+            "text": "A gestire i prestiti bancari"
+          }
+        ],
+        "correctAnswer": "fi-97-a"
+      },
+      {
+        "id": "fi-98",
+        "text": "Qual è la differenza tra 'condizione di pagamento' e 'metodo di pagamento' in SAP?",
+        "answers": [
+          {
+            "id": "fi-98-a",
+            "text": "Non c'è differenza, sono termini intercambiabili"
+          },
+          {
+            "id": "fi-98-b",
+            "text": "La condizione di pagamento definisce i termini di scadenza mentre il metodo di pagamento definisce la modalità (bonifico, RIBA, ecc.)"
+          },
+          {
+            "id": "fi-98-c",
+            "text": "La condizione si applica solo ai clienti mentre il metodo solo ai fornitori"
+          },
+          {
+            "id": "fi-98-d",
+            "text": "La condizione riguarda i pagamenti in valuta locale mentre il metodo quelli in valuta estera"
+          }
+        ],
+        "correctAnswer": "fi-98-b"
+      },
+      {
+        "id": "fi-99",
+        "text": "Come funziona la procedura di sollecito (dunning) in SAP?",
+        "answers": [
+          {
+            "id": "fi-99-a",
+            "text": "È una procedura manuale che richiede l'intervento dell'utente per ogni cliente"
+          },
+          {
+            "id": "fi-99-b",
+            "text": "È un processo massivo che invia lettere ai clienti con pagamenti in sospeso in base a livelli e intervalli configurati"
+          },
+          {
+            "id": "fi-99-c",
+            "text": "È una procedura che blocca automaticamente i clienti insolventi"
+          },
+          {
+            "id": "fi-99-d",
+            "text": "È un processo che cancella automaticamente i crediti non pagati dopo un certo periodo"
+          }
+        ],
+        "correctAnswer": "fi-99-b"
+      },
+      {
+        "id": "fi-100",
+        "text": "Cosa accade durante il processo di gestione delle ricevute bancarie (RI.BA.) in SAP?",
+        "answers": [
+          {
+            "id": "fi-100-a",
+            "text": "Il credito viene semplicemente stornato"
+          },
+          {
+            "id": "fi-100-b",
+            "text": "Il credito del cliente viene riclassificato da 'crediti verso clienti' a 'portafoglio effetti attivi'"
+          },
+          {
+            "id": "fi-100-c",
+            "text": "Il credito viene immediatamente considerato incassato"
+          },
+          {
+            "id": "fi-100-d",
+            "text": "Il credito viene cancellato e ricreato come nuovo"
+          }
+        ],
+        "correctAnswer": "fi-100-b"
+      },
+      {
+        "id": "fi-101",
+        "text": "Cosa rappresenta il 'conto di riconciliazione' in SAP?",
+        "answers": [
+          {
+            "id": "fi-101-a",
+            "text": "Un conto utilizzato per riconciliare le differenze di cambio"
+          },
+          {
+            "id": "fi-101-b",
+            "text": "Un conto che viene aggiornato automaticamente dalle registrazioni sui conti clienti/fornitori collegati"
+          },
+          {
+            "id": "fi-101-c",
+            "text": "Un conto per gestire le riconciliazioni bancarie"
+          },
+          {
+            "id": "fi-101-d",
+            "text": "Un conto per riconciliare le differenze tra contabilità generale e controllo di gestione"
+          }
+        ],
+        "correctAnswer": "fi-101-b"
+      },
+      {
+        "id": "fi-102",
+        "text": "Quali sono le chiavi contabili principali per i conti Co.Ge. in SAP?",
+        "answers": [
+          {
+            "id": "fi-102-a",
+            "text": "01 e 31"
+          },
+          {
+            "id": "fi-102-b",
+            "text": "11 e 21"
+          },
+          {
+            "id": "fi-102-c",
+            "text": "40 e 50"
+          },
+          {
+            "id": "fi-102-d",
+            "text": "70 e 75"
+          }
+        ],
+        "correctAnswer": "fi-102-c"
+      },
+      {
+        "id": "fi-103",
+        "text": "Perché è sconsigliata la cancellazione diretta di documenti in SAP?",
+        "answers": [
+          {
+            "id": "fi-103-a",
+            "text": "Perché è proibito dalle normative contabili"
+          },
+          {
+            "id": "fi-103-b",
+            "text": "Perché un singolo documento è memorizzato in numerose tabelle e la cancellazione forzata può compromettere la consistenza dei dati"
+          },
+          {
+            "id": "fi-103-c",
+            "text": "Perché è necessaria un'autorizzazione speciale"
+          },
+          {
+            "id": "fi-103-d",
+            "text": "Perché rallenta il sistema"
+          }
+        ],
+        "correctAnswer": "fi-103-b"
+      },
+      {
+        "id": "fi-104",
+        "text": "Cosa si intende per 'stornare' una registrazione in SAP?",
+        "answers": [
+          {
+            "id": "fi-104-a",
+            "text": "Eliminare completamente una registrazione dal database"
+          },
+          {
+            "id": "fi-104-b",
+            "text": "Creare una seconda registrazione che annulla contabilmente la prima invertendo il dare e l'avere"
+          },
+          {
+            "id": "fi-104-c",
+            "text": "Bloccare una registrazione per impedirne la modifica"
+          },
+          {
+            "id": "fi-104-d",
+            "text": "Trasferire una registrazione da una società all'altra"
+          }
+        ],
+        "correctAnswer": "fi-104-b"
+      },
+      {
+        "id": "fi-105",
+        "text": "In SAP, a quale struttura organizzativa è associato un piano dei conti?",
+        "answers": [
+          {
+            "id": "fi-105-a",
+            "text": "Business Area"
+          },
+          {
+            "id": "fi-105-b",
+            "text": "Company Code (Società)"
+          },
+          {
+            "id": "fi-105-c",
+            "text": "Centro di costo"
+          },
+          {
+            "id": "fi-105-d",
+            "text": "Plant"
+          }
+        ],
+        "correctAnswer": "fi-105-b"
+      },
+      {
+        "id": "fi-106",
+        "text": "A cosa serve il 'gruppo stato campo' nell'anagrafica di un conto contabile?",
+        "answers": [
+          {
+            "id": "fi-106-a",
+            "text": "A definire lo stato attivo o inattivo del conto"
+          },
+          {
+            "id": "fi-106-b",
+            "text": "A stabilire quali campi sono obbligatori, facoltativi o nascosti durante una registrazione"
+          },
+          {
+            "id": "fi-106-c",
+            "text": "A determinare il tipo di conto (attivo o passivo)"
+          },
+          {
+            "id": "fi-106-d",
+            "text": "A definire il gruppo di utenti che può utilizzare il conto"
+          }
+        ],
+        "correctAnswer": "fi-106-b"
+      },
+      {
+        "id": "fi-107",
+        "text": "Quali sono le tipologie di conti economici in relazione al controllo di gestione?",
+        "answers": [
+          {
+            "id": "fi-107-a",
+            "text": "Conti attivi e conti passivi"
+          },
+          {
+            "id": "fi-107-b",
+            "text": "Conti primari, secondari e non rilevanti"
+          },
+          {
+            "id": "fi-107-c",
+            "text": "Conti di costo, conti di ricavo e conti patrimoniali"
+          },
+          {
+            "id": "fi-107-d",
+            "text": "Conti diretti e conti indiretti"
+          }
+        ],
+        "correctAnswer": "fi-107-b"
+      },
+      {
+        "id": "fi-108",
+        "text": "Qual è la differenza principale tra SAP ECC e S/4HANA nella gestione dei dati contabili?",
+        "answers": [
+          {
+            "id": "fi-108-a",
+            "text": "In S/4HANA i dati contabili sono distribuiti su più tabelle"
+          },
+          {
+            "id": "fi-108-b",
+            "text": "In S/4HANA non esiste integrazione tra contabilità generale e controlling"
+          },
+          {
+            "id": "fi-108-c",
+            "text": "In S/4HANA esiste una singola tabella centralizzata (ACDOCA) che riceve tutte le informazioni contabili"
+          },
+          {
+            "id": "fi-108-d",
+            "text": "In S/4HANA la contabilità è completamente separata dal controllo di gestione"
+          }
+        ],
+        "correctAnswer": "fi-108-c"
+      },
+      {
+        "id": "fi-109",
+        "text": "Qual è il significato delle chiavi contabili 01 e 31 in SAP?",
+        "answers": [
+          {
+            "id": "fi-109-a",
+            "text": "01 rappresenta il dare di un conto Co.Ge. e 31 rappresenta l'avere"
+          },
+          {
+            "id": "fi-109-b",
+            "text": "01 rappresenta il dare (fattura cliente) e 31 rappresenta l'avere (fattura fornitore)"
+          },
+          {
+            "id": "fi-109-c",
+            "text": "01 rappresenta un conto attivo e 31 un conto passivo"
+          },
+          {
+            "id": "fi-109-d",
+            "text": "01 rappresenta un conto cliente e 31 un conto fornitore"
+          }
+        ],
+        "correctAnswer": "fi-109-b"
+      },
+      {
+        "id": "fi-110",
+        "text": "Cosa si intende per 'intervalli di numerazione' dei documenti in SAP?",
+        "answers": [
+          {
+            "id": "fi-110-a",
+            "text": "L'intervallo di tempo tra un documento e l'altro"
+          },
+          {
+            "id": "fi-110-b",
+            "text": "La distanza tra i numeri di due documenti consecutivi"
+          },
+          {
+            "id": "fi-110-c",
+            "text": "Gli intervalli di numeri assegnati ai diversi tipi di documento per la numerazione progressiva"
+          },
+          {
+            "id": "fi-110-d",
+            "text": "La sequenza di numeri utilizzata per ordinare i documenti nei report"
+          }
+        ],
+        "correctAnswer": "fi-110-c"
+      },
+      {
+        "id": "fi-111",
+        "text": "Come vengono definiti i codici IVA in SAP?",
+        "answers": [
+          {
+            "id": "fi-111-a",
+            "text": "Sono predefiniti nel sistema e non possono essere modificati"
+          },
+          {
+            "id": "fi-111-b",
+            "text": "Sono definiti in base alla normativa fiscale e alle esigenze specifiche del cliente"
+          },
+          {
+            "id": "fi-111-c",
+            "text": "Sono sempre gli stessi per tutti i paesi"
+          },
+          {
+            "id": "fi-111-d",
+            "text": "Possono essere utilizzati indifferentemente per acquisti e vendite"
+          }
+        ],
+        "correctAnswer": "fi-111-b"
+      },
+      {
+        "id": "fi-112",
+        "text": "Cosa avviene in SAP al momento dell'esecuzione di un pagamento automatico?",
+        "answers": [
+          {
+            "id": "fi-112-a",
+            "text": "Viene solo creato un file per la banca"
+          },
+          {
+            "id": "fi-112-b",
+            "text": "Vengono solo generate le scritture contabili"
+          },
+          {
+            "id": "fi-112-c",
+            "text": "Vengono create le scritture contabili e generato il file per la banca"
+          },
+          {
+            "id": "fi-112-d",
+            "text": "Viene solo inviata una email al fornitore"
+          }
+        ],
+        "correctAnswer": "fi-112-c"
+      },
+      {
+        "id": "fi-113",
+        "text": "Cosa rappresenta il 'numero documento FI' in SAP?",
+        "answers": [
+          {
+            "id": "fi-113-a",
+            "text": "Un numero arbitrario inserito dall'utente"
+          },
+          {
+            "id": "fi-113-b",
+            "text": "Il criterio principale per la ricerca delle registrazioni nel sistema"
+          },
+          {
+            "id": "fi-113-c",
+            "text": "Un codice che identifica solo le fatture clienti"
+          },
+          {
+            "id": "fi-113-d",
+            "text": "Il riferimento alla fattura del fornitore"
+          }
+        ],
+        "correctAnswer": "fi-113-b"
+      },
+      {
+        "id": "fi-114",
+        "text": "Come sono gestiti i periodi contabili in SAP?",
+        "answers": [
+          {
+            "id": "fi-114-a",
+            "text": "Sono fissi e uguali per tutte le società"
+          },
+          {
+            "id": "fi-114-b",
+            "text": "Tramite la variante periodi contabili che può essere aperta o chiusa per controllare quando è possibile effettuare registrazioni"
+          },
+          {
+            "id": "fi-114-c",
+            "text": "Possono essere modificati solo dagli sviluppatori"
+          },
+          {
+            "id": "fi-114-d",
+            "text": "Non è possibile chiudere un periodo contabile in SAP"
+          }
+        ],
+        "correctAnswer": "fi-114-b"
+      },
+      {
+        "id": "fi-115",
+        "text": "Cosa rappresenta il 'protocollo IVA' in Italia per le fatture passive?",
+        "answers": [
+          {
+            "id": "fi-115-a",
+            "text": "Un codice arbitrario assegnato dall'azienda"
+          },
+          {
+            "id": "fi-115-b",
+            "text": "Un numero assegnato dall'Agenzia delle Entrate"
+          },
+          {
+            "id": "fi-115-c",
+            "text": "Il numero di documento FI, vincolato dalla normativa italiana a seguire una numerazione sequenziale in base alla data di registrazione"
+          },
+          {
+            "id": "fi-115-d",
+            "text": "Il numero della fattura originale del fornitore"
+          }
+        ],
+        "correctAnswer": "fi-115-c"
+      },
+      {
+        "id": "fi-116",
+        "text": "Cosa si intende per 'match code' in SAP?",
+        "answers": [
+          {
+            "id": "fi-116-a",
+            "text": "Un codice per identificare in modo univoco un fornitore"
+          },
+          {
+            "id": "fi-116-b",
+            "text": "Un'icona con più quadratini che permette di visualizzare i valori esistenti nel sistema per un determinato campo"
+          },
+          {
+            "id": "fi-116-c",
+            "text": "Un parametro per confrontare due documenti"
+          },
+          {
+            "id": "fi-116-d",
+            "text": "Un codice per gestire le corrispondenze tra conti"
+          }
+        ],
+        "correctAnswer": "fi-116-b"
+      },
+      {
+        "id": "fi-117",
+        "text": "Cosa sono le 'validazioni' in SAP in relazione alla contabilità?",
+        "answers": [
+          {
+            "id": "fi-117-a",
+            "text": "Processi di verifica della password"
+          },
+          {
+            "id": "fi-117-b",
+            "text": "Meccanismi per controllare la correttezza delle operazioni, ad esempio sulla coerenza tra tipo documento e codice IVA"
+          },
+          {
+            "id": "fi-117-c",
+            "text": "Procedure di conferma dell'installazione di SAP"
+          },
+          {
+            "id": "fi-117-d",
+            "text": "Verifica della connessione al server"
+          }
+        ],
+        "correctAnswer": "fi-117-b"
+      },
+      {
+        "id": "fi-118",
+        "text": "Come viene gestito il libro giornale in SAP rispetto agli altri report?",
+        "answers": [
+          {
+            "id": "fi-118-a",
+            "text": "Come qualsiasi altro report, senza particolari restrizioni"
+          },
+          {
+            "id": "fi-118-b",
+            "text": "Con una procedura particolare (esecuzione di prova seguita da esecuzione definitiva), poiché il sistema memorizza l'ultima pagina stampata"
+          },
+          {
+            "id": "fi-118-c",
+            "text": "Non è disponibile in SAP"
+          },
+          {
+            "id": "fi-118-d",
+            "text": "Può essere generato solo dall'amministratore di sistema"
+          }
+        ],
+        "correctAnswer": "fi-118-b"
+      },
+      {
+        "id": "fi-119",
+        "text": "Cosa rappresenta l'app 'Report di Conformità' in SAP Fiori?",
+        "answers": [
+          {
+            "id": "fi-119-a",
+            "text": "Un'app per verificare la conformità normativa di SAP"
+          },
+          {
+            "id": "fi-119-b",
+            "text": "Un'app per gestire la reportistica fiscale in modo più moderno rispetto alla GUI"
+          },
+          {
+            "id": "fi-119-c",
+            "text": "Un'app per controllare la conformità al GDPR"
+          },
+          {
+            "id": "fi-119-d",
+            "text": "Un'app per verificare la conformità della configurazione SAP"
+          }
+        ],
+        "correctAnswer": "fi-119-b"
+      },
+      {
+        "id": "fi-120",
+        "text": "Come viene gestito il processo di fatturazione elettronica in SAP?",
+        "answers": [
+          {
+            "id": "fi-120-a",
+            "text": "Non è gestito in SAP"
+          },
+          {
+            "id": "fi-120-b",
+            "text": "Tramite il Cockpit eDocument"
+          },
+          {
+            "id": "fi-120-c",
+            "text": "Solo tramite sistemi esterni"
+          },
+          {
+            "id": "fi-120-d",
+            "text": "Tramite email automatiche"
+          }
+        ],
+        "correctAnswer": "fi-120-b"
+      },
+      {
+        "id": "fi-121",
+        "text": "Cosa si intende per 'Split Payment' nel contesto dell'IVA in SAP?",
+        "answers": [
+          {
+            "id": "fi-121-a",
+            "text": "La suddivisione di un pagamento in più rate"
+          },
+          {
+            "id": "fi-121-b",
+            "text": "Un meccanismo di pagamento dell'IVA applicato alle pubbliche amministrazioni per le vendite"
+          },
+          {
+            "id": "fi-121-c",
+            "text": "La separazione dell'IVA in diverse aliquote"
+          },
+          {
+            "id": "fi-121-d",
+            "text": "La suddivisione del pagamento tra diversi fornitori"
+          }
+        ],
+        "correctAnswer": "fi-121-b"
+      },
+      {
+        "id": "fi-122",
+        "text": "Come vengono gestiti i controlli sui dati anagrafici in SAP?",
+        "answers": [
+          {
+            "id": "fi-122-a",
+            "text": "Non esistono controlli sui dati anagrafici"
+          },
+          {
+            "id": "fi-122-b",
+            "text": "Solo tramite validazioni manuali"
+          },
+          {
+            "id": "fi-122-c",
+            "text": "Il sistema può effettuare controlli di plausibilità su dati come codice fiscale, partita IVA e IBAN"
+          },
+          {
+            "id": "fi-122-d",
+            "text": "Solo tramite sistemi esterni"
+          }
+        ],
+        "correctAnswer": "fi-122-c"
+      },
+      {
+        "id": "fi-123",
+        "text": "Come si applica la ritenuta d'acconto in SAP?",
+        "answers": [
+          {
+            "id": "fi-123-a",
+            "text": "Deve essere calcolata manualmente e inserita in ogni fattura"
+          },
+          {
+            "id": "fi-123-b",
+            "text": "SAP non gestisce la ritenuta d'acconto"
+          },
+          {
+            "id": "fi-123-c",
+            "text": "In base alle informazioni configurate nell'anagrafica del fornitore e a specifici codici, il sistema calcola e gestisce la ritenuta"
+          },
+          {
+            "id": "fi-123-d",
+            "text": "Viene gestita solo tramite un modulo separato"
+          }
+        ],
+        "correctAnswer": "fi-123-c"
+      },
+      {
+        "id": "fi-124",
+        "text": "In che modo SAP integra i diversi moduli?",
+        "answers": [
+          {
+            "id": "fi-124-a",
+            "text": "Non esiste integrazione tra i moduli"
+          },
+          {
+            "id": "fi-124-b",
+            "text": "Solo tramite report specifici"
+          },
+          {
+            "id": "fi-124-c",
+            "text": "Tramite anagrafiche condivise e processi automatici che generano registrazioni nei vari moduli"
+          },
+          {
+            "id": "fi-124-d",
+            "text": "Solo tramite interventi manuali"
+          }
+        ],
+        "correctAnswer": "fi-124-c"
+      },
+      {
+        "id": "fi-125",
+        "text": "Quale delle seguenti operazioni viene eseguita durante un processo di migrazione dati a SAP?",
+        "answers": [
+          {
+            "id": "fi-125-a",
+            "text": "Solo la migrazione di tutti i dati storici completi"
+          },
+          {
+            "id": "fi-125-b",
+            "text": "Mapping tra i codici dei dati del vecchio sistema e quelli di SAP e migrazione dei dati necessari"
+          },
+          {
+            "id": "fi-125-c",
+            "text": "Solo la creazione manuale dei dati essenziali"
+          },
+          {
+            "id": "fi-125-d",
+            "text": "Nessuna migrazione, si parte da zero"
+          }
+        ],
+        "correctAnswer": "fi-125-b"
+      },
+      {
+        "id": "fi-126",
+        "text": "Perché è importante gestire centralmente il piano dei conti in un gruppo con più società?",
+        "answers": [
+          {
+            "id": "fi-126-a",
+            "text": "Non è importante, ogni società dovrebbe gestire autonomamente i propri conti"
+          },
+          {
+            "id": "fi-126-b",
+            "text": "Per evitare la proliferazione di conti e garantire una maggiore coerenza"
+          },
+          {
+            "id": "fi-126-c",
+            "text": "Solo per rispettare i requisiti legali"
+          },
+          {
+            "id": "fi-126-d",
+            "text": "Solo per la reportistica fiscale"
+          }
+        ],
+        "correctAnswer": "fi-126-b"
+      },
+      {
+        "id": "fi-127",
+        "text": "Cosa succede quando si modifica l'anagrafica di un conto già utilizzato in registrazioni?",
+        "answers": [
+          {
+            "id": "fi-127-a",
+            "text": "Tutte le registrazioni precedenti vengono aggiornate automaticamente"
+          },
+          {
+            "id": "fi-127-b",
+            "text": "Non è possibile modificare l'anagrafica di un conto usato"
+          },
+          {
+            "id": "fi-127-c",
+            "text": "Le modifiche influiscono solo sulle nuove registrazioni, non su quelle già effettuate"
+          },
+          {
+            "id": "fi-127-d",
+            "text": "Tutte le registrazioni precedenti devono essere stornate e riregistrate"
+          }
+        ],
+        "correctAnswer": "fi-127-c"
+      },
+      {
+        "id": "fi-128",
+        "text": "Cosa avviene quando si copia una società esistente in SAP?",
+        "answers": [
+          {
+            "id": "fi-128-a",
+            "text": "Vengono copiati tutti i dati, compresi i movimenti contabili"
+          },
+          {
+            "id": "fi-128-b",
+            "text": "Vengono copiate le impostazioni di base (piano dei conti, metodi di pagamento) ma non le banche interne"
+          },
+          {
+            "id": "fi-128-c",
+            "text": "Viene copiata solo la struttura organizzativa"
+          },
+          {
+            "id": "fi-128-d",
+            "text": "Non è possibile copiare una società in SAP"
+          }
+        ],
+        "correctAnswer": "fi-128-b"
+      },
+      {
+        "id": "fi-129",
+        "text": "Come avviene la gestione dell'insoluto di una RIBA in SAP?",
+        "answers": [
+          {
+            "id": "fi-129-a",
+            "text": "Non viene gestita in SAP"
+          },
+          {
+            "id": "fi-129-b",
+            "text": "Viene semplicemente cancellata la RIBA"
+          },
+          {
+            "id": "fi-129-c",
+            "text": "La posizione del cliente viene riaperta"
+          },
+          {
+            "id": "fi-129-d",
+            "text": "Viene creato un nuovo cliente"
+          }
+        ],
+        "correctAnswer": "fi-129-c"
+      },
+      {
+        "id": "fi-130",
+        "text": "Come viene registrato il Cash Forecast in SAP?",
+        "answers": [
+          {
+            "id": "fi-130-a",
+            "text": "Solo manualmente"
+          },
+          {
+            "id": "fi-130-b",
+            "text": "Viene generato automaticamente già dalla creazione di un ordine di vendita o acquisto"
+          },
+          {
+            "id": "fi-130-c",
+            "text": "Solo alla registrazione della fattura"
+          },
+          {
+            "id": "fi-130-d",
+            "text": "Solo al momento del pagamento"
+          }
+        ],
+        "correctAnswer": "fi-130-b"
       }
     ]
 }

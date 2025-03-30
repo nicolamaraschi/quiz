@@ -2,5 +2,1731 @@
     "moduleId": "sd",
     "moduleName": "Sales and Distribution (SD)",
     "description": "Test sul ciclo di vendita, gestione ordini clienti e distribuzione.",
-    "questions": []
+    "questions": [
+        {
+            "id": "sd-1",
+            "text": "Cosa rappresenta il 'mandante' nella gerarchia organizzativa di SAP?",
+            "answers": [
+              {
+                "id": "sd-1-a",
+                "text": "Un cliente che richiede beni o servizi"
+              },
+              {
+                "id": "sd-1-b",
+                "text": "Il livello organizzativo di massimo livello caratterizzato da totale isolamento dei dati"
+              },
+              {
+                "id": "sd-1-c",
+                "text": "Un fornitore che opera per conto dell'azienda"
+              },
+              {
+                "id": "sd-1-d",
+                "text": "Una divisione di vendita specifica"
+              }
+            ],
+            "correctAnswer": "sd-1-b"
+          },
+          {
+            "id": "sd-2",
+            "text": "Quale componente organizzativa è responsabile del bilancio e delle dichiarazioni fiscali in SAP?",
+            "answers": [
+              {
+                "id": "sd-2-a",
+                "text": "Organizzazione Commerciale"
+              },
+              {
+                "id": "sd-2-b",
+                "text": "Mandante"
+              },
+              {
+                "id": "sd-2-c",
+                "text": "Società (Company Code)"
+              },
+              {
+                "id": "sd-2-d",
+                "text": "Area Vendite"
+              }
+            ],
+            "correctAnswer": "sd-2-c"
+          },
+          {
+            "id": "sd-3",
+            "text": "Quale delle seguenti è la corretta definizione dell'Organizzazione Commerciale in SAP SD?",
+            "answers": [
+              {
+                "id": "sd-3-a",
+                "text": "Un'entità legale autonoma responsabile del bilancio"
+              },
+              {
+                "id": "sd-3-b",
+                "text": "Un'unità strategica per la gestione vendite, distribuzione prodotti e definizione politiche commerciali"
+              },
+              {
+                "id": "sd-3-c",
+                "text": "Un raggruppamento omogeneo di prodotti o servizi"
+              },
+              {
+                "id": "sd-3-d",
+                "text": "Un'area geografica di vendita"
+              }
+            ],
+            "correctAnswer": "sd-3-b"
+          },
+          {
+            "id": "sd-4",
+            "text": "Quali delle seguenti è una tipologia di Canale Distributivo in SAP SD?",
+            "answers": [
+              {
+                "id": "sd-4-a",
+                "text": "Canale 01 - Produzione"
+              },
+              {
+                "id": "sd-4-b",
+                "text": "Canale 01 - Vendita Diretta"
+              },
+              {
+                "id": "sd-4-c",
+                "text": "Canale 01 - Finanziario"
+              },
+              {
+                "id": "sd-4-d",
+                "text": "Canale 01 - Marketing"
+              }
+            ],
+            "correctAnswer": "sd-4-b"
+          },
+          {
+            "id": "sd-5",
+            "text": "Cosa rappresenta il Settore Merceologico in SAP SD?",
+            "answers": [
+              {
+                "id": "sd-5-a",
+                "text": "Un'area geografica dove vengono venduti i prodotti"
+              },
+              {
+                "id": "sd-5-b",
+                "text": "Un canale di distribuzione specifico"
+              },
+              {
+                "id": "sd-5-c",
+                "text": "Un raggruppamento omogeneo di prodotti/servizi"
+              },
+              {
+                "id": "sd-5-d",
+                "text": "Una divisione amministrativa dell'azienda"
+              }
+            ],
+            "correctAnswer": "sd-5-c"
+          },
+          {
+            "id": "sd-6",
+            "text": "Qual è la definizione corretta di 'Area Vendite' in SAP SD?",
+            "answers": [
+              {
+                "id": "sd-6-a",
+                "text": "Un'area geografica dove opera l'azienda"
+              },
+              {
+                "id": "sd-6-b",
+                "text": "Una combinazione di Organizzazione Commerciale, Canale Distributivo e Settore Merceologico"
+              },
+              {
+                "id": "sd-6-c",
+                "text": "Un gruppo di clienti strategici"
+              },
+              {
+                "id": "sd-6-d",
+                "text": "Un dipartimento all'interno dell'azienda"
+              }
+            ],
+            "correctAnswer": "sd-6-b"
+          },
+          {
+            "id": "sd-7",
+            "text": "Quale ruolo del Business Partner (Cliente) in SAP S/4HANA contiene le informazioni commerciali specifiche?",
+            "answers": [
+              {
+                "id": "sd-7-a",
+                "text": "Ruolo Base (000000)"
+              },
+              {
+                "id": "sd-7-b",
+                "text": "Ruolo Societario (FLCU00)"
+              },
+              {
+                "id": "sd-7-c",
+                "text": "Ruolo Vendite (FLCU01)"
+              },
+              {
+                "id": "sd-7-d",
+                "text": "Ruolo Credito (UKM000)"
+              }
+            ],
+            "correctAnswer": "sd-7-c"
+          },
+          {
+            "id": "sd-8",
+            "text": "Quale ruolo del Business Partner definisce il limite di fido e le condizioni di pagamento?",
+            "answers": [
+              {
+                "id": "sd-8-a",
+                "text": "Ruolo Base (000000)"
+              },
+              {
+                "id": "sd-8-b",
+                "text": "Ruolo Societario (FLCU00)"
+              },
+              {
+                "id": "sd-8-c",
+                "text": "Ruolo Vendite (FLCU01)"
+              },
+              {
+                "id": "sd-8-d",
+                "text": "Ruolo Credito (UKM000)"
+              }
+            ],
+            "correctAnswer": "sd-8-b"
+          },
+          {
+            "id": "sd-9",
+            "text": "Quali dati vengono gestiti nel Ruolo Credito (UKM000) del Business Partner?",
+            "answers": [
+              {
+                "id": "sd-9-a",
+                "text": "Dati anagrafici generali"
+              },
+              {
+                "id": "sd-9-b",
+                "text": "Condizioni di spedizione e Incoterms"
+              },
+              {
+                "id": "sd-9-c",
+                "text": "Condizioni di pagamento e limite fido"
+              },
+              {
+                "id": "sd-9-d",
+                "text": "Valutazione rischio, monitoraggio esposizione e classificazione affidabilità creditizia"
+              }
+            ],
+            "correctAnswer": "sd-9-d"
+          },
+          {
+            "id": "sd-10",
+            "text": "Cosa contiene la Vista Base dell'anagrafica materiali in SAP?",
+            "answers": [
+              {
+                "id": "sd-10-a",
+                "text": "Informazioni sui fornitori e condizioni di approvvigionamento"
+              },
+              {
+                "id": "sd-10-b",
+                "text": "Descrizione generale del materiale, classificazione merceologica e unità di misura base"
+              },
+              {
+                "id": "sd-10-c",
+                "text": "Parametri commerciali specifici e listini di vendita"
+              },
+              {
+                "id": "sd-10-d",
+                "text": "Valorizzazioni economiche e centri di costo associati"
+              }
+            ],
+            "correctAnswer": "sd-10-b"
+          },
+          {
+            "id": "sd-11",
+            "text": "Quali informazioni sono contenute nella Vista Vendite dell'anagrafica materiali?",
+            "answers": [
+              {
+                "id": "sd-11-a",
+                "text": "Gestione giacenze e parametri di stoccaggio"
+              },
+              {
+                "id": "sd-11-b",
+                "text": "Valorizzazioni economiche e centri di costo"
+              },
+              {
+                "id": "sd-11-c",
+                "text": "Parametri commerciali specifici, listini e condizioni di vendita"
+              },
+              {
+                "id": "sd-11-d",
+                "text": "Informazioni sui fornitori e condizioni di approvvigionamento"
+              }
+            ],
+            "correctAnswer": "sd-11-c"
+          },
+          {
+            "id": "sd-12",
+            "text": "A cosa serve l'Info-Record Cliente/Materiale in SAP SD?",
+            "answers": [
+              {
+                "id": "sd-12-a",
+                "text": "A registrare i dati generali di tutti i materiali"
+              },
+              {
+                "id": "sd-12-b",
+                "text": "A creare una connessione specifica tra un cliente e un materiale specifico"
+              },
+              {
+                "id": "sd-12-c",
+                "text": "A memorizzare dati storici di acquisto"
+              },
+              {
+                "id": "sd-12-d",
+                "text": "A definire le politiche di prezzo generali"
+              }
+            ],
+            "correctAnswer": "sd-12-b"
+          },
+          {
+            "id": "sd-13",
+            "text": "Quale delle seguenti informazioni è tipicamente gestita nell'Info-Record Cliente/Materiale?",
+            "answers": [
+              {
+                "id": "sd-13-a",
+                "text": "Codice articolo cliente e priorità di consegna"
+              },
+              {
+                "id": "sd-13-b",
+                "text": "Solo il prezzo del materiale"
+              },
+              {
+                "id": "sd-13-c",
+                "text": "Solo i dati di stoccaggio"
+              },
+              {
+                "id": "sd-13-d",
+                "text": "Solo le specifiche tecniche"
+              }
+            ],
+            "correctAnswer": "sd-13-a"
+          },
+          {
+            "id": "sd-14",
+            "text": "Quale tipo di condizione rappresenta il prezzo base nello schema prezzi di SAP SD?",
+            "answers": [
+              {
+                "id": "sd-14-a",
+                "text": "TC01"
+              },
+              {
+                "id": "sd-14-b",
+                "text": "TC02"
+              },
+              {
+                "id": "sd-14-c",
+                "text": "TC03"
+              },
+              {
+                "id": "sd-14-d",
+                "text": "TC04"
+              }
+            ],
+            "correctAnswer": "sd-14-a"
+          },
+          {
+            "id": "sd-15",
+            "text": "Quale tipo di condizione rappresenta gli sconti nello schema prezzi di SAP SD?",
+            "answers": [
+              {
+                "id": "sd-15-a",
+                "text": "TC01"
+              },
+              {
+                "id": "sd-15-b",
+                "text": "TC02"
+              },
+              {
+                "id": "sd-15-c",
+                "text": "TC03"
+              },
+              {
+                "id": "sd-15-d",
+                "text": "TC04"
+              }
+            ],
+            "correctAnswer": "sd-15-b"
+          },
+          {
+            "id": "sd-16",
+            "text": "Come funziona la strategia di ricerca nelle sequenze di accesso in SAP SD?",
+            "answers": [
+              {
+                "id": "sd-16-a",
+                "text": "Dal più generico al più specifico"
+              },
+              {
+                "id": "sd-16-b",
+                "text": "Dal più specifico al più generico"
+              },
+              {
+                "id": "sd-16-c",
+                "text": "In ordine alfabetico"
+              },
+              {
+                "id": "sd-16-d",
+                "text": "In ordine cronologico"
+              }
+            ],
+            "correctAnswer": "sd-16-b"
+          },
+          {
+            "id": "sd-17",
+            "text": "Quali sono i componenti strutturali principali di un ordine di vendita in SAP SD?",
+            "answers": [
+              {
+                "id": "sd-17-a",
+                "text": "Solo testata e posizioni"
+              },
+              {
+                "id": "sd-17-b",
+                "text": "Testata, posizioni e schedulazione"
+              },
+              {
+                "id": "sd-17-c",
+                "text": "Testata, posizioni e fatturazione"
+              },
+              {
+                "id": "sd-17-d",
+                "text": "Solo posizioni e consegna"
+              }
+            ],
+            "correctAnswer": "sd-17-b"
+          },
+          {
+            "id": "sd-18",
+            "text": "Quale tipo di ordine si utilizza per gestire consegne ripetitive durante un periodo di tempo stabilito?",
+            "answers": [
+              {
+                "id": "sd-18-a",
+                "text": "Ordine Standard"
+              },
+              {
+                "id": "sd-18-b",
+                "text": "Ordine Spot"
+              },
+              {
+                "id": "sd-18-c",
+                "text": "Ordine Quadro"
+              },
+              {
+                "id": "sd-18-d",
+                "text": "Ordine Campionatura"
+              }
+            ],
+            "correctAnswer": "sd-18-c"
+          },
+          {
+            "id": "sd-19",
+            "text": "Quali controlli vengono effettuati durante la creazione di un ordine di vendita in SAP SD?",
+            "answers": [
+              {
+                "id": "sd-19-a",
+                "text": "Solo la completezza informativa"
+              },
+              {
+                "id": "sd-19-b",
+                "text": "Solo la disponibilità materiali"
+              },
+              {
+                "id": "sd-19-c",
+                "text": "Solo i limiti di credito"
+              },
+              {
+                "id": "sd-19-d",
+                "text": "Completezza informativa, disponibilità materiali, limiti di credito e coerenza tecnica"
+              }
+            ],
+            "correctAnswer": "sd-19-d"
+          },
+          {
+            "id": "sd-20",
+            "text": "Quale funzione partner identifica il soggetto che riceve fisicamente la merce?",
+            "answers": [
+              {
+                "id": "sd-20-a",
+                "text": "Committente (AG)"
+              },
+              {
+                "id": "sd-20-b",
+                "text": "Destinatario Merce (WE)"
+              },
+              {
+                "id": "sd-20-c",
+                "text": "Destinatario Fattura (RG)"
+              },
+              {
+                "id": "sd-20-d",
+                "text": "Pagatore (BP)"
+              }
+            ],
+            "correctAnswer": "sd-20-b"
+          },
+          {
+            "id": "sd-21",
+            "text": "Quale funzione partner identifica il soggetto intestatario della fattura?",
+            "answers": [
+              {
+                "id": "sd-21-a",
+                "text": "Committente (AG)"
+              },
+              {
+                "id": "sd-21-b",
+                "text": "Destinatario Merce (WE)"
+              },
+              {
+                "id": "sd-21-c",
+                "text": "Destinatario Fattura (RG)"
+              },
+              {
+                "id": "sd-21-d",
+                "text": "Agente (ZA)"
+              }
+            ],
+            "correctAnswer": "sd-21-c"
+          },
+          {
+            "id": "sd-22",
+            "text": "Quali sono i tipi di testi gestibili nei documenti di vendita SAP SD?",
+            "answers": [
+              {
+                "id": "sd-22-a",
+                "text": "Solo testi intestazione"
+              },
+              {
+                "id": "sd-22-b",
+                "text": "Solo testi posizione"
+              },
+              {
+                "id": "sd-22-c",
+                "text": "Testi intestazione, testi posizione e testi stampa"
+              },
+              {
+                "id": "sd-22-d",
+                "text": "Solo testi interni all'azienda"
+              }
+            ],
+            "correctAnswer": "sd-22-c"
+          },
+          {
+            "id": "sd-23",
+            "text": "Cosa rappresenta il Log Dati Incompleti in SAP SD?",
+            "answers": [
+              {
+                "id": "sd-23-a",
+                "text": "Un registro dei clienti inattivi"
+              },
+              {
+                "id": "sd-23-b",
+                "text": "Un meccanismo di rilevazione che verifica campi obbligatori e segnala incompletezze"
+              },
+              {
+                "id": "sd-23-c",
+                "text": "Un elenco dei materiali non più vendibili"
+              },
+              {
+                "id": "sd-23-d",
+                "text": "Un registro degli utenti non autorizzati"
+              }
+            ],
+            "correctAnswer": "sd-23-b"
+          },
+          {
+            "id": "sd-24",
+            "text": "Quale tipo di schedulazione calcola a ritroso dalla data di consegna in SAP SD?",
+            "answers": [
+              {
+                "id": "sd-24-a",
+                "text": "Forward Scheduling"
+              },
+              {
+                "id": "sd-24-b",
+                "text": "Backward Scheduling"
+              },
+              {
+                "id": "sd-24-c",
+                "text": "Direct Scheduling"
+              },
+              {
+                "id": "sd-24-d",
+                "text": "Manual Scheduling"
+              }
+            ],
+            "correctAnswer": "sd-24-b"
+          },
+          {
+            "id": "sd-25",
+            "text": "Quale tipo di schedulazione calcola in avanti dalla data di ordine in SAP SD?",
+            "answers": [
+              {
+                "id": "sd-25-a",
+                "text": "Forward Scheduling"
+              },
+              {
+                "id": "sd-25-b",
+                "text": "Backward Scheduling"
+              },
+              {
+                "id": "sd-25-c",
+                "text": "Direct Scheduling"
+              },
+              {
+                "id": "sd-25-d",
+                "text": "Manual Scheduling"
+              }
+            ],
+            "correctAnswer": "sd-25-a"
+          },
+          {
+            "id": "sd-26",
+            "text": "Come si definisce un'offerta commerciale in SAP SD?",
+            "answers": [
+              {
+                "id": "sd-26-a",
+                "text": "Un documento interno all'azienda"
+              },
+              {
+                "id": "sd-26-b",
+                "text": "Una proposta vincolante verso il cliente con definizione specifica di prodotti, prezzi e condizioni temporali"
+              },
+              {
+                "id": "sd-26-c",
+                "text": "Un documento che riguarda solo la logistica"
+              },
+              {
+                "id": "sd-26-d",
+                "text": "Un report statistico sulle vendite"
+              }
+            ],
+            "correctAnswer": "sd-26-b"
+          },
+          {
+            "id": "sd-27",
+            "text": "Quali sono le transazioni SAP per la gestione delle offerte commerciali?",
+            "answers": [
+              {
+                "id": "sd-27-a",
+                "text": "VA01, VA02, VA03"
+              },
+              {
+                "id": "sd-27-b",
+                "text": "VA21, VA22, VA23"
+              },
+              {
+                "id": "sd-27-c",
+                "text": "VL01, VL02, VL03"
+              },
+              {
+                "id": "sd-27-d",
+                "text": "VF01, VF02, VF03"
+              }
+            ],
+            "correctAnswer": "sd-27-b"
+          },
+          {
+            "id": "sd-28",
+            "text": "Quale documento viene creato successivamente all'ordine di vendita per gestire la spedizione?",
+            "answers": [
+              {
+                "id": "sd-28-a",
+                "text": "Documento di consegna"
+              },
+              {
+                "id": "sd-28-b",
+                "text": "Fattura"
+              },
+              {
+                "id": "sd-28-c",
+                "text": "Conferma d'ordine"
+              },
+              {
+                "id": "sd-28-d",
+                "text": "Preventivo"
+              }
+            ],
+            "correctAnswer": "sd-28-a"
+          },
+          {
+            "id": "sd-29",
+            "text": "Quali sono le fasi operative principali della gestione di consegna e spedizione?",
+            "answers": [
+              {
+                "id": "sd-29-a",
+                "text": "Solo creazione consegna e prelievo merce"
+              },
+              {
+                "id": "sd-29-b",
+                "text": "Creazione consegna, prelievo merce, preparazione e spedizione"
+              },
+              {
+                "id": "sd-29-c",
+                "text": "Solo prelievo merce e spedizione"
+              },
+              {
+                "id": "sd-29-d",
+                "text": "Solo preparazione e spedizione"
+              }
+            ],
+            "correctAnswer": "sd-29-b"
+          },
+          {
+            "id": "sd-30",
+            "text": "Quali sono le principali transazioni GUI per la gestione delle consegne in SAP SD?",
+            "answers": [
+              {
+                "id": "sd-30-a",
+                "text": "VA01N, VA02N, VA03N"
+              },
+              {
+                "id": "sd-30-b",
+                "text": "VF01, VF02, VF03"
+              },
+              {
+                "id": "sd-30-c",
+                "text": "VL01N, VL02N, VL03N"
+              },
+              {
+                "id": "sd-30-d",
+                "text": "MM01, MM02, MM03"
+              }
+            ],
+            "correctAnswer": "sd-30-c"
+          },
+          {
+            "id": "sd-31",
+            "text": "Quale impatto ha l'uscita merce sul magazzino in SAP?",
+            "answers": [
+              {
+                "id": "sd-31-a",
+                "text": "Nessun impatto"
+              },
+              {
+                "id": "sd-31-b",
+                "text": "Riduzione stock e aggiornamento giacenze"
+              },
+              {
+                "id": "sd-31-c",
+                "text": "Solo registrazione statistica"
+              },
+              {
+                "id": "sd-31-d",
+                "text": "Aumento dello stock disponibile"
+              }
+            ],
+            "correctAnswer": "sd-31-b"
+          },
+          {
+            "id": "sd-32",
+            "text": "Come vengono gestite le partite e serie nella gestione consegne di SAP SD?",
+            "answers": [
+              {
+                "id": "sd-32-a",
+                "text": "Non possono essere gestite"
+              },
+              {
+                "id": "sd-32-b",
+                "text": "Solo manualmente a posteriori"
+              },
+              {
+                "id": "sd-32-c",
+                "text": "Tramite assegnazione multipla per le partite e identificazione univoca per i numeri di serie"
+              },
+              {
+                "id": "sd-32-d",
+                "text": "Solo per prodotti specifici"
+              }
+            ],
+            "correctAnswer": "sd-32-c"
+          },
+          {
+            "id": "sd-33",
+            "text": "Come si definisce un piano dei conti operativo in SAP?",
+            "answers": [
+              {
+                "id": "sd-33-a",
+                "text": "Un piano dei conti utilizzato esclusivamente per operazioni giornaliere"
+              },
+              {
+                "id": "sd-33-b",
+                "text": "Un piano dei conti che tutte le società utilizzano per le rilevazioni contabili"
+              },
+              {
+                "id": "sd-33-c",
+                "text": "Un piano dei conti in formato cartaceo"
+              },
+              {
+                "id": "sd-33-d",
+                "text": "Un piano dei conti temporaneo"
+              }
+            ],
+            "correctAnswer": "sd-33-b"
+          },
+          {
+            "id": "sd-34",
+            "text": "Qual è il significato di 'Incoterms' nella gestione vendite SAP?",
+            "answers": [
+              {
+                "id": "sd-34-a",
+                "text": "International Commercial Terms che definiscono le responsabilità di compratore e venditore nelle transazioni internazionali"
+              },
+              {
+                "id": "sd-34-b",
+                "text": "Interni Commerciali Termini, un sistema di classificazione interno di SAP"
+              },
+              {
+                "id": "sd-34-c",
+                "text": "In-Company Terms, regole interne all'azienda"
+              },
+              {
+                "id": "sd-34-d",
+                "text": "Inclusive Contract Terms, termini contrattuali inclusivi"
+              }
+            ],
+            "correctAnswer": "sd-34-a"
+          },
+          {
+            "id": "sd-35",
+            "text": "Quale delle seguenti unità organizzative SAP definisce i limiti legali e fiscali?",
+            "answers": [
+              {
+                "id": "sd-35-a",
+                "text": "Società (Company Code)"
+              },
+              {
+                "id": "sd-35-b",
+                "text": "Organizzazione Commerciale"
+              },
+              {
+                "id": "sd-35-c",
+                "text": "Canale Distributivo"
+              },
+              {
+                "id": "sd-35-d",
+                "text": "Settore Merceologico"
+              }
+            ],
+            "correctAnswer": "sd-35-a"
+          },
+          {
+            "id": "sd-36",
+            "text": "Qual è la relazione tra Organizzazione Commerciale e Società (Company Code) in SAP?",
+            "answers": [
+              {
+                "id": "sd-36-a",
+                "text": "Nessuna relazione, operano in modo indipendente"
+              },
+              {
+                "id": "sd-36-b",
+                "text": "Un'Organizzazione Commerciale può essere associata a più Società"
+              },
+              {
+                "id": "sd-36-c",
+                "text": "Un'Organizzazione Commerciale è associabile a una sola Società"
+              },
+              {
+                "id": "sd-36-d",
+                "text": "Una Società può contenere solo un'Organizzazione Commerciale"
+              }
+            ],
+            "correctAnswer": "sd-36-c"
+          },
+          {
+            "id": "sd-37",
+            "text": "Quali tipi di unità di misura possono essere gestiti per un materiale in SAP SD?",
+            "answers": [
+              {
+                "id": "sd-37-a",
+                "text": "Solo unità base"
+              },
+              {
+                "id": "sd-37-b",
+                "text": "Unità base e un'unica unità alternativa"
+              },
+              {
+                "id": "sd-37-c",
+                "text": "Unità base e molteplici unità alternative con conversioni dinamiche"
+              },
+              {
+                "id": "sd-37-d",
+                "text": "Solo unità di vendita"
+              }
+            ],
+            "correctAnswer": "sd-37-c"
+          },
+          {
+            "id": "sd-38",
+            "text": "Come funziona la determinazione automatica dei prezzi in SAP SD?",
+            "answers": [
+              {
+                "id": "sd-38-a",
+                "text": "Solo in base al cliente"
+              },
+              {
+                "id": "sd-38-b",
+                "text": "Solo in base al materiale"
+              },
+              {
+                "id": "sd-38-c",
+                "text": "In base a un'unica tabella prezzi fissa"
+              },
+              {
+                "id": "sd-38-d",
+                "text": "Tramite sequenze di accesso che cercano dal più specifico al più generico"
+              }
+            ],
+            "correctAnswer": "sd-38-d"
+          },
+          {
+            "id": "sd-39",
+            "text": "In quale vista dell'anagrafica materiali si definiscono i parametri relativi alla vendita?",
+            "answers": [
+              {
+                "id": "sd-39-a",
+                "text": "Vista Base"
+              },
+              {
+                "id": "sd-39-b",
+                "text": "Vista Acquisti"
+              },
+              {
+                "id": "sd-39-c",
+                "text": "Vista Vendite"
+              },
+              {
+                "id": "sd-39-d",
+                "text": "Vista Contabile"
+              }
+            ],
+            "correctAnswer": "sd-39-c"
+          },
+          {
+            "id": "sd-40",
+            "text": "Come funziona la gestione dei testi nell'ordine di vendita SAP?",
+            "answers": [
+              {
+                "id": "sd-40-a",
+                "text": "I testi possono essere inseriti solo manualmente"
+              },
+              {
+                "id": "sd-40-b",
+                "text": "I testi possono essere inseriti manualmente, automaticamente da anagrafica o da template predefiniti"
+              },
+              {
+                "id": "sd-40-c",
+                "text": "I testi non possono essere modificati una volta inseriti"
+              },
+              {
+                "id": "sd-40-d",
+                "text": "I testi sono sempre derivati automaticamente dalle anagrafiche"
+              }
+            ],
+            "correctAnswer": "sd-40-b"
+          },
+          {
+            "id": "sd-41",
+            "text": "Cosa rappresenta una classificazione 'testo interno' nei documenti di vendita SAP?",
+            "answers": [
+              {
+                "id": "sd-41-a",
+                "text": "Testo visibile solo per usi interni all'azienda"
+              },
+              {
+                "id": "sd-41-b",
+                "text": "Testo che appare solo nella stampa per i clienti"
+              },
+              {
+                "id": "sd-41-c",
+                "text": "Testo che descrive le caratteristiche interne di un prodotto"
+              },
+              {
+                "id": "sd-41-d",
+                "text": "Testo che descrive i processi interni di produzione"
+              }
+            ],
+            "correctAnswer": "sd-41-a"
+          },
+          {
+            "id": "sd-42",
+            "text": "Quali parametri temporali vengono utilizzati nella schedulazione delle consegne in SAP SD?",
+            "answers": [
+              {
+                "id": "sd-42-a",
+                "text": "Solo il tempo di transito"
+              },
+              {
+                "id": "sd-42-b",
+                "text": "Solo il tempo di caricamento"
+              },
+              {
+                "id": "sd-42-c",
+                "text": "Tempo transito, tempo caricamento, tempo prelievo/imballaggio e lead time trasporto"
+              },
+              {
+                "id": "sd-42-d",
+                "text": "Solo la data di consegna richiesta dal cliente"
+              }
+            ],
+            "correctAnswer": "sd-42-c"
+          },
+          {
+            "id": "sd-43",
+            "text": "Cosa rappresenta un fabbisogno diretto in SAP SD?",
+            "answers": [
+              {
+                "id": "sd-43-a",
+                "text": "Una richiesta generica di materiale"
+              },
+              {
+                "id": "sd-43-b",
+                "text": "Un fabbisogno previsionale non collegato a ordini specifici"
+              },
+              {
+                "id": "sd-43-c",
+                "text": "Un fabbisogno collegato a un ordine specifico con immediata programmazione"
+              },
+              {
+                "id": "sd-43-d",
+                "text": "Un'esigenza di produzione interna"
+              }
+            ],
+            "correctAnswer": "sd-43-c"
+          },
+          {
+            "id": "sd-44",
+            "text": "Come vengono gestiti gli sconti volume nel sistema di pricing SAP SD?",
+            "answers": [
+              {
+                "id": "sd-44-a",
+                "text": "Non possono essere gestiti"
+              },
+              {
+                "id": "sd-44-b",
+                "text": "Solo come importi fissi"
+              },
+              {
+                "id": "sd-44-c",
+                "text": "Come condizioni di tipo TC02 con definizione di scaglionamenti basati sulle quantità"
+              },
+              {
+                "id": "sd-44-d",
+                "text": "Solo come percentuali fisse per cliente"
+              }
+            ],
+            "correctAnswer": "sd-44-c"
+          },
+          {
+            "id": "sd-45",
+            "text": "Quale transazione si utilizza per verificare la disponibilità dei materiali in SAP?",
+            "answers": [
+              {
+                "id": "sd-45-a",
+                "text": "MD04"
+              },
+              {
+                "id": "sd-45-b",
+                "text": "VA01"
+              },
+              {
+                "id": "sd-45-c",
+                "text": "VL01N"
+              },
+              {
+                "id": "sd-45-d",
+                "text": "MM03"
+              }
+            ],
+            "correctAnswer": "sd-45-a"
+          },
+          {
+            "id": "sd-46",
+            "text": "Quale funzionalità permette di monitorare le consegne in SAP SD?",
+            "answers": [
+              {
+                "id": "sd-46-a",
+                "text": "VA05"
+              },
+              {
+                "id": "sd-46-b",
+                "text": "VL06O"
+              },
+              {
+                "id": "sd-46-c",
+                "text": "VF04"
+              },
+              {
+                "id": "sd-46-d",
+                "text": "ME23N"
+              }
+            ],
+            "correctAnswer": "sd-46-b"
+          },
+          {
+            "id": "sd-47",
+            "text": "Quali impatti ha la registrazione dell'uscita merce in SAP?",
+            "answers": [
+              {
+                "id": "sd-47-a",
+                "text": "Solo sulla contabilità"
+              },
+              {
+                "id": "sd-47-b",
+                "text": "Solo sul magazzino"
+              },
+              {
+                "id": "sd-47-c",
+                "text": "Impatti su magazzino, contabilità e produzione"
+              },
+              {
+                "id": "sd-47-d",
+                "text": "Non ha impatti significativi"
+              }
+            ],
+            "correctAnswer": "sd-47-c"
+          },
+          {
+            "id": "sd-48",
+            "text": "Come può essere creato un documento di consegna in SAP SD?",
+            "answers": [
+              {
+                "id": "sd-48-a",
+                "text": "Solo manualmente tramite VL01N"
+              },
+              {
+                "id": "sd-48-b",
+                "text": "Solo automaticamente dall'ordine"
+              },
+              {
+                "id": "sd-48-c",
+                "text": "Può essere creato sia manualmente che derivato automaticamente da un ordine"
+              },
+              {
+                "id": "sd-48-d",
+                "text": "Non è possibile creare documenti di consegna"
+              }
+            ],
+            "correctAnswer": "sd-48-c"
+          },
+          {
+            "id": "sd-49",
+            "text": "Cosa rappresenta la transazione VL10C in SAP SD?",
+            "answers": [
+              {
+                "id": "sd-49-a",
+                "text": "Visualizzazione di un ordine di vendita"
+              },
+              {
+                "id": "sd-49-b",
+                "text": "Creazione manuale di una consegna"
+              },
+              {
+                "id": "sd-49-c",
+                "text": "Elaborazione collettiva di consegne a partire da ordini"
+              },
+              {
+                "id": "sd-49-d",
+                "text": "Modifica di una fattura"
+              }
+            ],
+            "correctAnswer": "sd-49-c"
+          },
+          {
+            "id": "sd-50",
+            "text": "Quali controlli vengono effettuati durante la creazione di un'offerta commerciale in SAP?",
+            "answers": [
+              {
+                "id": "sd-50-a",
+                "text": "Nessun controllo"
+              },
+              {
+                "id": "sd-50-b",
+                "text": "Solo controllo di disponibilità materiali"
+              },
+              {
+                "id": "sd-50-c",
+                "text": "Completezza dati, validità cliente, materiale e condizioni"
+              },
+              {
+                "id": "sd-50-d",
+                "text": "Solo controllo limiti di credito"
+              }
+            ],
+            "correctAnswer": "sd-50-c"
+          },
+          {
+            "id": "sd-51",
+            "text": "Cosa rappresenta il ciclo di vita di un'offerta commerciale in SAP SD?",
+            "answers": [
+              {
+                "id": "sd-51-a",
+                "text": "Solo creazione e accettazione"
+              },
+              {
+                "id": "sd-51-b",
+                "text": "Creazione, accettazione o rifiuto"
+              },
+              {
+                "id": "sd-51-c",
+                "text": "Solo creazione e modifica"
+              },
+              {
+                "id": "sd-51-d",
+                "text": "Non esiste un ciclo di vita per le offerte"
+              }
+            ],
+            "correctAnswer": "sd-51-b"
+          },
+          {
+            "id": "sd-52",
+            "text": "Cosa si intende per 'gruppo merceologico' nell'anagrafica materiali SAP?",
+            "answers": [
+              {
+                "id": "sd-52-a",
+                "text": "Un codice esclusivamente per la contabilità"
+              },
+              {
+                "id": "sd-52-b",
+                "text": "Un raggruppamento basato su tipologia prodotto, origine merceologica o destinazione commerciale"
+              },
+              {
+                "id": "sd-52-c",
+                "text": "Un campo obbligatorio senza significato specifico"
+              },
+              {
+                "id": "sd-52-d",
+                "text": "Un codice per identificare i fornitori"
+              }
+            ],
+            "correctAnswer": "sd-52-b"
+          },
+          {
+            "id": "sd-53",
+            "text": "Come vengono gestite le classificazioni fiscali dei materiali in SAP SD?",
+            "answers": [
+              {
+                "id": "sd-53-a",
+                "text": "Non possono essere gestite"
+              },
+              {
+                "id": "sd-53-b",
+                "text": "Tramite classificazione IVA e codici tariffari per la gestione import/export"
+              },
+              {
+                "id": "sd-53-c",
+                "text": "Solo manualmente per ogni documento"
+              },
+              {
+                "id": "sd-53-d",
+                "text": "Solo a livello di società"
+              }
+            ],
+            "correctAnswer": "sd-53-b"
+          },
+          {
+            "id": "sd-54",
+            "text": "Quale funzione consente di monitorare gli ordini di vendita in SAP SD?",
+            "answers": [
+              {
+                "id": "sd-54-a",
+                "text": "VA05"
+              },
+              {
+                "id": "sd-54-b",
+                "text": "VL06O"
+              },
+              {
+                "id": "sd-54-c",
+                "text": "VF04"
+              },
+              {
+                "id": "sd-54-d",
+                "text": "ME23N"
+              }
+            ],
+            "correctAnswer": "sd-54-a"
+          },
+          {
+            "id": "sd-55",
+            "text": "Come vengono gestiti i diversi tipi di documento in SAP SD?",
+            "answers": [
+              {
+                "id": "sd-55-a",
+                "text": "Non possono essere personalizzati"
+              },
+              {
+                "id": "sd-55-b",
+                "text": "Tramite customizing che definisce tipi documento, categorie posizione e workflow personalizzati"
+              },
+              {
+                "id": "sd-55-c",
+                "text": "Solo attraverso interventi tecnici ABAP"
+              },
+              {
+                "id": "sd-55-d",
+                "text": "Solo con l'assistenza di SAP"
+              }
+            ],
+            "correctAnswer": "sd-55-b"
+          },
+          {
+            "id": "sd-56",
+            "text": "Cosa rappresenta la 'divisione' nella struttura organizzativa SAP SD?",
+            "answers": [
+              {
+                "id": "sd-56-a",
+                "text": "Un'unità organizzativa responsabile di determinati prodotti o linee di business"
+              },
+              {
+                "id": "sd-56-b",
+                "text": "Un reparto all'interno dell'azienda"
+              },
+              {
+                "id": "sd-56-c",
+                "text": "Un diverso tipo di canale distributivo"
+              },
+              {
+                "id": "sd-56-d",
+                "text": "Un'area geografica di vendita"
+              }
+            ],
+            "correctAnswer": "sd-56-a"
+          },
+          {
+            "id": "sd-57",
+            "text": "Come viene calcolata la data di consegna richiesta in un ordine di vendita SAP?",
+            "answers": [
+              {
+                "id": "sd-57-a",
+                "text": "Sempre manualmente dall'utente"
+              },
+              {
+                "id": "sd-57-b",
+                "text": "Automaticamente in base a data ordine più tempo di consegna standard"
+              },
+              {
+                "id": "sd-57-c",
+                "text": "Può essere inserita manualmente o calcolata in base a parametri di schedulazione configurati"
+              },
+              {
+                "id": "sd-57-d",
+                "text": "Sempre identica alla data dell'ordine"
+              }
+            ],
+            "correctAnswer": "sd-57-c"
+          },
+          {
+            "id": "sd-58",
+            "text": "Quale impatto ha l'impostazione della 'variante di prezzo' nell'anagrafica del materiale?",
+            "answers": [
+              {
+                "id": "sd-58-a",
+                "text": "Nessun impatto"
+              },
+              {
+                "id": "sd-58-b",
+                "text": "Determina quali condizioni di prezzo e sconti sono applicabili al materiale"
+              },
+              {
+                "id": "sd-58-c",
+                "text": "Influisce solo sull'aspetto grafico dei listini"
+              },
+              {
+                "id": "sd-58-d",
+                "text": "Determina solo la valuta da utilizzare"
+              }
+            ],
+            "correctAnswer": "sd-58-b"
+          },
+          {
+            "id": "sd-59",
+            "text": "Qual è la funzione della transazione VA01 in SAP SD?",
+            "answers": [
+              {
+                "id": "sd-59-a",
+                "text": "Creazione di un ordine di vendita"
+              },
+              {
+                "id": "sd-59-b",
+                "text": "Creazione di un'offerta"
+              },
+              {
+                "id": "sd-59-c",
+                "text": "Creazione di una consegna"
+              },
+              {
+                "id": "sd-59-d",
+                "text": "Creazione di una fattura"
+              }
+            ],
+            "correctAnswer": "sd-59-a"
+          },
+          {
+            "id": "sd-60",
+            "text": "Come funziona il blocco di credito in SAP SD?",
+            "answers": [
+              {
+                "id": "sd-60-a",
+                "text": "Non esiste funzionalità di blocco credito"
+              },
+              {
+                "id": "sd-60-b",
+                "text": "Un ordine può essere bloccato automaticamente se supera il limite di credito del cliente"
+              },
+              {
+                "id": "sd-60-c",
+                "text": "Solo la fatturazione può essere bloccata, non l'ordine"
+              },
+              {
+                "id": "sd-60-d",
+                "text": "Il blocco può essere applicato solo manualmente"
+              }
+            ],
+            "correctAnswer": "sd-60-b"
+          },
+          {
+            "id": "sd-61",
+            "text": "Quale funzione permette di convertire un'offerta in ordine di vendita in SAP SD?",
+            "answers": [
+              {
+                "id": "sd-61-a",
+                "text": "Non è possibile convertire un'offerta in ordine"
+              },
+              {
+                "id": "sd-61-b",
+                "text": "Funzione standard disponibile nell'offerta per copiarla in un ordine di vendita"
+              },
+              {
+                "id": "sd-61-c",
+                "text": "È necessario ricreare manualmente tutti i dati"
+              },
+              {
+                "id": "sd-61-d",
+                "text": "Solo attraverso un programma batch notturno"
+              }
+            ],
+            "correctAnswer": "sd-61-b"
+          },
+          {
+            "id": "sd-62",
+            "text": "Come viene gestita la divisione del credito tra le varie società del gruppo in SAP SD?",
+            "answers": [
+              {
+                "id": "sd-62-a",
+                "text": "Non è possibile gestire il credito tra società"
+              },
+              {
+                "id": "sd-62-b",
+                "text": "Tramite una gestione centralizzata del credito che permette di definire limiti di credito per gruppo cliente o per singola società"
+              },
+              {
+                "id": "sd-62-c",
+                "text": "Solo manualmente tramite accordi tra le società"
+              },
+              {
+                "id": "sd-62-d",
+                "text": "Il credito è sempre gestito individualmente per società"
+              }
+            ],
+            "correctAnswer": "sd-62-b"
+          },
+          {
+            "id": "sd-63",
+            "text": "Come viene gestita la determinazione del magazzino di prelievo in SAP SD?",
+            "answers": [
+              {
+                "id": "sd-63-a",
+                "text": "Sempre manualmente dall'utente"
+              },
+              {
+                "id": "sd-63-b",
+                "text": "Automaticamente in base a regole configurate come prossimità al cliente o disponibilità materiale"
+              },
+              {
+                "id": "sd-63-c",
+                "text": "Sempre dal magazzino principale"
+              },
+              {
+                "id": "sd-63-d",
+                "text": "Non è configurabile"
+              }
+            ],
+            "correctAnswer": "sd-63-b"
+          },
+          {
+            "id": "sd-64",
+            "text": "Quali transazioni vengono utilizzate per la creazione delle fatture clienti in SAP SD?",
+            "answers": [
+              {
+                "id": "sd-64-a",
+                "text": "VA01, VA02, VA03"
+              },
+              {
+                "id": "sd-64-b",
+                "text": "VL01N, VL02N, VL03N"
+              },
+              {
+                "id": "sd-64-c",
+                "text": "VF01, VF02, VF03"
+              },
+              {
+                "id": "sd-64-d",
+                "text": "FB01, FB02, FB03"
+              }
+            ],
+            "correctAnswer": "sd-64-c"
+          },
+          {
+            "id": "sd-65",
+            "text": "Come vengono gestiti i listini prezzi in SAP SD?",
+            "answers": [
+              {
+                "id": "sd-65-a",
+                "text": "Solo come prezzi fissi per materiale"
+              },
+              {
+                "id": "sd-65-b",
+                "text": "Tramite record di condizione che possono essere basati su varie dimensioni come cliente, materiale, canale, quantità"
+              },
+              {
+                "id": "sd-65-c",
+                "text": "Solo tramite importazione da sistemi esterni"
+              },
+              {
+                "id": "sd-65-d",
+                "text": "Solo a livello di gruppo clienti"
+              }
+            ],
+            "correctAnswer": "sd-65-b"
+          },
+          {
+            "id": "sd-66",
+            "text": "Come funziona la determinazione delle condizioni di pagamento in SAP SD?",
+            "answers": [
+              {
+                "id": "sd-66-a",
+                "text": "Vengono sempre inserite manualmente"
+              },
+              {
+                "id": "sd-66-b",
+                "text": "Vengono derivate automaticamente dall'anagrafica cliente e possono essere modificate nel documento"
+              },
+              {
+                "id": "sd-66-c",
+                "text": "Sono sempre fisse per tutta l'azienda"
+              },
+              {
+                "id": "sd-66-d",
+                "text": "Vengono determinate solo a livello di fatturazione"
+              }
+            ],
+            "correctAnswer": "sd-66-b"
+          },
+          {
+            "id": "sd-67",
+            "text": "Come vengono gestiti i motivi di rifiuto di un'offerta in SAP SD?",
+            "answers": [
+              {
+                "id": "sd-67-a",
+                "text": "Non possono essere registrati"
+              },
+              {
+                "id": "sd-67-b",
+                "text": "Vengono registrati tramite codici predefiniti configurabili per analisi successive"
+              },
+              {
+                "id": "sd-67-c",
+                "text": "Solo come note di testo libero"
+              },
+              {
+                "id": "sd-67-d",
+                "text": "Solo tramite comunicazione verbale"
+              }
+            ],
+            "correctAnswer": "sd-67-b"
+          },
+          {
+            "id": "sd-68",
+            "text": "Come funziona la gestione delle autorizzazioni nell'area vendite di SAP?",
+            "answers": [
+              {
+                "id": "sd-68-a",
+                "text": "Tutti gli utenti hanno accesso completo"
+              },
+              {
+                "id": "sd-68-b",
+                "text": "Le autorizzazioni possono essere configurate a livello di organizzazione commerciale, ufficio vendite, area vendite"
+              },
+              {
+                "id": "sd-68-c",
+                "text": "Solo per transazione, senza possibilità di filtro organizzativo"
+              },
+              {
+                "id": "sd-68-d",
+                "text": "Solo per tipo di documento"
+              }
+            ],
+            "correctAnswer": "sd-68-b"
+          },
+          {
+            "id": "sd-69",
+            "text": "Come vengono gestiti i lotti nei documenti di vendita SAP?",
+            "answers": [
+              {
+                "id": "sd-69-a",
+                "text": "Non possono essere gestiti"
+              },
+              {
+                "id": "sd-69-b",
+                "text": "Possono essere determinati automaticamente o inseriti manualmente e seguiti lungo tutto il processo di vendita"
+              },
+              {
+                "id": "sd-69-c",
+                "text": "Solo come informazione statistica"
+              },
+              {
+                "id": "sd-69-d",
+                "text": "Solo per prodotti specifici non configurabili"
+              }
+            ],
+            "correctAnswer": "sd-69-b"
+          },
+          {
+            "id": "sd-70",
+            "text": "Come viene gestito il flusso di approvazione degli ordini clienti in SAP SD?",
+            "answers": [
+              {
+                "id": "sd-70-a",
+                "text": "Non esiste un flusso di approvazione"
+              },
+              {
+                "id": "sd-70-b",
+                "text": "Tramite workflow configurabili basati su vari criteri come valore, cliente, tipo materiale"
+              },
+              {
+                "id": "sd-70-c",
+                "text": "Solo manualmente via email"
+              },
+              {
+                "id": "sd-70-d",
+                "text": "Tutti gli ordini richiedono sempre approvazione"
+              }
+            ],
+            "correctAnswer": "sd-70-b"
+          },
+          {
+            "id": "sd-71",
+            "text": "Come vengono gestiti i contratti quadro in SAP SD?",
+            "answers": [
+              {
+                "id": "sd-71-a",
+                "text": "Non sono supportati"
+              },
+              {
+                "id": "sd-71-b",
+                "text": "Come documenti specifici che permettono di definire condizioni valide per un periodo e monitorare il rilascio degli ordini"
+              },
+              {
+                "id": "sd-71-c",
+                "text": "Solo come note informative"
+              },
+              {
+                "id": "sd-71-d",
+                "text": "Solo per clienti specifici non configurabili"
+              }
+            ],
+            "correctAnswer": "sd-71-b"
+          },
+          {
+            "id": "sd-72",
+            "text": "Come funziona il processo di fatturazione collettiva in SAP SD?",
+            "answers": [
+              {
+                "id": "sd-72-a",
+                "text": "Non è possibile creare fatture collettive"
+              },
+              {
+                "id": "sd-72-b",
+                "text": "Tramite transazione VF04 che permette di raggruppare più consegne in un'unica fattura secondo criteri configurabili"
+              },
+              {
+                "id": "sd-72-c",
+                "text": "Deve essere fatto manualmente per ogni fattura"
+              },
+              {
+                "id": "sd-72-d",
+                "text": "Solo a fine mese automaticamente"
+              }
+            ],
+            "correctAnswer": "sd-72-b"
+          },
+          {
+            "id": "sd-73",
+            "text": "Quale funzione permette di visualizzare la situazione complessiva di un ordine cliente in SAP SD?",
+            "answers": [
+              {
+                "id": "sd-73-a",
+                "text": "VA03"
+              },
+              {
+                "id": "sd-73-b",
+                "text": "ME23N"
+              },
+              {
+                "id": "sd-73-c",
+                "text": "VA23"
+              },
+              {
+                "id": "sd-73-d",
+                "text": "FBL5N"
+              }
+            ],
+            "correctAnswer": "sd-73-a"
+          },
+          {
+            "id": "sd-74",
+            "text": "Come vengono gestite le sostituzioni di materiale in SAP SD?",
+            "answers": [
+              {
+                "id": "sd-74-a",
+                "text": "Non è possibile gestire sostituzioni"
+              },
+              {
+                "id": "sd-74-b",
+                "text": "Tramite funzionalità di sostituzione configurabili che possono proporre materiali alternativi in caso di indisponibilità"
+              },
+              {
+                "id": "sd-74-c",
+                "text": "Solo manualmente da parte dell'utente"
+              },
+              {
+                "id": "sd-74-d",
+                "text": "Solo attraverso modifiche all'anagrafica materiale"
+              }
+            ],
+            "correctAnswer": "sd-74-b"
+          },
+          {
+            "id": "sd-75",
+            "text": "Come viene gestita la determinazione dei prezzi basati su attributi del cliente in SAP SD?",
+            "answers": [
+              {
+                "id": "sd-75-a",
+                "text": "Non è possibile basare i prezzi su attributi del cliente"
+              },
+              {
+                "id": "sd-75-b",
+                "text": "Tramite gruppi prezzo cliente e sequenze di accesso che cercano condizioni basate su questi gruppi"
+              },
+              {
+                "id": "sd-75-c",
+                "text": "Solo attraverso prezzi fissi per cliente"
+              },
+              {
+                "id": "sd-75-d",
+                "text": "Solo attraverso listini cartacei"
+              }
+            ],
+            "correctAnswer": "sd-75-b"
+          }
+    ]
 }

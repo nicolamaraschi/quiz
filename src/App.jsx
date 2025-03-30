@@ -11,7 +11,7 @@ import Header from './components/Header';
 import Footer from './components/Footer';
 import MMDocumentationPage from './pages/MMDocumentationPage';
 import FIDocumentationPage from './pages/FIDocumentationPage';
-
+import SDDocumentationPage from './pages/SDDocumentationPage';
 function App() {
   return (
     <QuizProvider>
@@ -27,6 +27,7 @@ function App() {
               <Route path="/about" element={<AboutPage />} />
               <Route path="/mm-documentation" element={<MMDocumentationPage />} />
               <Route path="/fi-documentation" element={<FIDocumentationPage />} />
+              <Route path="/sd-documentation" element={<SDDocumentationPage />} />
             </Routes>
           </main>
           <Footer />
