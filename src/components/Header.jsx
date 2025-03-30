@@ -215,11 +215,14 @@ const Header = () => {
         <DropdownContainer onClick={(e) => e.stopPropagation()}>
           <DropdownButton 
             onClick={handleDropdownClick(setDocsOpen)}
-            active={isActive('/mm-documentation') ? 1 : 0}
+            active={isActive('/mm-documentation') || isActive('/fi-documentation') ? 1 : 0}
           >
             Documentazione <span>{docsOpen ? '▲' : '▼'}</span>
           </DropdownButton>
           <DropdownContent isOpen={docsOpen}>
+            <DropdownItem onClick={() => handleDocsNavigation('/fi-documentation')}>
+              Finance (FI)
+            </DropdownItem>
             <DropdownItem onClick={() => handleDocsNavigation('/mm-documentation')}>
               Material Management (MM)
             </DropdownItem>
