@@ -2,5 +2,1386 @@
     "moduleId": "pp",
     "moduleName": "Production Planning (PP)",
     "description": "Quiz sulla pianificazione della produzione, MRP e gestione delle risorse.",
-    "questions": []
-}
+    "questions": [
+      {
+        "id": "pp-1",
+        "text": "Qual è lo scopo principale della Pianificazione della Produzione (PP) in SAP?",
+        "answers": [
+          {
+            "id": "pp-1-a",
+            "text": "Gestire esclusivamente la contabilità dei costi di produzione"
+          },
+          {
+            "id": "pp-1-b",
+            "text": "Governare e gestire i processi produttivi, determinando cosa, quanto, quando e come produrre"
+          },
+          {
+            "id": "pp-1-c",
+            "text": "Gestire solo l'acquisto di materie prime dai fornitori"
+          },
+          {
+            "id": "pp-1-d",
+            "text": "Organizzare esclusivamente la distribuzione dei prodotti finiti"
+          }
+        ],
+        "correctAnswer": "pp-1-b"
+      },
+      {
+        "id": "pp-2",
+        "text": "Quali sono gli input principali del processo di pianificazione della produzione?",
+        "answers": [
+          {
+            "id": "pp-2-a",
+            "text": "Solo i rapporti finanziari dell'azienda"
+          },
+          {
+            "id": "pp-2-b",
+            "text": "Esclusivamente le valutazioni di magazzino"
+          },
+          {
+            "id": "pp-2-c",
+            "text": "Le previsioni di vendita e gli ordini cliente"
+          },
+          {
+            "id": "pp-2-d",
+            "text": "Solo le performance storiche degli impianti"
+          }
+        ],
+        "correctAnswer": "pp-2-c"
+      },
+      {
+        "id": "pp-3",
+        "text": "Cosa rappresenta la Distinta Base (BOM) nel contesto della produzione?",
+        "answers": [
+          {
+            "id": "pp-3-a",
+            "text": "Un elenco dei fornitori approvati per l'acquisto"
+          },
+          {
+            "id": "pp-3-b",
+            "text": "La struttura del prodotto con l'elenco dei componenti necessari e le relative quantità"
+          },
+          {
+            "id": "pp-3-c",
+            "text": "Una lista dei macchinari disponibili in stabilimento"
+          },
+          {
+            "id": "pp-3-d",
+            "text": "Il calendario delle consegne ai clienti"
+          }
+        ],
+        "correctAnswer": "pp-3-b"
+      },
+      {
+        "id": "pp-4",
+        "text": "Cosa definiscono i 'Cicli di Lavoro' nel modulo PP?",
+        "answers": [
+          {
+            "id": "pp-4-a",
+            "text": "Solo i turni del personale in produzione"
+          },
+          {
+            "id": "pp-4-b",
+            "text": "La sequenza di attività che gli operatori e le macchine eseguono per ogni livello della distinta base"
+          },
+          {
+            "id": "pp-4-c",
+            "text": "Esclusivamente i periodi di manutenzione dei macchinari"
+          },
+          {
+            "id": "pp-4-d",
+            "text": "Solo le date di consegna degli ordini cliente"
+          }
+        ],
+        "correctAnswer": "pp-4-b"
+      },
+      {
+        "id": "pp-5",
+        "text": "Cosa rappresentano le 'Versioni' nella pianificazione della produzione?",
+        "answers": [
+          {
+            "id": "pp-5-a",
+            "text": "Solo i diversi rilasci del software SAP"
+          },
+          {
+            "id": "pp-5-b",
+            "text": "Diversi percorsi produttivi per ottenere un medesimo prodotto finito"
+          },
+          {
+            "id": "pp-5-c",
+            "text": "Le diverse revisioni dei documenti di qualità"
+          },
+          {
+            "id": "pp-5-d",
+            "text": "Esclusivamente le modifiche agli ordini cliente"
+          }
+        ],
+        "correctAnswer": "pp-5-b"
+      },
+      {
+        "id": "pp-6",
+        "text": "Quale campo dell'anagrafica materiale identifica il pianificatore responsabile del materiale?",
+        "answers": [
+          {
+            "id": "pp-6-a",
+            "text": "Gruppo di Acquisti"
+          },
+          {
+            "id": "pp-6-b",
+            "text": "Codice ABC"
+          },
+          {
+            "id": "pp-6-c",
+            "text": "Responsabile MRP"
+          },
+          {
+            "id": "pp-6-d",
+            "text": "Lotto Pianificazione"
+          }
+        ],
+        "correctAnswer": "pp-6-c"
+      },
+      {
+        "id": "pp-7",
+        "text": "Cos'è il 'Demand Planning' nel contesto della pianificazione della produzione?",
+        "answers": [
+          {
+            "id": "pp-7-a",
+            "text": "L'inserimento di un piano previsionale di domanda che serve come base per determinare un piano di produzione anticipato"
+          },
+          {
+            "id": "pp-7-b",
+            "text": "Solo la raccolta degli ordini cliente già confermati"
+          },
+          {
+            "id": "pp-7-c",
+            "text": "Esclusivamente l'analisi delle vendite passate"
+          },
+          {
+            "id": "pp-7-d",
+            "text": "La gestione delle richieste di informazioni dai clienti"
+          }
+        ],
+        "correctAnswer": "pp-7-a"
+      },
+      {
+        "id": "pp-8",
+        "text": "Cosa significa 'compensazione delle previsioni' nel Demand Planning?",
+        "answers": [
+          {
+            "id": "pp-8-a",
+            "text": "Il calcolo degli stipendi per il personale di vendita"
+          },
+          {
+            "id": "pp-8-b",
+            "text": "L'erosione delle previsioni da parte degli ordini cliente effettivi, in base a specifiche impostazioni"
+          },
+          {
+            "id": "pp-8-c",
+            "text": "La modifica dei prezzi di vendita in base alla domanda"
+          },
+          {
+            "id": "pp-8-d",
+            "text": "L'annullamento completo delle previsioni a fine anno"
+          }
+        ],
+        "correctAnswer": "pp-8-b"
+      },
+      {
+        "id": "pp-9",
+        "text": "Qual è la principale differenza tra MTS (Make to Stock) e MTO (Make to Order)?",
+        "answers": [
+          {
+            "id": "pp-9-a",
+            "text": "MTS richiede sempre più personale di MTO"
+          },
+          {
+            "id": "pp-9-b",
+            "text": "In MTS la produzione è basata su previsioni, mentre in MTO la produzione inizia solo dopo l'ordine cliente"
+          },
+          {
+            "id": "pp-9-c",
+            "text": "MTO è applicabile solo a prodotti di grandi dimensioni"
+          },
+          {
+            "id": "pp-9-d",
+            "text": "MTS richiede sempre macchinari più costosi di MTO"
+          }
+        ],
+        "correctAnswer": "pp-9-b"
+      },
+      {
+        "id": "pp-10",
+        "text": "Cosa fa l'MRP (Material Requirements Planning) in SAP?",
+        "answers": [
+          {
+            "id": "pp-10-a",
+            "text": "Si occupa esclusivamente della qualità dei prodotti"
+          },
+          {
+            "id": "pp-10-b",
+            "text": "Gestisce solo la distribuzione dei prodotti finiti"
+          },
+          {
+            "id": "pp-10-c",
+            "text": "Determina cosa, quanto e quando produrre, espandendo i fabbisogni indipendenti in fabbisogni dipendenti"
+          },
+          {
+            "id": "pp-10-d",
+            "text": "Si occupa solo della manutenzione dei macchinari"
+          }
+        ],
+        "correctAnswer": "pp-10-c"
+      },
+      {
+        "id": "pp-11",
+        "text": "Quali sono i due principali modelli di pianificazione in SAP?",
+        "answers": [
+          {
+            "id": "pp-11-a",
+            "text": "Pianificazione stagionale e giornaliera"
+          },
+          {
+            "id": "pp-11-b",
+            "text": "Pianificazione a fabbisogno (deterministica/MRP) e pianificazione a consumo (stocastica)"
+          },
+          {
+            "id": "pp-11-c",
+            "text": "Pianificazione manuale e automatica"
+          },
+          {
+            "id": "pp-11-d",
+            "text": "Pianificazione interna ed esterna"
+          }
+        ],
+        "correctAnswer": "pp-11-b"
+      },
+      {
+        "id": "pp-12",
+        "text": "Cosa si intende per 'BOM explosion' nel processo MRP?",
+        "answers": [
+          {
+            "id": "pp-12-a",
+            "text": "Un malfunzionamento critico del sistema SAP"
+          },
+          {
+            "id": "pp-12-b",
+            "text": "Il processo di scomposizione della distinta base per identificare tutti i componenti necessari alla produzione"
+          },
+          {
+            "id": "pp-12-c",
+            "text": "La rottura fisica di uno stampo o utensile"
+          },
+          {
+            "id": "pp-12-d",
+            "text": "L'eliminazione di prodotti obsoleti dal catalogo"
+          }
+        ],
+        "correctAnswer": "pp-12-b"
+      },
+      {
+        "id": "pp-13",
+        "text": "Cosa si verifica nella fase di 'Controllo disponibilità ATP' durante la creazione di un ordine di produzione?",
+        "answers": [
+          {
+            "id": "pp-13-a",
+            "text": "Si controlla solo la disponibilità dei macchinari"
+          },
+          {
+            "id": "pp-13-b",
+            "text": "Si verifica che i materiali e le risorse necessarie siano disponibili per l'ordine di produzione"
+          },
+          {
+            "id": "pp-13-c",
+            "text": "Si controlla esclusivamente la presenza degli operatori"
+          },
+          {
+            "id": "pp-13-d",
+            "text": "Si verifica solo lo spazio disponibile in magazzino per il prodotto finito"
+          }
+        ],
+        "correctAnswer": "pp-13-b"
+      },
+      {
+        "id": "pp-14",
+        "text": "Quale codice movimento è associato ai CONSUMI di materiali in SAP?",
+        "answers": [
+          {
+            "id": "pp-14-a",
+            "text": "101"
+          },
+          {
+            "id": "pp-14-b",
+            "text": "261"
+          },
+          {
+            "id": "pp-14-c",
+            "text": "501"
+          },
+          {
+            "id": "pp-14-d",
+            "text": "301"
+          }
+        ],
+        "correctAnswer": "pp-14-b"
+      },
+      {
+        "id": "pp-15",
+        "text": "Quale codice movimento è associato ai VERSAMENTI di prodotti finiti in SAP?",
+        "answers": [
+          {
+            "id": "pp-15-a",
+            "text": "101"
+          },
+          {
+            "id": "pp-15-b",
+            "text": "261"
+          },
+          {
+            "id": "pp-15-c",
+            "text": "501"
+          },
+          {
+            "id": "pp-15-d",
+            "text": "301"
+          }
+        ],
+        "correctAnswer": "pp-15-a"
+      },
+      {
+        "id": "pp-16",
+        "text": "Cosa rappresenta il 'Versamento' nel processo di produzione?",
+        "answers": [
+          {
+            "id": "pp-16-a",
+            "text": "Il pagamento degli stipendi agli operai"
+          },
+          {
+            "id": "pp-16-b",
+            "text": "La registrazione del carico a magazzino del materiale prodotto"
+          },
+          {
+            "id": "pp-16-c",
+            "text": "Il trasferimento di denaro ai fornitori"
+          },
+          {
+            "id": "pp-16-d",
+            "text": "L'inserimento di nuovi ordini cliente"
+          }
+        ],
+        "correctAnswer": "pp-16-b"
+      },
+      {
+        "id": "pp-17",
+        "text": "Cosa accade durante la 'Chiusura Tecnica' di un ordine di produzione?",
+        "answers": [
+          {
+            "id": "pp-17-a",
+            "text": "Si contatta il cliente per la consegna"
+          },
+          {
+            "id": "pp-17-b",
+            "text": "I costi sostenuti per l'ordine vengono attribuiti ai conti dedicati"
+          },
+          {
+            "id": "pp-17-c",
+            "text": "Si emette la fattura di vendita"
+          },
+          {
+            "id": "pp-17-d",
+            "text": "Si disconnettono i macchinari dalla rete elettrica"
+          }
+        ],
+        "correctAnswer": "pp-17-b"
+      },
+      {
+        "id": "pp-18",
+        "text": "A cosa serve l'app 'COGI' (RIELABORA MOVIMENTI MERCI) in SAP?",
+        "answers": [
+          {
+            "id": "pp-18-a",
+            "text": "Serve solo per la contabilizzazione dei costi"
+          },
+          {
+            "id": "pp-18-b",
+            "text": "Consente di visualizzare i movimenti che hanno avuto problemi e correggerli"
+          },
+          {
+            "id": "pp-18-c",
+            "text": "Si utilizza esclusivamente per la gestione del personale"
+          },
+          {
+            "id": "pp-18-d",
+            "text": "Serve solo per emettere documenti di trasporto"
+          }
+        ],
+        "correctAnswer": "pp-18-b"
+      },
+      {
+        "id": "pp-19",
+        "text": "Cosa sono le 'Caratteristiche di Controllo' nel Quality Management?",
+        "answers": [
+          {
+            "id": "pp-19-a",
+            "text": "I parametri di controllo degli accessi al sistema SAP"
+          },
+          {
+            "id": "pp-19-b",
+            "text": "Un'anagrafica QM che rappresenta i singoli test/prove da effettuare per valutare l'accettabilità della merce"
+          },
+          {
+            "id": "pp-19-c",
+            "text": "Esclusivamente i controlli finanziari dell'azienda"
+          },
+          {
+            "id": "pp-19-d",
+            "text": "Le caratteristiche estetiche dei prodotti"
+          }
+        ],
+        "correctAnswer": "pp-19-b"
+      },
+      {
+        "id": "pp-20",
+        "text": "Quale tipo di caratteristica di controllo permette la modifica dei parametri all'interno del piano di controllo?",
+        "answers": [
+          {
+            "id": "pp-20-a",
+            "text": "Caratteristica di Riferimento"
+          },
+          {
+            "id": "pp-20-b",
+            "text": "Modello copia incompleto"
+          },
+          {
+            "id": "pp-20-c",
+            "text": "Caratteristica fissa"
+          },
+          {
+            "id": "pp-20-d",
+            "text": "Referenza assoluta"
+          }
+        ],
+        "correctAnswer": "pp-20-b"
+      },
+      {
+        "id": "pp-21",
+        "text": "Qual è la principale caratteristica della strategia 'Assembly to Order' (ATO)?",
+        "answers": [
+          {
+            "id": "pp-21-a",
+            "text": "Si producono solo componenti non assemblati"
+          },
+          {
+            "id": "pp-21-b",
+            "text": "I componenti e i semilavorati sono tenuti a stock, ma l'assemblaggio finale avviene solo a fronte di un ordine cliente"
+          },
+          {
+            "id": "pp-21-c",
+            "text": "Si producono sempre prodotti completi per il magazzino"
+          },
+          {
+            "id": "pp-21-d",
+            "text": "La progettazione completa avviene solo dopo l'ordine"
+          }
+        ],
+        "correctAnswer": "pp-21-b"
+      },
+      {
+        "id": "pp-22",
+        "text": "Cosa si intende per 'Engineering to Order' (ETO)?",
+        "answers": [
+          {
+            "id": "pp-22-a",
+            "text": "Produzione standard di articoli comuni"
+          },
+          {
+            "id": "pp-22-b",
+            "text": "Approccio che prevede progettazione e produzione su specifica completamente personalizzata del cliente"
+          },
+          {
+            "id": "pp-22-c",
+            "text": "Assemblaggio di componenti solo dopo l'ordine"
+          },
+          {
+            "id": "pp-22-d",
+            "text": "Produzione basata esclusivamente sulle previsioni"
+          }
+        ],
+        "correctAnswer": "pp-22-b"
+      },
+      {
+        "id": "pp-23",
+        "text": "Cosa si intende per 'Capacity Workload' nel Capacity Planning?",
+        "answers": [
+          {
+            "id": "pp-23-a",
+            "text": "Il peso fisico dei macchinari di produzione"
+          },
+          {
+            "id": "pp-23-b",
+            "text": "Valutazione del carico di lavoro rispetto alle capacità produttive disponibili"
+          },
+          {
+            "id": "pp-23-c",
+            "text": "Il numero di operai in un turno"
+          },
+          {
+            "id": "pp-23-d",
+            "text": "La quantità di elettricità consumata"
+          }
+        ],
+        "correctAnswer": "pp-23-b"
+      },
+      {
+        "id": "pp-24",
+        "text": "Cosa fa la 'Finite Scheduling' nel contesto del Capacity Planning?",
+        "answers": [
+          {
+            "id": "pp-24-a",
+            "text": "Limita il numero di ordini accettabili dai clienti"
+          },
+          {
+            "id": "pp-24-b",
+            "text": "Termina automaticamente le attività produttive a fine giornata"
+          },
+          {
+            "id": "pp-24-c",
+            "text": "Tecnica di programmazione che considera limiti e vincoli delle risorse produttive"
+          },
+          {
+            "id": "pp-24-d",
+            "text": "Definisce un numero finito di prodotti nel catalogo"
+          }
+        ],
+        "correctAnswer": "pp-24-c"
+      },
+      {
+        "id": "pp-25",
+        "text": "Qual è la differenza principale tra 'Batch Management' e 'Serial Number'?",
+        "answers": [
+          {
+            "id": "pp-25-a",
+            "text": "Il Batch Management è solo per prodotti alimentari, i Serial Number solo per elettronica"
+          },
+          {
+            "id": "pp-25-b",
+            "text": "Il Batch Management traccia gruppi di materiali con caratteristiche simili, mentre i Serial Number identificano singoli prodotti"
+          },
+          {
+            "id": "pp-25-c",
+            "text": "Il Batch Management è manuale, i Serial Number sono sempre automatici"
+          },
+          {
+            "id": "pp-25-d",
+            "text": "Il Batch Management è usato solo per l'export, i Serial Number solo per il mercato interno"
+          }
+        ],
+        "correctAnswer": "pp-25-b"
+      },
+      {
+        "id": "pp-26",
+        "text": "Quali informazioni contiene l'anagrafica materiale nella view 'Quality Management'?",
+        "answers": [
+          {
+            "id": "pp-26-a",
+            "text": "Solo informazioni sul prezzo di vendita"
+          },
+          {
+            "id": "pp-26-b",
+            "text": "I principali parametri di controllo per l'attivazione delle ispezioni di qualità lungo la supply chain"
+          },
+          {
+            "id": "pp-26-c",
+            "text": "Esclusivamente dati sui fornitori"
+          },
+          {
+            "id": "pp-26-d",
+            "text": "Solo informazioni sul packaging"
+          }
+        ],
+        "correctAnswer": "pp-26-b"
+      },
+      {
+        "id": "pp-27",
+        "text": "Quali KPI sono tipicamente monitorati nella reportistica di produzione?",
+        "answers": [
+          {
+            "id": "pp-27-a",
+            "text": "Solo il numero di dipendenti"
+          },
+          {
+            "id": "pp-27-b",
+            "text": "OEE, tempi di setup, scarti, aderenza al piano e costi di produzione"
+          },
+          {
+            "id": "pp-27-c",
+            "text": "Esclusivamente il fatturato aziendale"
+          },
+          {
+            "id": "pp-27-d",
+            "text": "Solo i consumi energetici"
+          }
+        ],
+        "correctAnswer": "pp-27-b"
+      },
+      {
+        "id": "pp-28",
+        "text": "Cosa significa la sigla 'DMS' nel contesto della documentazione tecnica?",
+        "answers": [
+          {
+            "id": "pp-28-a",
+            "text": "Digital Marketing System"
+          },
+          {
+            "id": "pp-28-b",
+            "text": "Document Management System - Sistema di gestione e condivisione della documentazione tecnica"
+          },
+          {
+            "id": "pp-28-c",
+            "text": "Daily Manufacturing Schedule"
+          },
+          {
+            "id": "pp-28-d",
+            "text": "Direct Material Supplier"
+          }
+        ],
+        "correctAnswer": "pp-28-b"
+      },
+      {
+        "id": "pp-29",
+        "text": "Qual è lo scopo delle 'Procedure di campionatura' nel Quality Management?",
+        "answers": [
+          {
+            "id": "pp-29-a",
+            "text": "Definire le campagne pubblicitarie"
+          },
+          {
+            "id": "pp-29-b",
+            "text": "Definire le regole con le quali viene calcolata la dimensione del campione da analizzare"
+          },
+          {
+            "id": "pp-29-c",
+            "text": "Stabilire i campioni gratuiti da inviare ai clienti"
+          },
+          {
+            "id": "pp-29-d",
+            "text": "Determinare il design dei prodotti"
+          }
+        ],
+        "correctAnswer": "pp-29-b"
+      },
+      {
+        "id": "pp-30",
+        "text": "Qual è la differenza tra 'Caratteristiche Qualitative' e 'Caratteristiche Quantitative' nel Quality Management?",
+        "answers": [
+          {
+            "id": "pp-30-a",
+            "text": "Le qualitative si riferiscono a prodotti di alta qualità, le quantitative a prodotti di qualità inferiore"
+          },
+          {
+            "id": "pp-30-b",
+            "text": "Le qualitative hanno valori definiti in un catalogo codici, le quantitative sono numeriche"
+          },
+          {
+            "id": "pp-30-c",
+            "text": "Le qualitative si riferiscono a caratteristiche visive, le quantitative solo al peso"
+          },
+          {
+            "id": "pp-30-d",
+            "text": "Le qualitative sono sempre facoltative, le quantitative sempre obbligatorie"
+          }
+        ],
+        "correctAnswer": "pp-30-b"
+      },
+      {
+            "id": "pp-31",
+            "text": "Quale domanda fondamentale risponde alla descrizione della struttura quantitativa del prodotto in PP?",
+            "answers": [
+              {
+                "id": "pp-31-a",
+                "text": "Quando devo produrre?"
+              },
+              {
+                "id": "pp-31-b",
+                "text": "Chi deve produrre?"
+              },
+              {
+                "id": "pp-31-c",
+                "text": "Come deve essere fatto?"
+              },
+              {
+                "id": "pp-31-d",
+                "text": "Perché devo produrre?"
+              }
+            ],
+            "correctAnswer": "pp-31-c"
+          },
+          {
+            "id": "pp-32",
+            "text": "Quale strumento SAP sviluppa proposte nel momento in cui abbiamo una rottura di stock?",
+            "answers": [
+              {
+                "id": "pp-32-a",
+                "text": "ATP"
+              },
+              {
+                "id": "pp-32-b",
+                "text": "MRP"
+              },
+              {
+                "id": "pp-32-c",
+                "text": "DRP"
+              },
+              {
+                "id": "pp-32-d",
+                "text": "CRP"
+              }
+            ],
+            "correctAnswer": "pp-32-b"
+          },
+          {
+            "id": "pp-33",
+            "text": "Quale strumento è necessario per schedulare le proposte dell'MRP nel tempo?",
+            "answers": [
+              {
+                "id": "pp-33-a",
+                "text": "Un tool che gestisce solo gli ordini cliente"
+              },
+              {
+                "id": "pp-33-b",
+                "text": "Un tool che gestisce le capacità dei centri di costo (CDC)"
+              },
+              {
+                "id": "pp-33-c",
+                "text": "Un sistema autonomo non collegato a SAP"
+              },
+              {
+                "id": "pp-33-d",
+                "text": "Solo fogli Excel esterni"
+              }
+            ],
+            "correctAnswer": "pp-33-b"
+          },
+          {
+            "id": "pp-34",
+            "text": "Quale componente del sistema PP si occupa della gestione degli ordini di produzione?",
+            "answers": [
+              {
+                "id": "pp-34-a",
+                "text": "Master Data"
+              },
+              {
+                "id": "pp-34-b",
+                "text": "Demand"
+              },
+              {
+                "id": "pp-34-c",
+                "text": "Planning"
+              },
+              {
+                "id": "pp-34-d",
+                "text": "SFC Produzione"
+              }
+            ],
+            "correctAnswer": "pp-34-d"
+          },
+          {
+            "id": "pp-35",
+            "text": "Quale affermazione descrive correttamente la relazione tra distinta base e cicli di lavoro?",
+            "answers": [
+              {
+                "id": "pp-35-a",
+                "text": "Non c'è alcuna relazione tra i due elementi"
+              },
+              {
+                "id": "pp-35-b",
+                "text": "I cicli esprimono, per ogni livello creato nella distinta, cosa fanno gli operatori e le macchine"
+              },
+              {
+                "id": "pp-35-c",
+                "text": "La distinta base è sempre creata dopo i cicli di lavoro"
+              },
+              {
+                "id": "pp-35-d",
+                "text": "I cicli di lavoro si riferiscono solo alla manutenzione dell'impianto"
+              }
+            ],
+            "correctAnswer": "pp-35-b"
+          },
+          {
+            "id": "pp-36",
+            "text": "Come viene strutturata gerarchicamente l'anagrafica materiale in SAP?",
+            "answers": [
+              {
+                "id": "pp-36-a",
+                "text": "Solo per categoria merceologica"
+              },
+              {
+                "id": "pp-36-b",
+                "text": "Imita la struttura organizzativa della società (Mandante, Divisione, ecc.)"
+              },
+              {
+                "id": "pp-36-c",
+                "text": "Solo in base al prezzo dei materiali"
+              },
+              {
+                "id": "pp-36-d",
+                "text": "Esclusivamente per fornitore"
+              }
+            ],
+            "correctAnswer": "pp-36-b"
+          },
+          {
+            "id": "pp-37",
+            "text": "Quale campo dell'anagrafica materiale determina se e come viene pianificato il materiale?",
+            "answers": [
+              {
+                "id": "pp-37-a",
+                "text": "Codice ABC"
+              },
+              {
+                "id": "pp-37-b",
+                "text": "Gruppo Acquisti"
+              },
+              {
+                "id": "pp-37-c",
+                "text": "Caratteristica MRP"
+              },
+              {
+                "id": "pp-37-d",
+                "text": "Gruppo di pianificazione"
+              }
+            ],
+            "correctAnswer": "pp-37-c"
+          },
+          {
+            "id": "pp-38",
+            "text": "Cosa indica il 'Lotto pianificazione' nell'anagrafica materiale?",
+            "answers": [
+              {
+                "id": "pp-38-a",
+                "text": "Solo il numero massimo di operatori necessari"
+              },
+              {
+                "id": "pp-38-b",
+                "text": "Il procedimento di dimensionamento del lotto secondo il quale il sistema calcola la quantità da approvvigionare"
+              },
+              {
+                "id": "pp-38-c",
+                "text": "Solo la data di consegna degli ordini"
+              },
+              {
+                "id": "pp-38-d",
+                "text": "Esclusivamente il percorso di stoccaggio"
+              }
+            ],
+            "correctAnswer": "pp-38-b"
+          },
+          {
+            "id": "pp-39",
+            "text": "Cosa si intende per 'Lotto Fisso' nei parametri dell'anagrafica materiale?",
+            "answers": [
+              {
+                "id": "pp-39-a",
+                "text": "Un lotto che non può essere spostato fisicamente"
+              },
+              {
+                "id": "pp-39-b",
+                "text": "La quantità da ordinare o produrre in caso di carenza, eventualmente in multipli se il fabbisogno è maggiore"
+              },
+              {
+                "id": "pp-39-c",
+                "text": "Un lotto bloccato per controllo qualità"
+              },
+              {
+                "id": "pp-39-d",
+                "text": "Un lotto assegnato a un cliente fisso"
+              }
+            ],
+            "correctAnswer": "pp-39-b"
+          },
+          {
+            "id": "pp-40",
+            "text": "Cosa regolano le 'strategie di pianificazione' nel Demand Planning?",
+            "answers": [
+              {
+                "id": "pp-40-a",
+                "text": "Solo il prezzo di vendita dei prodotti"
+              },
+              {
+                "id": "pp-40-b",
+                "text": "La modalità con cui il sistema tratta il demand, la sua compensazione rispetto agli ordini e la reazione dell'MRP"
+              },
+              {
+                "id": "pp-40-c",
+                "text": "Esclusivamente la gestione dei fornitori"
+              },
+              {
+                "id": "pp-40-d",
+                "text": "Solo il numero di turni di lavoro"
+              }
+            ],
+            "correctAnswer": "pp-40-b"
+          },
+          {
+            "id": "pp-41",
+            "text": "Cosa sono i 'Fabbisogni Indipendenti Pianificati'?",
+            "answers": [
+              {
+                "id": "pp-41-a",
+                "text": "Solo gli ordini cliente definitivi"
+              },
+              {
+                "id": "pp-41-b",
+                "text": "Le previsioni di domanda inserite a sistema, che possono essere erose dagli ordini cliente"
+              },
+              {
+                "id": "pp-41-c",
+                "text": "I fabbisogni che non richiedono approvazione"
+              },
+              {
+                "id": "pp-41-d",
+                "text": "Fabbisogni esclusivamente per materiali non critici"
+              }
+            ],
+            "correctAnswer": "pp-41-b"
+          },
+          {
+            "id": "pp-42",
+            "text": "In una logica MTS (Make-to-Stock), cosa forma l'input per la pianificazione MRP?",
+            "answers": [
+              {
+                "id": "pp-42-a",
+                "text": "Solo le riunioni con i manager"
+              },
+              {
+                "id": "pp-42-b",
+                "text": "Il demand netto o lordo (in base alla strategia)"
+              },
+              {
+                "id": "pp-42-c",
+                "text": "Esclusivamente le indicazioni del reparto vendite"
+              },
+              {
+                "id": "pp-42-d",
+                "text": "Solo il budget disponibile"
+              }
+            ],
+            "correctAnswer": "pp-42-b"
+          },
+          {
+            "id": "pp-43",
+            "text": "Quale differenza principale c'è tra i fabbisogni indipendenti e dipendenti nell'MRP?",
+            "answers": [
+              {
+                "id": "pp-43-a",
+                "text": "I fabbisogni indipendenti derivano da domanda e ordini di vendita, quelli dipendenti da fabbisogni di produzione"
+              },
+              {
+                "id": "pp-43-b",
+                "text": "I fabbisogni indipendenti sono sempre manuali, quelli dipendenti sempre automatici"
+              },
+              {
+                "id": "pp-43-c",
+                "text": "Non c'è alcuna differenza tra i due"
+              },
+              {
+                "id": "pp-43-d",
+                "text": "I fabbisogni indipendenti sono poco importanti, quelli dipendenti sono critici"
+              }
+            ],
+            "correctAnswer": "pp-43-a"
+          },
+          {
+            "id": "pp-44",
+            "text": "Quale termine descrive la valutazione delle carenze di materiali che potrebbero compromettere la produzione?",
+            "answers": [
+              {
+                "id": "pp-44-a",
+                "text": "BOM explosion"
+              },
+              {
+                "id": "pp-44-b",
+                "text": "Analisi shortage"
+              },
+              {
+                "id": "pp-44-c",
+                "text": "Capacity workload"
+              },
+              {
+                "id": "pp-44-d",
+                "text": "Finite scheduling"
+              }
+            ],
+            "correctAnswer": "pp-44-b"
+          },
+          {
+            "id": "pp-45",
+            "text": "Cosa sono i 'Rescheduling message' nel contesto MRP?",
+            "answers": [
+              {
+                "id": "pp-45-a",
+                "text": "Messaggi di marketing ai clienti"
+              },
+              {
+                "id": "pp-45-b",
+                "text": "Comunicazioni di rimodulazione dei piani produttivi a seguito di variazioni"
+              },
+              {
+                "id": "pp-45-c",
+                "text": "Notifiche di cambio turno agli operatori"
+              },
+              {
+                "id": "pp-45-d",
+                "text": "Avvisi di manutenzione dei macchinari"
+              }
+            ],
+            "correctAnswer": "pp-45-b"
+          },
+          {
+            "id": "pp-46",
+            "text": "Cosa si verifica durante il rilascio di un ordine di produzione?",
+            "answers": [
+              {
+                "id": "pp-46-a",
+                "text": "L'ordine viene chiuso e fatturato"
+              },
+              {
+                "id": "pp-46-b",
+                "text": "Dopo la verifica della disponibilità, l'ordine viene autorizzato per la produzione"
+              },
+              {
+                "id": "pp-46-c",
+                "text": "Il prodotto finito viene consegnato al cliente"
+              },
+              {
+                "id": "pp-46-d",
+                "text": "I componenti vengono ordinati ai fornitori"
+              }
+            ],
+            "correctAnswer": "pp-46-b"
+          },
+          {
+            "id": "pp-47",
+            "text": "Quando viene eseguita la conferma delle operazioni nel processo produttivo?",
+            "answers": [
+              {
+                "id": "pp-47-a",
+                "text": "Solo prima di creare l'ordine di produzione"
+              },
+              {
+                "id": "pp-47-b",
+                "text": "Durante la produzione, per registrare l'avanzamento, i tempi e le risorse utilizzate"
+              },
+              {
+                "id": "pp-47-c",
+                "text": "Solo dopo la consegna al cliente"
+              },
+              {
+                "id": "pp-47-d",
+                "text": "Esclusivamente al ricevimento delle materie prime"
+              }
+            ],
+            "correctAnswer": "pp-47-b"
+          },
+          {
+            "id": "pp-48",
+            "text": "Cosa si intende per 'consumo retroattivo' nei movimenti di materiali?",
+            "answers": [
+              {
+                "id": "pp-48-a",
+                "text": "L'utilizzo di materiali scaduti"
+              },
+              {
+                "id": "pp-48-b",
+                "text": "Un'opzione che, se non spuntata, rende il consumo puntuale anziché automaticamente collegato al versamento"
+              },
+              {
+                "id": "pp-48-c",
+                "text": "Il riciclo di materiali già usati"
+              },
+              {
+                "id": "pp-48-d",
+                "text": "L'utilizzo di materiali prodotti in anni precedenti"
+              }
+            ],
+            "correctAnswer": "pp-48-b"
+          },
+          {
+            "id": "pp-49",
+            "text": "Perché è importante visualizzare spesso l'app COGI (RIELABORA MOVIMENTI MERCI)?",
+            "answers": [
+              {
+                "id": "pp-49-a",
+                "text": "Solo per divertimento degli operatori"
+              },
+              {
+                "id": "pp-49-b",
+                "text": "Per evitare problemi sia dal punto di vista logistico che contabile"
+              },
+              {
+                "id": "pp-49-c",
+                "text": "Non è importante, è una funzione opzionale"
+              },
+              {
+                "id": "pp-49-d",
+                "text": "Solo per monitorare i prezzi di mercato"
+              }
+            ],
+            "correctAnswer": "pp-49-b"
+          },
+          {
+            "id": "pp-50",
+            "text": "Quale differenza c'è tra 'Acquisizione sommaria' e 'Acquisizione dei singoli risultati' nel Quality Management?",
+            "answers": [
+              {
+                "id": "pp-50-a",
+                "text": "La prima è cartacea, la seconda elettronica"
+              },
+              {
+                "id": "pp-50-b",
+                "text": "Nella sommaria i risultati dei controlli sono registrati globalmente per l'intero campione, nella singola sono registrati per ogni unità"
+              },
+              {
+                "id": "pp-50-c",
+                "text": "La prima è obbligatoria, la seconda facoltativa"
+              },
+              {
+                "id": "pp-50-d",
+                "text": "La prima si usa solo per prodotti finiti, la seconda solo per materie prime"
+              }
+            ],
+            "correctAnswer": "pp-50-b"
+          },
+          {
+            "id": "pp-51",
+            "text": "Quale tipo di procedura di campionatura prevede che la dimensione del campione non dipenda dalla quantità del lotto?",
+            "answers": [
+              {
+                "id": "pp-51-a",
+                "text": "Percentuale"
+              },
+              {
+                "id": "pp-51-b",
+                "text": "Volume fisso"
+              },
+              {
+                "id": "pp-51-c",
+                "text": "Con piano di campionatura"
+              },
+              {
+                "id": "pp-51-d",
+                "text": "Controllo al 100%"
+              }
+            ],
+            "correctAnswer": "pp-51-b"
+          },
+          {
+            "id": "pp-52",
+            "text": "Quali sono i possibili stati delle scorte all'apertura di un lotto di controllo?",
+            "answers": [
+              {
+                "id": "pp-52-a",
+                "text": "Solo 'approvato' o 'respinto'"
+              },
+              {
+                "id": "pp-52-b",
+                "text": "'Utilizzo libero' o 'Stock CQ'"
+              },
+              {
+                "id": "pp-52-c",
+                "text": "Solo 'venduto' o 'invenduto'"
+              },
+              {
+                "id": "pp-52-d",
+                "text": "Solo 'nazionale' o 'estero'"
+              }
+            ],
+            "correctAnswer": "pp-52-b"
+          },
+          {
+            "id": "pp-53",
+            "text": "Nella strategia ATO (Assembly to Order), cosa viene tenuto a stock?",
+            "answers": [
+              {
+                "id": "pp-53-a",
+                "text": "Solo i prodotti finiti"
+              },
+              {
+                "id": "pp-53-b",
+                "text": "I componenti e i semilavorati"
+              },
+              {
+                "id": "pp-53-c",
+                "text": "Niente, tutto viene prodotto on demand"
+              },
+              {
+                "id": "pp-53-d",
+                "text": "Solo i cataloghi di vendita"
+              }
+            ],
+            "correctAnswer": "pp-53-b"
+          },
+          {
+            "id": "pp-54",
+            "text": "Quale delle seguenti strategie richiede la più stretta collaborazione con il cliente?",
+            "answers": [
+              {
+                "id": "pp-54-a",
+                "text": "Make to Stock (MTS)"
+              },
+              {
+                "id": "pp-54-b",
+                "text": "Assembly to Order (ATO)"
+              },
+              {
+                "id": "pp-54-c",
+                "text": "Make to Order (MTO)"
+              },
+              {
+                "id": "pp-54-d",
+                "text": "Engineering to Order (ETO)"
+              }
+            ],
+            "correctAnswer": "pp-54-d"
+          },
+          {
+            "id": "pp-55",
+            "text": "Quale attività fa parte del 'livellamento del carico' nel Capacity Planning?",
+            "answers": [
+              {
+                "id": "pp-55-a",
+                "text": "Aumentare i prezzi di vendita"
+              },
+              {
+                "id": "pp-55-b",
+                "text": "Redistribuzione del carico di lavoro per evitare picchi e valli"
+              },
+              {
+                "id": "pp-55-c",
+                "text": "Ridurre il peso fisico dei macchinari"
+              },
+              {
+                "id": "pp-55-d",
+                "text": "Assumere esclusivamente personale part-time"
+              }
+            ],
+            "correctAnswer": "pp-55-b"
+          },
+          {
+            "id": "pp-56",
+            "text": "In cosa consiste il 'Batch Management' nel contesto produttivo?",
+            "answers": [
+              {
+                "id": "pp-56-a",
+                "text": "Solo la gestione delle retribuzioni a lotti"
+              },
+              {
+                "id": "pp-56-b",
+                "text": "La gestione di lotti di produzione con tracciabilità e controlli specifici"
+              },
+              {
+                "id": "pp-56-c",
+                "text": "Esclusivamente la formazione di gruppi di lavoro"
+              },
+              {
+                "id": "pp-56-d",
+                "text": "Solo la divisione del magazzino in sezioni"
+              }
+            ],
+            "correctAnswer": "pp-56-b"
+          },
+          {
+            "id": "pp-57",
+            "text": "Perché i numeri seriali sono fondamentali per prodotti ad alto valore?",
+            "answers": [
+              {
+                "id": "pp-57-a",
+                "text": "Solo per renderli più costosi"
+              },
+              {
+                "id": "pp-57-b",
+                "text": "Consentono la tracciabilità individuale, utile per garanzia e assistenza post-vendita"
+              },
+              {
+                "id": "pp-57-c",
+                "text": "Solo per l'estetica del prodotto"
+              },
+              {
+                "id": "pp-57-d",
+                "text": "Servono solo per la fatturazione"
+              }
+            ],
+            "correctAnswer": "pp-57-b"
+          },
+          {
+            "id": "pp-58",
+            "text": "Cosa si intende per 'genealogia dei prodotti' nella gestione dei lotti?",
+            "answers": [
+              {
+                "id": "pp-58-a",
+                "text": "L'età anagrafica dei prodotti"
+              },
+              {
+                "id": "pp-58-b",
+                "text": "La registrazione di quali componenti specifici sono stati utilizzati nella produzione"
+              },
+              {
+                "id": "pp-58-c",
+                "text": "L'albero genealogico dei designer"
+              },
+              {
+                "id": "pp-58-d",
+                "text": "Solo l'evoluzione storica del marchio"
+              }
+            ],
+            "correctAnswer": "pp-58-b"
+          },
+          {
+            "id": "pp-59",
+            "text": "Cosa significa l'acronimo OEE nel contesto dei KPI di produzione?",
+            "answers": [
+              {
+                "id": "pp-59-a",
+                "text": "Office Equipment Expenses"
+              },
+              {
+                "id": "pp-59-b",
+                "text": "Overall Equipment Effectiveness"
+              },
+              {
+                "id": "pp-59-c",
+                "text": "Operational Energy Efficiency"
+              },
+              {
+                "id": "pp-59-d",
+                "text": "Order Entry Errors"
+              }
+            ],
+            "correctAnswer": "pp-59-b"
+          },
+          {
+            "id": "pp-60",
+            "text": "Qual è lo scopo principale delle analisi predittive nel contesto produttivo?",
+            "answers": [
+              {
+                "id": "pp-60-a",
+                "text": "Solo prevedere le vendite future"
+              },
+              {
+                "id": "pp-60-b",
+                "text": "Anticipare problemi di produzione e supportare decisioni strategiche"
+              },
+              {
+                "id": "pp-60-c",
+                "text": "Esclusivamente prevedere il meteo"
+              },
+              {
+                "id": "pp-60-d",
+                "text": "Solo stimare il costo dell'energia"
+              }
+            ],
+            "correctAnswer": "pp-60-b"
+          }
+        ]
+      }

@@ -12,6 +12,8 @@ import Footer from './components/Footer';
 import MMDocumentationPage from './pages/MMDocumentationPage';
 import FIDocumentationPage from './pages/FIDocumentationPage';
 import SDDocumentationPage from './pages/SDDocumentationPage';
+import PPDocumentationPage from './pages/PPDocumentationPage';
+import SAPSecurityPageDocumentation from './pages/SAPSecurityPageDocumentation';
 function App() {
   return (
     <QuizProvider>
@@ -28,6 +30,8 @@ function App() {
               <Route path="/mm-documentation" element={<MMDocumentationPage />} />
               <Route path="/fi-documentation" element={<FIDocumentationPage />} />
               <Route path="/sd-documentation" element={<SDDocumentationPage />} />
+              <Route path="/pp-documentation" element={<PPDocumentationPage />} />
+              <Route path="/security-documentation" element={<SAPSecurityPageDocumentation />} />
             </Routes>
           </main>
           <Footer />

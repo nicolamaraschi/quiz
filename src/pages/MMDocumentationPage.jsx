@@ -142,6 +142,11 @@ const MMDocumentation = () => {
     fontWeight: 'bold',
     color: darkMode ? '#61dafb' : '#0056b3'
   };
+  // Aggiungi questa definizione dopo listItemStyle
+const nestedListStyle = {
+  paddingLeft: '2rem',
+  marginTop: '0.5rem'
+};
 
   return (
     <div style={containerStyle}>
@@ -621,6 +626,447 @@ const MMDocumentation = () => {
           </div>
         )}
       </div>
+
+      {/* Sezione: Gestione Entrata Fattura */}
+<div style={sectionStyle}>
+  <div 
+    style={sectionHeaderStyle}
+    onClick={() => toggleSection('sectionEntryFattura')}
+  >
+    <h2 style={sectionTitleStyle}>Gestione Entrata Fattura</h2>
+    <span style={{fontSize: `${fontSize + 4}px`}}>{activeSection === 'sectionEntryFattura' ? '▼' : '▶'}</span>
+  </div>
+  
+  {activeSection === 'sectionEntryFattura' && (
+    <div style={sectionContentStyle}>
+      <h3 style={subSectionTitleStyle}>Processo di Verifica Fattura</h3>
+      <p style={{fontWeight: 'bold', marginBottom: '0.5rem'}}>Concetti generali:</p>
+      <ul style={listStyle}>
+        <li style={listItemStyle}>Il processo di controllo fatture completa il ciclo di approvvigionamento</li>
+        <li style={listItemStyle}>Verifica la corrispondenza tra ordine d'acquisto, entrata merce e fattura (logica a tre vie)</li>
+        <li style={listItemStyle}>Gestisce le tolleranze di prezzo e quantità configurabili</li>
+      </ul>
+
+      <h3 style={subSectionTitleStyle}>Transazione MIRO</h3>
+      <p style={{fontWeight: 'bold', marginBottom: '0.5rem'}}>Struttura principale:</p>
+      <ul style={listStyle}>
+        <li style={listItemStyle}><span style={strongStyle}>Testata</span>
+          <ul style={nestedListStyle}>
+            <li style={listItemStyle}>Data fattura (data del documento fornitore)</li>
+            <li style={listItemStyle}>Riferimento (numero della fattura fornitore)</li>
+            <li style={listItemStyle}>Importo totale</li>
+            <li style={listItemStyle}>Calcolo imposte (flag per determinare il calcolo automatico dell'IVA)</li>
+          </ul>
+        </li>
+        <li style={listItemStyle}><span style={strongStyle}>Tab disponibili</span>
+          <ul style={nestedListStyle}>
+            <li style={listItemStyle}>Dati di base: informazioni generali</li>
+            <li style={listItemStyle}>Dati pagamento: data base, modalità di pagamento</li>
+            <li style={listItemStyle}>Dettagli: tipo documento (fattura fornitori)</li>
+            <li style={listItemStyle}>Imposte: informazioni relative all'IVA</li>
+          </ul>
+        </li>
+        <li style={listItemStyle}><span style={strongStyle}>Riferimenti per ricerca</span>
+          <ul style={nestedListStyle}>
+            <li style={listItemStyle}>Ordine d'acquisto (numero ordine)</li>
+            <li style={listItemStyle}>Bolla di consegna (fornita dal fornitore)</li>
+            <li style={listItemStyle}>Lettera di vettura</li>
+            <li style={listItemStyle}>Fornitore</li>
+          </ul>
+        </li>
+      </ul>
+
+      <h3 style={subSectionTitleStyle}>Gestione Differenze</h3>
+      <p style={{fontWeight: 'bold', marginBottom: '0.5rem'}}>Scenari gestiti:</p>
+      <ul style={listStyle}>
+        <li style={listItemStyle}><span style={strongStyle}>Differenze di prezzo</span>
+          <ul style={nestedListStyle}>
+            <li style={listItemStyle}>Movimenta conti come "acquisti di materie prime" e "perdita da scostamento prezzo"</li>
+            <li style={listItemStyle}>Tolleranze configurabili per controllare gli scostamenti</li>
+            <li style={listItemStyle}>Blocchi automatici oltre determinate soglie</li>
+          </ul>
+        </li>
+        <li style={listItemStyle}><span style={strongStyle}>Fatturazione parziale</span>
+          <ul style={nestedListStyle}>
+            <li style={listItemStyle}>Possibilità di fatturare solo parte delle entrate merci</li>
+            <li style={listItemStyle}>Tracciamento delle quantità già fatturate</li>
+          </ul>
+        </li>
+        <li style={listItemStyle}><span style={strongStyle}>Flag importanti</span>
+          <ul style={nestedListStyle}>
+            <li style={listItemStyle}>"Ver. fatt. dopo mov. merc." (GR-Based IV): vincola la registrazione della fattura all'avvenuta entrata merci</li>
+            <li style={listItemStyle}>"Controllo fattura riferimento in entrata merce": meccanismo di doppio controllo</li>
+          </ul>
+        </li>
+      </ul>
+
+      <h3 style={subSectionTitleStyle}>Fornitore di Servizi di Trasporto</h3>
+      <p style={{fontWeight: 'bold', marginBottom: '0.5rem'}}>Funzionalità speciale:</p>
+      <ul style={listStyle}>
+        <li style={listItemStyle}>Permette di registrare fatture per costi di trasporto emesse da un fornitore diverso da quello principale dell'ordine</li>
+        <li style={listItemStyle}>Importanza di registrare i costi di trasporto in riferimento all'ordine d'acquisto per una corretta valorizzazione del magazzino</li>
+        <li style={listItemStyle}>Consente di attribuire i costi di trasporto al costo del materiale invece di registrarli direttamente su un conto COGE</li>
+      </ul>
+    </div>
+  )}
+</div>
+
+{/* Sezione: Gestione Magazzino Logico (MM-IM) */}
+<div style={sectionStyle}>
+  <div 
+    style={sectionHeaderStyle}
+    onClick={() => toggleSection('sectionMagazzinoLogico')}
+  >
+    <h2 style={sectionTitleStyle}>Gestione Magazzino Logico (MM-IM)</h2>
+    <span style={{fontSize: `${fontSize + 4}px`}}>{activeSection === 'sectionMagazzinoLogico' ? '▼' : '▶'}</span>
+  </div>
+  
+  {activeSection === 'sectionMagazzinoLogico' && (
+    <div style={sectionContentStyle}>
+      <h3 style={subSectionTitleStyle}>Reportistica di Magazzino</h3>
+      <p style={{fontWeight: 'bold', marginBottom: '0.5rem'}}>Transazioni principali:</p>
+      <ul style={listStyle}>
+        <li style={listItemStyle}><span style={strongStyle}>MB51 - Lista documenti materiale</span>
+          <ul style={nestedListStyle}>
+            <li style={listItemStyle}>Visualizza tutti i movimenti di materiale in un intervallo di date</li>
+            <li style={listItemStyle}>Filtrabile per tipo movimento, magazzino, materiale</li>
+            <li style={listItemStyle}>Personalizzazione layout per informazioni aggiuntive (utente, bolla, OdA)</li>
+          </ul>
+        </li>
+        <li style={listItemStyle}><span style={strongStyle}>MB52 - Lista stock magazzino</span>
+          <ul style={nestedListStyle}>
+            <li style={listItemStyle}>Riepilogo giacenze attuali per materiali e magazzini</li>
+            <li style={listItemStyle}>Opzioni di filtro multiple (materiale, divisione, magazzino, partita)</li>
+            <li style={listItemStyle}>Flag per visualizzare/nascondere stock zero, partite, valori, stock speciali</li>
+          </ul>
+        </li>
+        <li style={listItemStyle}><span style={strongStyle}>MMBE - Riepilogo stock per singolo materiale</span>
+          <ul style={nestedListStyle}>
+            <li style={listItemStyle}>Giacenza dettagliata per un singolo materiale a tutti i livelli</li>
+            <li style={listItemStyle}>Visualizzazione di società, plant, magazzino, partite, stock speciale</li>
+            <li style={listItemStyle}>Possibilità di cambiare l'unità di misura</li>
+          </ul>
+        </li>
+        <li style={listItemStyle}><span style={strongStyle}>MB5B - Stock a data di registrazione</span>
+          <ul style={nestedListStyle}>
+            <li style={listItemStyle}>Visualizza lo stock in una data specifica nel passato</li>
+          </ul>
+        </li>
+        <li style={listItemStyle}><span style={strongStyle}>MBLB - Stock presso fornitore</span>
+          <ul style={nestedListStyle}>
+            <li style={listItemStyle}>Mostra lo stock giacente presso il fornitore</li>
+          </ul>
+        </li>
+      </ul>
+
+      <h3 style={subSectionTitleStyle}>Tipi di Stock e Stock Speciali</h3>
+      <p style={{fontWeight: 'bold', marginBottom: '0.5rem'}}>Classificazioni importanti:</p>
+      <ul style={listStyle}>
+        <li style={listItemStyle}><span style={strongStyle}>Tipi Stock</span>
+          <ul style={nestedListStyle}>
+            <li style={listItemStyle}>Utilizzabile liberamente: stock disponibile per tutti gli scopi</li>
+            <li style={listItemStyle}>Bloccato: stock non disponibile in attesa di decisioni</li>
+            <li style={listItemStyle}>Controllo qualità: stock in attesa di ispezione</li>
+          </ul>
+        </li>
+        <li style={listItemStyle}><span style={strongStyle}>Stock Speciali</span>
+          <ul style={nestedListStyle}>
+            <li style={listItemStyle}>Conto deposito cliente/fornitore: materiale di terzi in nostro possesso</li>
+            <li style={listItemStyle}>Progetto: stock assegnato a progetto specifico</li>
+            <li style={listItemStyle}>Ordine cliente: stock riservato per cliente (Make to Order)</li>
+            <li style={listItemStyle}>Lavorazione esterna: materiale presso fornitore per lavorazione</li>
+            <li style={listItemStyle}>Stock in transito: materiale in trasferimento tra sedi</li>
+          </ul>
+        </li>
+      </ul>
+
+      <h3 style={subSectionTitleStyle}>Movimentazioni in MIGO</h3>
+      <p style={{fontWeight: 'bold', marginBottom: '0.5rem'}}>Operazioni principali:</p>
+      <ul style={listStyle}>
+        <li style={listItemStyle}><span style={strongStyle}>Consumi (uscite merci)</span>
+          <ul style={nestedListStyle}>
+            <li style={listItemStyle}>201: Consumo a centro di costo</li>
+            <li style={listItemStyle}>221: Consumo per progetto</li>
+            <li style={listItemStyle}>261: Consumo per ordine</li>
+            <li style={listItemStyle}>551: Rottamazione</li>
+          </ul>
+        </li>
+        <li style={listItemStyle}><span style={strongStyle}>Trasferimenti</span>
+          <ul style={nestedListStyle}>
+            <li style={listItemStyle}>311: Trasferimento nella divisione (tra magazzini dello stesso plant)</li>
+            <li style={listItemStyle}>301: Trasferimento tra plant diversi</li>
+            <li style={listItemStyle}>313: Prelievo per trasferimento</li>
+            <li style={listItemStyle}>315: Immagazzinamento per trasferimento</li>
+            <li style={listItemStyle}>321: Trasferimento da qualità a utilizzabile liberamente</li>
+            <li style={listItemStyle}>322: Trasferimento da utilizzabile liberamente a controllo qualità</li>
+          </ul>
+        </li>
+        <li style={listItemStyle}><span style={strongStyle}>Inventario</span>
+          <ul style={nestedListStyle}>
+            <li style={listItemStyle}>561: Entrata per inventario (carico iniziale)</li>
+            <li style={listItemStyle}>701: Entrata merci per inventario (incremento)</li>
+            <li style={listItemStyle}>702: Uscita merci per inventario (decremento)</li>
+          </ul>
+        </li>
+      </ul>
+
+      <h3 style={subSectionTitleStyle}>Funzionalità Aggiuntive MIGO</h3>
+      <p style={{fontWeight: 'bold', marginBottom: '0.5rem'}}>Opzioni utili:</p>
+      <ul style={listStyle}>
+        <li style={listItemStyle}><span style={strongStyle}>Parcheggiare</span>
+          <ul style={nestedListStyle}>
+            <li style={listItemStyle}>Permette di salvare una movimentazione senza registrarla</li>
+            <li style={listItemStyle}>I documenti parcheggiati possono essere richiamati successivamente</li>
+            <li style={listItemStyle}>Richiede riesecuzione del salvataggio dopo riapertura</li>
+          </ul>
+        </li>
+        <li style={listItemStyle}><span style={strongStyle}>Registrazione retroattiva</span>
+          <ul style={nestedListStyle}>
+            <li style={listItemStyle}>Possibilità di registrare movimenti con data nel passato</li>
+            <li style={listItemStyle}>Rispetta i periodi contabili aperti</li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+  )}
+</div>
+
+{/* Sezione: Inventario Fisico */}
+<div style={sectionStyle}>
+  <div 
+    style={sectionHeaderStyle}
+    onClick={() => toggleSection('sectionInventario')}
+  >
+    <h2 style={sectionTitleStyle}>Inventario Fisico</h2>
+    <span style={{fontSize: `${fontSize + 4}px`}}>{activeSection === 'sectionInventario' ? '▼' : '▶'}</span>
+  </div>
+  
+  {activeSection === 'sectionInventario' && (
+    <div style={sectionContentStyle}>
+      <h3 style={subSectionTitleStyle}>Tipologie di Inventario</h3>
+      <p style={{fontWeight: 'bold', marginBottom: '0.5rem'}}>Modalità principali:</p>
+      <ul style={listStyle}>
+        <li style={listItemStyle}><span style={strongStyle}>Inventario Periodico</span>
+          <ul style={nestedListStyle}>
+            <li style={listItemStyle}>Conteggio completo a intervalli definiti (spesso annuale)</li>
+            <li style={listItemStyle}>Tipicamente eseguito a fine esercizio</li>
+          </ul>
+        </li>
+        <li style={listItemStyle}><span style={strongStyle}>Inventario Rotativo</span>
+          <ul style={nestedListStyle}>
+            <li style={listItemStyle}>Conteggio di una parte del magazzino a intervalli regolari</li>
+            <li style={listItemStyle}>Distribuzione dell'attività durante l'anno</li>
+            <li style={listItemStyle}>Possibilità di focus su articoli ad alto valore o alta rotazione</li>
+          </ul>
+        </li>
+      </ul>
+
+      <h3 style={subSectionTitleStyle}>Processo di Inventario</h3>
+      <p style={{fontWeight: 'bold', marginBottom: '0.5rem'}}>Fasi principali:</p>
+      <ul style={listStyle}>
+        <li style={listItemStyle}><span style={strongStyle}>Preparazione</span>
+          <ul style={nestedListStyle}>
+            <li style={listItemStyle}>Creazione documento di inventario</li>
+            <li style={listItemStyle}>Stampa documenti di conteggio</li>
+            <li style={listItemStyle}>Organizzazione attività di conteggio "cieco" (senza visualizzare la quantità a sistema)</li>
+          </ul>
+        </li>
+        <li style={listItemStyle}><span style={strongStyle}>Esecuzione</span>
+          <ul style={nestedListStyle}>
+            <li style={listItemStyle}>Conteggio fisico delle giacenze</li>
+            <li style={listItemStyle}>Registrazione risultati (possibile tramite transazione MI10)</li>
+          </ul>
+        </li>
+        <li style={listItemStyle}><span style={strongStyle}>Analisi differenze</span>
+          <ul style={nestedListStyle}>
+            <li style={listItemStyle}>Controlli sulle differenze inventariali basati su parametri di customizing</li>
+            <li style={listItemStyle}>Possibilità di riconteggio per differenze significative</li>
+          </ul>
+        </li>
+        <li style={listItemStyle}><span style={strongStyle}>Registrazione</span>
+          <ul style={nestedListStyle}>
+            <li style={listItemStyle}>Creazione documenti materiale per rettificare le giacenze</li>
+            <li style={listItemStyle}>Utilizzo tipi movimento 701 (incremento) e 702 (decremento)</li>
+            <li style={listItemStyle}>Impatto contabile delle differenze inventariali</li>
+          </ul>
+        </li>
+      </ul>
+
+      <h3 style={subSectionTitleStyle}>Carico Iniziale Giacenze</h3>
+      <p style={{fontWeight: 'bold', marginBottom: '0.5rem'}}>In sistema nuovo:</p>
+      <ul style={listStyle}>
+        <li style={listItemStyle}>Utilizzo tipo movimento 561 (Entrata per inventario)</li>
+        <li style={listItemStyle}>Conti contabili diversi rispetto alle rettifiche inventariali standard</li>
+        <li style={listItemStyle}>Parte cruciale della fase di migrazione dati in un nuovo sistema</li>
+      </ul>
+    </div>
+  )}
+</div>
+
+{/* Sezione: Extended Warehouse Management (EWM) */}
+<div style={sectionStyle}>
+  <div 
+    style={sectionHeaderStyle}
+    onClick={() => toggleSection('sectionEWM')}
+  >
+    <h2 style={sectionTitleStyle}>Extended Warehouse Management (EWM)</h2>
+    <span style={{fontSize: `${fontSize + 4}px`}}>{activeSection === 'sectionEWM' ? '▼' : '▶'}</span>
+  </div>
+  
+  {activeSection === 'sectionEWM' && (
+    <div style={sectionContentStyle}>
+      <h3 style={subSectionTitleStyle}>Introduzione a SAP EWM</h3>
+      <p style={{fontWeight: 'bold', marginBottom: '0.5rem'}}>Concetti chiave:</p>
+      <ul style={listStyle}>
+        <li style={listItemStyle}>Modulo principale di SAP per la gestione dei magazzini fisici</li>
+        <li style={listItemStyle}>Soluzione su cui SAP sta investendo maggiormente dal punto di vista commerciale</li>
+        <li style={listItemStyle}>Disponibile in diverse licenze (Basic ed Extended)</li>
+      </ul>
+
+      <h3 style={subSectionTitleStyle}>Implementazioni</h3>
+      <p style={{fontWeight: 'bold', marginBottom: '0.5rem'}}>Modalità di implementazione:</p>
+      <ul style={listStyle}>
+        <li style={listItemStyle}><span style={strongStyle}>Decentralizzata</span>
+          <ul style={nestedListStyle}>
+            <li style={listItemStyle}>EWM installato su sistema separato (database diverso) da SAP S/4HANA</li>
+            <li style={listItemStyle}>Adatta per aziende di grandi dimensioni con elevati volumi di dati</li>
+            <li style={listItemStyle}>Richiede configurazione dell'interfacciamento tra sistemi</li>
+          </ul>
+        </li>
+        <li style={listItemStyle}><span style={strongStyle}>Embedded</span>
+          <ul style={nestedListStyle}>
+            <li style={listItemStyle}>EWM integrato direttamente in SAP S/4HANA (stesso database)</li>
+            <li style={listItemStyle}>Soluzione più comune per aziende italiane di medie dimensioni</li>
+            <li style={listItemStyle}>Anagrafiche materiali condivise tra MM ed EWM</li>
+          </ul>
+        </li>
+      </ul>
+
+      <h3 style={subSectionTitleStyle}>Struttura del Magazzino</h3>
+      <p style={{fontWeight: 'bold', marginBottom: '0.5rem'}}>Gerarchia organizzativa:</p>
+      <ul style={listStyle}>
+        <li style={listItemStyle}><span style={strongStyle}>Numero di Magazzino (Warehouse Number)</span>
+          <ul style={nestedListStyle}>
+            <li style={listItemStyle}>Rappresenta un perimetro fisico (es. stabilimento)</li>
+            <li style={listItemStyle}>Si collega ai magazzini logici definiti in MM</li>
+          </ul>
+        </li>
+        <li style={listItemStyle}><span style={strongStyle}>Tipo Magazzino (Storage Type)</span>
+          <ul style={nestedListStyle}>
+            <li style={listItemStyle}>Raggruppa sezioni con comportamenti simili</li>
+            <li style={listItemStyle}>Esempi: scaffali, stoccaggio a blocchi (pile di pallet)</li>
+          </ul>
+        </li>
+        <li style={listItemStyle}><span style={strongStyle}>Area Magazzino (Storage Section)</span>
+          <ul style={nestedListStyle}>
+            <li style={listItemStyle}>Suddivisione di un tipo magazzino</li>
+            <li style={listItemStyle}>Esempio: aree in base all'altezza (A, B, C) per gestire rotazione merce</li>
+          </ul>
+        </li>
+        <li style={listItemStyle}><span style={strongStyle}>Ubicazione (Storage Bin)</span>
+          <ul style={nestedListStyle}>
+            <li style={listItemStyle}>Unità più piccola di stoccaggio</li>
+            <li style={listItemStyle}>Posizione specifica dove viene stoccato un prodotto</li>
+          </ul>
+        </li>
+      </ul>
+
+      <h3 style={subSectionTitleStyle}>Elementi Cross-Process</h3>
+      <p style={{fontWeight: 'bold', marginBottom: '0.5rem'}}>Concetti fondamentali:</p>
+      <ul style={listStyle}>
+        <li style={listItemStyle}><span style={strongStyle}>Richiesta di Magazzino (Warehouse Request)</span>
+          <ul style={nestedListStyle}>
+            <li style={listItemStyle}>Documento che abilita l'elaborazione delle attività di magazzino</li>
+            <li style={listItemStyle}>Può derivare da ordini di acquisto o vendita</li>
+          </ul>
+        </li>
+        <li style={listItemStyle}><span style={strongStyle}>Unità di Movimentazione (Handling Unit - HU)</span>
+          <ul style={nestedListStyle}>
+            <li style={listItemStyle}>Rappresenta fisicamente un pallet o contenitore con merce</li>
+            <li style={listItemStyle}>Ogni HU ha un codice univoco in SAP</li>
+            <li style={listItemStyle}>Facilita le movimentazioni logistiche</li>
+          </ul>
+        </li>
+        <li style={listItemStyle}><span style={strongStyle}>Task di Magazzino (Warehouse Task)</span>
+          <ul style={nestedListStyle}>
+            <li style={listItemStyle}>Istruzione specifica per un operatore</li>
+            <li style={listItemStyle}>Elemento base utilizzato nei terminali a radiofrequenza</li>
+          </ul>
+        </li>
+        <li style={listItemStyle}><span style={strongStyle}>Ordine di Magazzino (Warehouse Order)</span>
+          <ul style={nestedListStyle}>
+            <li style={listItemStyle}>Raggruppa più task con caratteristiche simili</li>
+            <li style={listItemStyle}>Facilita l'assegnazione e l'esecuzione delle attività</li>
+          </ul>
+        </li>
+      </ul>
+
+      <h3 style={subSectionTitleStyle}>Processi Principali</h3>
+      <p style={{fontWeight: 'bold', marginBottom: '0.5rem'}}>Flussi operativi:</p>
+      <ul style={listStyle}>
+        <li style={listItemStyle}><span style={strongStyle}>Entrata Merci (Inbound)</span>
+          <ul style={nestedListStyle}>
+            <li style={listItemStyle}>Fornitura (Inbound Delivery) come punto di connessione tra MM ed EWM</li>
+            <li style={listItemStyle}>Strategie di Immagazzinamento (Putaway Strategies) per determinare ubicazioni ottimali</li>
+            <li style={listItemStyle}>Accettazione merce, controllo qualità, reimballaggio, stoccaggio</li>
+          </ul>
+        </li>
+        <li style={listItemStyle}><span style={strongStyle}>Uscita Merci (Outbound)</span>
+          <ul style={nestedListStyle}>
+            <li style={listItemStyle}>Ordine di Consegna in Uscita (Outbound Delivery Order) come connessione con SD</li>
+            <li style={listItemStyle}>Strategie di Prelievo (Stock Removal Strategies) come FIFO, LIFO, FEFO</li>
+            <li style={listItemStyle}>Picking, packing, staging, loading e spedizione</li>
+          </ul>
+        </li>
+        <li style={listItemStyle}><span style={strongStyle}>Processi Interni</span>
+          <ul style={nestedListStyle}>
+            <li style={listItemStyle}>Replenishment (Rifornimento) per mantenere livelli minimi di scorta</li>
+            <li style={listItemStyle}>Movimenti Ad Hoc per riorganizzare il magazzino</li>
+            <li style={listItemStyle}>Registrazioni di Modifica per cambiare caratteristiche dello stock</li>
+          </ul>
+        </li>
+        <li style={listItemStyle}><span style={strongStyle}>Integrazione con Produzione</span>
+          <ul style={nestedListStyle}>
+            <li style={listItemStyle}>Approntamento Produzione (Production Staging)</li>
+            <li style={listItemStyle}>Area Approntamento Produzione (PSA) come zona temporanea</li>
+            <li style={listItemStyle}>Metodi di Approntamento per gestire flussi di materiali verso produzione</li>
+          </ul>
+        </li>
+      </ul>
+
+      <h3 style={subSectionTitleStyle}>Strumenti Operativi</h3>
+      <p style={{fontWeight: 'bold', marginBottom: '0.5rem'}}>Interfacce principali:</p>
+      <ul style={listStyle}>
+        <li style={listItemStyle}><span style={strongStyle}>Monitor di Magazzino</span>
+          <ul style={nestedListStyle}>
+            <li style={listItemStyle}>Transazione /SCWM/MON per monitorare attività di magazzino</li>
+            <li style={listItemStyle}>Visualizzazione forniture, ordini, task e stock</li>
+          </ul>
+        </li>
+        <li style={listItemStyle}><span style={strongStyle}>Terminali a Radiofrequenza</span>
+          <ul style={nestedListStyle}>
+            <li style={listItemStyle}>Simulazione con transazione /SCWM/RFUI</li>
+            <li style={listItemStyle}>Utilizzo di scanner per codici a barre di HU e ubicazioni</li>
+          </ul>
+        </li>
+        <li style={listItemStyle}><span style={strongStyle}>SAP Fiori per EWM</span>
+          <ul style={nestedListStyle}>
+            <li style={listItemStyle}>App "Warehouse KPIs - Operations" per monitoraggio KPI</li>
+            <li style={listItemStyle}>App dedicate per outbound e spedizioni</li>
+          </ul>
+        </li>
+      </ul>
+
+      <h3 style={subSectionTitleStyle}>Yard Management</h3>
+      <p style={{fontWeight: 'bold', marginBottom: '0.5rem'}}>Gestione piazzali:</p>
+      <ul style={listStyle}>
+        <li style={listItemStyle}>Gestione dei piazzali e parcheggi camion</li>
+        <li style={listItemStyle}>Possibile integrazione con sistemi di prenotazione online</li>
+        <li style={listItemStyle}>Monitoraggio tempi di carico/scarico</li>
+      </ul>
+    </div>
+  )}
+</div>
       
       {/* Indice rapido */}
       <div style={{...sectionStyle, marginTop: '3rem'}}>

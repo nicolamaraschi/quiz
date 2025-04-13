@@ -1724,6 +1724,236 @@
               {
                 "id": "sd-75-d",
                 "text": "Solo attraverso listini cartacei"
+              },
+              {
+                "id": "sd-76",
+                "text": "Quali sono i tipi di fatturazione disponibili in SAP SD?",
+                "answers": [
+                  {
+                    "id": "sd-76-a",
+                    "text": "Solo fatture individuali per cliente"
+                  },
+                  {
+                    "id": "sd-76-b",
+                    "text": "Fattura unica per singola consegna, fattura riepilogativa per più consegne e fattura parziale per una consegna"
+                  },
+                  {
+                    "id": "sd-76-c",
+                    "text": "Solo fatture mensili cumulative"
+                  },
+                  {
+                    "id": "sd-76-d",
+                    "text": "Solo fatture in blocco per data di consegna"
+                  }
+                ],
+                "correctAnswer": "sd-76-b"
+              },
+              {
+                "id": "sd-77",
+                "text": "Quali App Fiori sono disponibili per la gestione della fatturazione in SAP S/4 HANA?",
+                "answers": [
+                  {
+                    "id": "sd-77-a",
+                    "text": "Solo 'Crea documenti di fatturazione'"
+                  },
+                  {
+                    "id": "sd-77-b",
+                    "text": "Solo 'Gestisci documenti di fatturazione' e 'Visualizza documenti di fatturazione'"
+                  },
+                  {
+                    "id": "sd-77-c",
+                    "text": "Crea, Gestisci, Visualizza e Modifica documenti di fatturazione"
+                  },
+                  {
+                    "id": "sd-77-d",
+                    "text": "Non esistono App Fiori per la fatturazione"
+                  }
+                ],
+                "correctAnswer": "sd-77-c"
+              },
+              {
+                "id": "sd-78",
+                "text": "Cosa accade durante il rilascio in contabilità di una fattura in SAP SD?",
+                "answers": [
+                  {
+                    "id": "sd-78-a",
+                    "text": "Solo l'aggiornamento dello stock"
+                  },
+                  {
+                    "id": "sd-78-b",
+                    "text": "Creazione di una fattura logistica con dati raccolti dai documenti precedenti e creazione di un documento contabile"
+                  },
+                  {
+                    "id": "sd-78-c",
+                    "text": "Solo l'invio della fattura al cliente"
+                  },
+                  {
+                    "id": "sd-78-d",
+                    "text": "Solo la stampa fisica del documento"
+                  }
+                ],
+                "correctAnswer": "sd-78-b"
+              },
+              {
+                "id": "sd-79",
+                "text": "Quale transazione GUI si utilizza per creare una fattura in SAP SD?",
+                "answers": [
+                  {
+                    "id": "sd-79-a",
+                    "text": "VF01"
+                  },
+                  {
+                    "id": "sd-79-b",
+                    "text": "VA01"
+                  },
+                  {
+                    "id": "sd-79-c",
+                    "text": "VL01N"
+                  },
+                  {
+                    "id": "sd-79-d",
+                    "text": "MM01"
+                  }
+                ],
+                "correctAnswer": "sd-79-a"
+              },
+              {
+                "id": "sd-80",
+                "text": "Quale numero viene stampato sulla fattura finale consegnata al cliente?",
+                "answers": [
+                  {
+                    "id": "sd-80-a",
+                    "text": "Il numero dell'ordine di vendita"
+                  },
+                  {
+                    "id": "sd-80-b",
+                    "text": "Il numero della fattura logistica"
+                  },
+                  {
+                    "id": "sd-80-c",
+                    "text": "Il numero del documento contabile"
+                  },
+                  {
+                    "id": "sd-80-d",
+                    "text": "Il numero della consegna"
+                  }
+                ],
+                "correctAnswer": "sd-80-c"
+              },
+              {
+                "id": "sd-81",
+                "text": "Come si definiscono i tipi di documento di fatturazione in SAP SD?",
+                "answers": [
+                  {
+                    "id": "sd-81-a",
+                    "text": "Tramite la transazione VA01"
+                  },
+                  {
+                    "id": "sd-81-b",
+                    "text": "Tramite la transazione VKOA"
+                  },
+                  {
+                    "id": "sd-81-c",
+                    "text": "Non possono essere personalizzati"
+                  },
+                  {
+                    "id": "sd-81-d",
+                    "text": "Solo attraverso interventi ABAP"
+                  }
+                ],
+                "correctAnswer": "sd-81-b"
+              },
+              {
+                "id": "sd-82",
+                "text": "Come viene emessa una nota credito in SAP SD?",
+                "answers": [
+                  {
+                    "id": "sd-82-a",
+                    "text": "Solo manualmente senza riferimenti a documenti precedenti"
+                  },
+                  {
+                    "id": "sd-82-b",
+                    "text": "A fronte di una richiesta di accredito, con o senza riferimento a una fattura precedente"
+                  },
+                  {
+                    "id": "sd-82-c",
+                    "text": "Solo come rettifica automatica"
+                  },
+                  {
+                    "id": "sd-82-d",
+                    "text": "Solo per annullare completamente una fattura"
+                  }
+                ],
+                "correctAnswer": "sd-82-b"
+              },
+              {
+                "id": "sd-83",
+                "text": "Quale caratteristica hanno le richieste di accredito/addebito appena create in SAP SD?",
+                "answers": [
+                  {
+                    "id": "sd-83-a",
+                    "text": "Sono immediatamente pronte per la fatturazione"
+                  },
+                  {
+                    "id": "sd-83-b",
+                    "text": "Nascono bloccate alla fatturazione e richiedono il motivo ordine"
+                  },
+                  {
+                    "id": "sd-83-c",
+                    "text": "Vengono automaticamente fatturate"
+                  },
+                  {
+                    "id": "sd-83-d",
+                    "text": "Non richiedono alcuna informazione aggiuntiva"
+                  }
+                ],
+                "correctAnswer": "sd-83-b"
+              },
+              {
+                "id": "sd-84",
+                "text": "Quali App Fiori sono disponibili per la gestione delle note credito in SAP S/4 HANA?",
+                "answers": [
+                  {
+                    "id": "sd-84-a",
+                    "text": "Solo 'Crea documenti di fatturazione'"
+                  },
+                  {
+                    "id": "sd-84-b",
+                    "text": "Gestisci richieste di accredito, Gestisci richieste di accredito v.2, Crea e Gestisci documenti di fatturazione"
+                  },
+                  {
+                    "id": "sd-84-c",
+                    "text": "Non esistono App Fiori per le note credito"
+                  },
+                  {
+                    "id": "sd-84-d",
+                    "text": "Solo 'Visualizza richieste di accredito'"
+                  }
+                ],
+                "correctAnswer": "sd-84-b"
+              },
+              {
+                "id": "sd-85",
+                "text": "Quale transazione GUI può essere utilizzata per creare richieste di accredito in SAP SD?",
+                "answers": [
+                  {
+                    "id": "sd-85-a",
+                    "text": "VA01"
+                  },
+                  {
+                    "id": "sd-85-b",
+                    "text": "VL01N"
+                  },
+                  {
+                    "id": "sd-85-c",
+                    "text": "FB01"
+                  },
+                  {
+                    "id": "sd-85-d",
+                    "text": "MM01"
+                  }
+                ],
+                "correctAnswer": "sd-85-a"
               }
             ],
             "correctAnswer": "sd-75-b"

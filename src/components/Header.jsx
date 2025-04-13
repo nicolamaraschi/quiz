@@ -307,6 +307,12 @@ const Header = () => {
               <DropdownItem onClick={() => handleDocsNavigation('/sd-documentation')}>
               Sales & Distribution (SD)
               </DropdownItem>
+              <DropdownItem onClick={() => handleDocsNavigation('/pp-documentation')}>
+                Production Planning (PP)
+              </DropdownItem>
+              <DropdownItem onClick={() => handleDocsNavigation('/security-documentation')}>
+                Security (SAP Security)
+              </DropdownItem>
             </DropdownContent>
           </DropdownContainer>
           
