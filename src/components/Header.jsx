@@ -1,236 +1,301 @@
 // src/components/Header.jsx
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useRef } from 'react';
 import { Link, useLocation, useNavigate } from 'react-router-dom';
 import styled from 'styled-components';
 import useQuiz from '../hooks/useQuiz';
 
+// Modifica il HeaderContainer
 const HeaderContainer = styled.header`
-  background-color: #0056b3;
+  background-color: #2563eb;
   color: white;
-  padding: 1rem 2rem;
+  padding: 0.75rem 2rem;
   display: flex;
-  justify-content: space-between;
+  justify-content: space-between; // Cambia questo in space-around o space-evenly
   align-items: center;
-  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  transition: all 0.3s ease;
 
   @media (max-width: 768px) {
+    padding: 0.75rem 1rem;
+  }
+`;
+// Aggiungi questo nuovo container che andrà a sostituire NavContainer
+const MainContainer = styled.div`
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+`;
+
+// Modifica NavContainer
+const NavContainer = styled.div`
+  display: flex;
+  align-items: center;
+  justify-content: center; // Aggiungi questa proprietà
+  flex: 1; // Aggiungi questa proprietà per farlo espandere
+  gap: 1rem;
+`;
+
+// Modifica Nav
+const Nav = styled.nav`
+  display: flex;
+  gap: 2rem; // Aumenta lo spazio tra i link
+  align-items: center;
+  justify-content: center; // Centra gli elementi
+  width: 100%; // Usa tutta la larghezza disponibile
+  
+  @media (max-width: 768px) {
+    position: fixed;
+    top: 0;
+    right: ${props => props.isOpen ? '0' : '-100%'};
+    width: 250px;
+    height: 100vh;
+    background-color: #1e40af;
     flex-direction: column;
-    padding: 1rem;
+    align-items: flex-start;
+    justify-content: flex-start; // Ripristina l'allineamento per mobile
+    padding: 5rem 1.5rem 2rem;
+    gap: 1.25rem;
+    transition: right 0.3s ease;
+    box-shadow: ${props => props.isOpen ? '-5px 0 15px rgba(0,0,0,0.1)' : 'none'};
+    overflow-y: auto;
   }
 `;
 
-const Logo = styled.h1`
-  margin: 0;
-  font-size: 1.5rem;
-  font-weight: bold;
+const LogoContainer = styled.div`
   display: flex;
   align-items: center;
+  z-index: 101;
+`;
+
+const Logo = styled(Link)`
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: white;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  
+  &:hover {
+    opacity: 0.9;
+  }
 `;
 
 const LogoIcon = styled.span`
-  margin-right: 10px;
   font-size: 1.6rem;
 `;
 
-const Nav = styled.nav`
-  display: flex;
-  gap: 1.5rem;
-  align-items: center;
 
-  @media (max-width: 768px) {
-    margin-top: 1rem;
-    width: 100%;
-    justify-content: center;
-    flex-wrap: wrap;
-    gap: 0.8rem;
-  }
+const NavItem = styled.div`
+  position: relative;
 `;
 
 const NavLink = styled(Link)`
   color: white;
   text-decoration: none;
   font-weight: 500;
-  transition: all 0.3s;
-  padding: 8px 12px;
-  border-radius: 4px;
-  position: relative;
-  background-color: ${props => props.active ? 'rgba(255, 255, 255, 0.15)' : 'transparent'};
-
-  &:hover {
-    background-color: rgba(255, 255, 255, 0.2);
-  }
-
-  &::after {
-    content: '';
-    position: absolute;
-    bottom: 0;
-    left: 50%;
-    transform: translateX(-50%);
-    width: ${props => props.active ? '50%' : '0'};
-    height: 3px;
-    background-color: white;
-    transition: width 0.3s;
-  }
-
-  &:hover::after {
-    width: 50%;
-  }
-  
-  @media (max-width: 768px) {
-    padding: 6px 10px;
-    font-size: 0.9rem;
-  }
-`;
-
-const DropdownContainer = styled.div`
-  position: relative;
-  display: inline-block;
-`;
-
-const DropdownButton = styled.button`
-  color: white;
-  background-color: ${props => props.active ? 'rgba(255, 255, 255, 0.15)' : 'transparent'};
-  border: none;
-  font-weight: 500;
-  padding: 8px 12px;
-  border-radius: 4px;
-  cursor: pointer;
-  transition: all 0.3s;
-  font-size: 1rem;
+  padding: 0.5rem 0.75rem;
+  border-radius: 8px;
   display: flex;
   align-items: center;
-  gap: 6px;
+  gap: 0.5rem;
+  transition: all 0.2s;
+  background-color: ${props => props.active ? 'rgba(255, 255, 255, 0.15)' : 'transparent'};
+  white-space: nowrap;
 
   &:hover {
     background-color: rgba(255, 255, 255, 0.2);
   }
   
   @media (max-width: 768px) {
-    padding: 6px 10px;
-    font-size: 0.9rem;
+    width: 100%;
+    padding: 0.75rem;
   }
 `;
 
-const DropdownContent = styled.div`
-  display: ${props => props.isOpen ? 'block' : 'none'};
+const MegaMenu = styled.div`
   position: absolute;
+  top: calc(100% + 0.5rem);
+  left: 50%;
+  transform: translateX(-50%);
   background-color: white;
-  min-width: 200px;
-  box-shadow: 0 8px 16px rgba(0,0,0,0.2);
-  z-index: 100;
-  border-radius: 4px;
-  top: 100%;
-  left: ${props => props.isMobile ? '50%' : '0'};
-  transform: ${props => props.isMobile ? 'translateX(-50%)' : 'none'};
-  margin-top: 6px;
-  overflow: hidden;
-
+  border-radius: 8px;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.15);
+  padding: 1rem;
+  min-width: 270px;
+  display: ${props => props.isOpen ? 'grid' : 'none'};
+  grid-template-columns: 1fr;
+  gap: 0.25rem;
+  z-index: 200;
+  
   @media (max-width: 768px) {
-    min-width: 180px;
+    position: relative;
+    top: 0.5rem;
+    left: 0;
+    transform: none;
+    width: 100%;
+    box-shadow: none;
+    background-color: rgba(255, 255, 255, 0.05);
+    border-radius: 6px;
+    margin-top: 0.25rem;
+    padding: 0.5rem;
   }
 `;
 
-const DropdownItem = styled.div`
-  color: #333;
-  padding: 10px 16px;
-  text-decoration: none;
-  display: block;
-  transition: all 0.2s;
-  border-left: 3px solid transparent;
-  cursor: pointer;
-  font-size: 0.95rem;
+const DocsMegaMenu = styled(MegaMenu)`
+  min-width: 300px;
+  grid-template-columns: repeat(2, 1fr);
+  
+  @media (max-width: 768px) {
+    grid-template-columns: 1fr;
+  }
+`;
 
+const MenuTitle = styled.div`
+  font-weight: 600;
+  color: #2563eb;
+  margin-bottom: 0.5rem;
+  padding: 0 0.5rem;
+  grid-column: 1 / -1;
+  
+  @media (max-width: 768px) {
+    color: rgba(255, 255, 255, 0.8);
+  }
+`;
+
+const MenuItem = styled.div`
+  padding: 0.6rem 0.75rem;
+  color: #334155;
+  font-size: 0.95rem;
+  border-radius: 6px;
+  transition: all 0.2s;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  
   &:hover {
-    background-color: #f0f7ff;
-    color: #0056b3;
-    border-left: 3px solid #0056b3;
+    background-color: #f1f5fd;
+    color: #2563eb;
   }
   
   @media (max-width: 768px) {
-    padding: 8px 12px;
-    font-size: 0.9rem;
+    color: white;
+    
+    &:hover {
+      background-color: rgba(255, 255, 255, 0.1);
+      color: white;
+    }
   }
 `;
 
-// Menu hamburger per mobile
-const MobileMenuButton = styled.button`
+const NavToggle = styled.button`
   display: none;
   background: none;
   border: none;
   color: white;
   font-size: 1.5rem;
   cursor: pointer;
-  padding: 5px;
+  z-index: 101;
   
-  @media (max-width: 480px) {
-    display: block;
-    position: absolute;
-    top: 1rem;
-    right: 1rem;
+  @media (max-width: 768px) {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0.5rem;
   }
 `;
 
-const MobileNav = styled.div`
-  display: flex;
-  flex-direction: column;
+const Backdrop = styled.div`
+  position: fixed;
+  top: 0;
+  left: 0;
   width: 100%;
-  
-  @media (max-width: 480px) {
-    display: ${props => props.isOpen ? 'flex' : 'none'};
-    margin-top: 0.5rem;
-  }
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: ${props => props.isOpen ? 'block' : 'none'};
+  z-index: 90;
 `;
+
+const ModuleIcon = {
+  fi: "💰",
+  mm: "📦",
+  sd: "🛒",
+  co: "📊",
+  pp: "🏭",
+  security: "🔒",
+  cx: "👥",
+  hcm: "👤",
+  abap: "💻"
+};
 
 const Header = () => {
   const { resetQuiz, startQuiz } = useQuiz();
   const location = useLocation();
   const navigate = useNavigate();
-  const [modulesOpen, setModulesOpen] = useState(false);
-  const [docsOpen, setDocsOpen] = useState(false);
+  const [quizMenuOpen, setQuizMenuOpen] = useState(false);
+  const [docsMenuOpen, setDocsMenuOpen] = useState(false);
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
-  const [isMobile, setIsMobile] = useState(false);
+  const quizRef = useRef(null);
+  const docsRef = useRef(null);
   
-  // Rileva se siamo su mobile
+  // Gestione dei click esterni per chiudere i menu
   useEffect(() => {
-    const checkIsMobile = () => {
-      setIsMobile(window.innerWidth <= 768);
+    const handleClickOutside = (event) => {
+      if (quizRef.current && !quizRef.current.contains(event.target)) {
+        setQuizMenuOpen(false);
+      }
+      if (docsRef.current && !docsRef.current.contains(event.target)) {
+        setDocsMenuOpen(false);
+      }
     };
     
-    checkIsMobile();
-    window.addEventListener('resize', checkIsMobile);
-    
+    document.addEventListener('mousedown', handleClickOutside);
     return () => {
-      window.removeEventListener('resize', checkIsMobile);
-    };
-  }, []);
-  
-  // Chiudi i dropdown quando si clicca fuori
-  useEffect(() => {
-    const handleClickOutside = () => {
-      setModulesOpen(false);
-      setDocsOpen(false);
-    };
-    
-    document.addEventListener('click', handleClickOutside);
-    return () => {
-      document.removeEventListener('click', handleClickOutside);
+      document.removeEventListener('mousedown', handleClickOutside);
     };
   }, []);
 
-  // Chiudi dropdown quando cambia la location
+  // Chiudi menu quando cambia la location
   useEffect(() => {
-    setModulesOpen(false);
-    setDocsOpen(false);
+    setQuizMenuOpen(false);
+    setDocsMenuOpen(false);
     setMobileMenuOpen(false);
   }, [location.pathname]);
 
-  // Gestisci click sui dropdown evitando la propagazione
-  const handleDropdownClick = (setter) => (e) => {
-    e.stopPropagation();
-    setter(prev => !prev);
-  };
+  // Gestisci chiusura menu con Escape
+  useEffect(() => {
+    const handleEscape = (e) => {
+      if (e.key === 'Escape') {
+        setQuizMenuOpen(false);
+        setDocsMenuOpen(false);
+        setMobileMenuOpen(false);
+      }
+    };
+    
+    document.addEventListener('keydown', handleEscape);
+    return () => {
+      document.removeEventListener('keydown', handleEscape);
+    };
+  }, []);
 
-  // Determina se un link dovrebbe essere attivo
+  // Disabilita lo scroll quando il menu mobile è aperto
+  useEffect(() => {
+    if (mobileMenuOpen) {
+      document.body.style.overflow = 'hidden';
+    } else {
+      document.body.style.overflow = 'unset';
+    }
+    
+    return () => {
+      document.body.style.overflow = 'unset';
+    };
+  }, [mobileMenuOpen]);
+
   const isActive = (path) => {
     if (path === '/') {
       return location.pathname === '/';
@@ -238,90 +303,129 @@ const Header = () => {
     return location.pathname.startsWith(path);
   };
 
-  // Gestisce la navigazione ai quiz
   const handleQuizNavigation = (moduleId) => {
-    resetQuiz(); // Reset lo stato del quiz
-    startQuiz(moduleId, false); // Inizializza il nuovo quiz
-    navigate(`/quiz/${moduleId}`); // Naviga alla pagina del quiz
-    setModulesOpen(false); // Chiudi il dropdown
-    setMobileMenuOpen(false); // Chiudi il menu mobile
-  };
-
-  // Gestisce la navigazione alla documentazione
-  const handleDocsNavigation = (path) => {
-    navigate(path);
-    setDocsOpen(false);
+    resetQuiz();
+    startQuiz(moduleId, false);
+    navigate(`/quiz/${moduleId}`);
+    setQuizMenuOpen(false);
     setMobileMenuOpen(false);
   };
 
+  const handleDocsNavigation = (path) => {
+    navigate(path);
+    setDocsMenuOpen(false);
+    setMobileMenuOpen(false);
+  };
+
+  const toggleMobileMenu = () => {
+    setMobileMenuOpen(!mobileMenuOpen);
+  };
+
   return (
-    <HeaderContainer>
-      <Logo>
-        <Link to="/" onClick={resetQuiz} style={{ color: 'white', textDecoration: 'none', display: 'flex', alignItems: 'center' }}>
-          <LogoIcon>🎓</LogoIcon>
-          SAP ERP Quiz
-        </Link>
-      </Logo>
+    <>
+      <HeaderContainer>
+        <MainContainer>
+          <LogoContainer>
+            <Logo to="/" onClick={resetQuiz}>
+              <LogoIcon>🎓</LogoIcon>
+              SAP ERP Quiz
+            </Logo>
+          </LogoContainer>
+          
+          <NavContainer>
+            <NavToggle onClick={toggleMobileMenu}>
+              {mobileMenuOpen ? "✕" : "☰"}
+            </NavToggle>
+            
+            <Nav isOpen={mobileMenuOpen}>
+              <NavItem>
+                <NavLink to="/" onClick={resetQuiz} active={isActive('/') ? 1 : 0}>
+                  Home
+                </NavLink>
+              </NavItem>
+              
+              <NavItem ref={quizRef}>
+                <NavLink 
+                  as="button" 
+                  onClick={() => setQuizMenuOpen(!quizMenuOpen)} 
+                  active={isActive('/quiz') ? 1 : 0}
+                >
+                  Quiz <span style={{ marginLeft: '4px', fontSize: '0.8rem' }}>{quizMenuOpen ? '▲' : '▼'}</span>
+                </NavLink>
+                
+                <MegaMenu isOpen={quizMenuOpen}>
+                  <MenuTitle>Scegli un modulo SAP</MenuTitle>
+                  <MenuItem onClick={() => handleQuizNavigation('fi')}>
+                    {ModuleIcon.fi} Finance (FI)
+                  </MenuItem>
+                  <MenuItem onClick={() => handleQuizNavigation('mm')}>
+                    {ModuleIcon.mm} Materials (MM)
+                  </MenuItem>
+                  <MenuItem onClick={() => handleQuizNavigation('sd')}>
+                    {ModuleIcon.sd} Sales (SD)
+                  </MenuItem>
+                  <MenuItem onClick={() => handleQuizNavigation('co')}>
+                    {ModuleIcon.co} Controlling (CO)
+                  </MenuItem>
+                  <MenuItem onClick={() => handleQuizNavigation('pp')}>
+                    {ModuleIcon.pp} Production (PP)
+                  </MenuItem>
+                </MegaMenu>
+              </NavItem>
+              
+              <NavItem ref={docsRef}>
+                <NavLink 
+                  as="button" 
+                  onClick={() => setDocsMenuOpen(!docsMenuOpen)} 
+                  active={(isActive('/mm-documentation') || isActive('/fi-documentation')) ? 1 : 0}
+                >
+                  Documentazione <span style={{ marginLeft: '4px', fontSize: '0.8rem' }}>{docsMenuOpen ? '▲' : '▼'}</span>
+                </NavLink>
+                
+                <DocsMegaMenu isOpen={docsMenuOpen}>
+                  <MenuTitle>Documentazione Moduli SAP</MenuTitle>
+                  <MenuItem onClick={() => handleDocsNavigation('/fi-documentation')}>
+                    {ModuleIcon.fi} Finance (FI)
+                  </MenuItem>
+                  <MenuItem onClick={() => handleDocsNavigation('/mm-documentation')}>
+                    {ModuleIcon.mm} Material (MM)
+                  </MenuItem>
+                  <MenuItem onClick={() => handleDocsNavigation('/sd-documentation')}>
+                    {ModuleIcon.sd} Sales (SD)
+                  </MenuItem>
+                  <MenuItem onClick={() => handleDocsNavigation('/pp-documentation')}>
+                    {ModuleIcon.pp} Production Planning
+                  </MenuItem>
+                  <MenuItem onClick={() => handleDocsNavigation('/co-documentation')}>
+                    {ModuleIcon.co} Controlling (CO)
+                  </MenuItem>
+                  <MenuItem onClick={() => handleDocsNavigation('/security-documentation')}>
+                    {ModuleIcon.security} Security
+                  </MenuItem>
+                  <MenuItem onClick={() => handleDocsNavigation('/cx-documentation')}>
+                    {ModuleIcon.cx} Customer Experience
+                  </MenuItem>
+                  <MenuItem onClick={() => handleDocsNavigation('/hcm-documentation')}>
+                    {ModuleIcon.hcm} Human Capital
+                  </MenuItem>
+                  <MenuItem onClick={() => handleDocsNavigation('/abap-documentation')}>
+                    {ModuleIcon.abap} ABAP Development
+                  </MenuItem>
+                </DocsMegaMenu>
+              </NavItem>
+              
+              <NavItem>
+                <NavLink to="/about" active={isActive('/about') ? 1 : 0}>
+                  Info
+                </NavLink>
+              </NavItem>
+            </Nav>
+          </NavContainer>
+        </MainContainer>
+      </HeaderContainer>
       
-      {/* Bottone hamburger per schermi piccoli */}
-      <MobileMenuButton onClick={() => setMobileMenuOpen(!mobileMenuOpen)}>
-        {mobileMenuOpen ? '✕' : '☰'}
-      </MobileMenuButton>
-      
-      <MobileNav isOpen={mobileMenuOpen || window.innerWidth > 480}>
-        <Nav>
-          <NavLink to="/" onClick={resetQuiz} active={isActive('/') ? 1 : 0}>
-            Home
-          </NavLink>
-          
-          <DropdownContainer onClick={(e) => e.stopPropagation()}>
-            <DropdownButton 
-              onClick={handleDropdownClick(setModulesOpen)}
-              active={isActive('/quiz') ? 1 : 0}
-            >
-              Quiz <span>{modulesOpen ? '▲' : '▼'}</span>
-            </DropdownButton>
-            <DropdownContent isOpen={modulesOpen} isMobile={isMobile}>
-              <DropdownItem onClick={() => handleQuizNavigation('fi')}>Finance (FI)</DropdownItem>
-              <DropdownItem onClick={() => handleQuizNavigation('mm')}>Materials (MM)</DropdownItem>
-              <DropdownItem onClick={() => handleQuizNavigation('sd')}>Sales (SD)</DropdownItem>
-              <DropdownItem onClick={() => handleQuizNavigation('co')}>Controlling (CO)</DropdownItem>
-              <DropdownItem onClick={() => handleQuizNavigation('pp')}>Production (PP)</DropdownItem>
-            </DropdownContent>
-          </DropdownContainer>
-          
-          <DropdownContainer onClick={(e) => e.stopPropagation()}>
-            <DropdownButton 
-              onClick={handleDropdownClick(setDocsOpen)}
-              active={isActive('/mm-documentation') || isActive('/fi-documentation') ? 1 : 0}
-            >
-              Docs <span>{docsOpen ? '▲' : '▼'}</span>
-            </DropdownButton>
-            <DropdownContent isOpen={docsOpen} isMobile={isMobile}>
-              <DropdownItem onClick={() => handleDocsNavigation('/fi-documentation')}>
-                Finance (FI)
-              </DropdownItem>
-              <DropdownItem onClick={() => handleDocsNavigation('/mm-documentation')}>
-                Material (MM)
-              </DropdownItem>
-              <DropdownItem onClick={() => handleDocsNavigation('/sd-documentation')}>
-              Sales & Distribution (SD)
-              </DropdownItem>
-              <DropdownItem onClick={() => handleDocsNavigation('/pp-documentation')}>
-                Production Planning (PP)
-              </DropdownItem>
-              <DropdownItem onClick={() => handleDocsNavigation('/security-documentation')}>
-                Security (SAP Security)
-              </DropdownItem>
-            </DropdownContent>
-          </DropdownContainer>
-          
-          <NavLink to="/about" active={isActive('/about') ? 1 : 0}>
-            Info
-          </NavLink>
-        </Nav>
-      </MobileNav>
-    </HeaderContainer>
+      <Backdrop isOpen={mobileMenuOpen} onClick={() => setMobileMenuOpen(false)} />
+    </>
   );
 };
 

@@ -1,0 +1,134 @@
+/* Reset di alcuni elementi di default */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Stile del container principale */
+  .documentation {
+    font-family: Arial, sans-serif;
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+  }
+  
+  /* Stile per i titoli */
+  h1 {
+    font-size: 2em;
+    color: #333;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  h2 {
+    font-size: 1.5em;
+    color: #444;
+    margin-bottom: 15px;
+  }
+  
+  /* Stile per le liste */
+  ul {
+    list-style-type: disc;
+    margin-left: 20px;
+    margin-bottom: 15px;
+  }
+  
+  ul li {
+    margin-bottom: 5px;
+  }
+  
+  /* Stile per i sotto-titoli */
+  h3 {
+    font-size: 1.2em;
+    color: #555;
+    margin-bottom: 10px;
+  }
+  
+  /* Stile per i paragrafi */
+  p {
+    font-size: 1em;
+    color: #666;
+    line-height: 1.6;
+    margin-bottom: 15px;
+  }
+  
+  /* Stile per le tabelle */
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+  }
+  
+  table th,
+  table td {
+    padding: 10px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  table th {
+    background-color: #f2f2f2;
+    font-weight: bold;
+  }
+  
+  /* Stile per i blocchi di codice */
+  pre {
+    background-color: #f4f4f4;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    padding: 10px;
+    overflow-x: auto;
+    margin-bottom: 20px;
+  }
+  
+  code {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 0.9em;
+  }
+  
+  /* Stile per i link */
+  a {
+    color: #007bff;
+    text-decoration: none;
+  }
+  
+  a:hover {
+    text-decoration: underline;
+  }
+  
+  /* Stile per i blocchi di citazione */
+  blockquote {
+    border-left: 4px solid #ccc;
+    padding: 10px;
+    margin: 20px 0;
+    font-style: italic;
+    color: #666;
+  }
+  
+  /* Stile per le immagini */
+  img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 20px 0;
+  }
+  
+  /* Stile per i pulsanti */
+  button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1em;
+    cursor: pointer;
+    border-radius: 4px;
+    margin-bottom: 20px;
+  }
+  
+  button:hover {
+    background-color: #0056b3;
+  }

@@ -14,6 +14,10 @@ import FIDocumentationPage from './pages/FIDocumentationPage';
 import SDDocumentationPage from './pages/SDDocumentationPage';
 import PPDocumentationPage from './pages/PPDocumentationPage';
 import SAPSecurityPageDocumentation from './pages/SAPSecurityPageDocumentation';
+import CxDocumentationPage from './pages/cxDocumentationPage';
+import HcmDocumentationPage from './pages/hcmDocumentationPage';
+import CoDocumentationPage from './pages/CODocumentationPage';
+import ABAPDocumentationPage from './pages/ABAPDocumentationPage';
 function App() {
   return (
     <QuizProvider>
@@ -32,6 +36,10 @@ function App() {
               <Route path="/sd-documentation" element={<SDDocumentationPage />} />
               <Route path="/pp-documentation" element={<PPDocumentationPage />} />
               <Route path="/security-documentation" element={<SAPSecurityPageDocumentation />} />
+              <Route path="/cx-documentation" element={<CxDocumentationPage />} />
+              <Route path="/hcm-documentation" element={<HcmDocumentationPage />} />
+              <Route path="/Co-Documentation" element={<CoDocumentationPage />} />
+              <Route path="/abap-Documentation" element={<ABAPDocumentationPage />} />
             </Routes>
           </main>
           <Footer />

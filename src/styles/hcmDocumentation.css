@@ -1,0 +1,65 @@
+/* HorsaAcademy.css */
+.horsa-academy {
+    font-family: Arial, sans-serif;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+  }
+  
+  .header {
+    text-align: center;
+    margin-bottom: 20px;
+    background-color: #007bff;
+    color: white;
+    padding: 10px;
+    border-radius: 8px;
+  }
+  
+  .agenda, .horsa-at-a-glance, .lob-hcm, .adoption, .employee-experience, .ai-employee-journey, .methodology-governance, .sap-resources, .employee-central, .employee-experience-management, .software-releases, .tenants-provisioning, .user-permission, .performance-goals {
+    margin-bottom: 20px;
+    padding: 10px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+  }
+  
+  h2 {
+    color: #333;
+    border-bottom: 2px solid #ccc;
+    padding-bottom: 5px;
+    margin-bottom: 15px;
+  }
+  
+  ul {
+    list-style-type: disc;
+    padding-left: 20px;
+    margin: 10px 0;
+  }
+  
+  p {
+    margin: 10px 0;
+  }
+  
+  div {
+    margin: 10px 0;
+  }
+  
+  /* Specific styles for sections */
+  .org-chart, .integrations, .release-updates, .deprecation, .data-center, .environment, .instance, .provisioning, .instance-strategy, .user-access, .single-sign-on, .role-based-permission, .permission-groups, .goal-plan, .continuous-performance, .performance-review, .calibration {
+    margin: 10px 0;
+    padding: 10px;
+    background-color: #f0f0f0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  .hr-admin, .manager, .candidate {
+    margin: 10px 0;
+    padding: 10px;
+    background-color: #e0e0e0;
+    border: 1px solid #bbb;
+    border-radius: 5px;
+  }
